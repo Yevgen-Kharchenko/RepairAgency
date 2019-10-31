@@ -7,17 +7,15 @@ public class Order {
     private LocalDate date;
     private double price;
     private int repairsTypesId;
-    private int statusId;
     private int userId;
 
     public Order(int id, LocalDate date,
                  double price, int repairsTypesId,
-                 int statusId, int userId) {
+                 int userId) {
         this.id = id;
         this.date = date;
         this.price = price;
         this.repairsTypesId = repairsTypesId;
-        this.statusId = statusId;
         this.userId = userId;
     }
 
@@ -61,18 +59,9 @@ public class Order {
         this.repairsTypesId = repairsTypesId;
     }
 
-    public int getStatusId() {
-        return statusId;
-    }
-
-    public void setStatusId(int statusId) {
-        this.statusId = statusId;
-    }
-
     @Override
     public String toString() {
         return "Order{" + "id=" + id + ", date='" + date + '\'' +
-                ", statusId='" + statusId + '\'' +
                 ", repairsTypesId=" + repairsTypesId +
                 ", price=" + price + '}' + "\n";
     }

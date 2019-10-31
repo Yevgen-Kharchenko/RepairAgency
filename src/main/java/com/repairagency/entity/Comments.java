@@ -2,19 +2,19 @@ package com.repairagency.entity;
 
 import java.time.LocalDate;
 
-public class StatusHistory {
+public class Comments {
     private int id;
     private LocalDate date;
-    private int statusId;
+    private String comment;
     private int userId;
     private int orderId;
 
-    public StatusHistory(int id,
-                         LocalDate date, int statusId,
-                         int userId, int orderId) {
+    public Comments(int id, LocalDate date,
+                    String comment,
+                    int userId, int orderId) {
         this.id = id;
         this.date = date;
-        this.statusId = statusId;
+        this.comment = comment;
         this.userId = userId;
         this.orderId = orderId;
     }
@@ -35,12 +35,12 @@ public class StatusHistory {
         this.date = date;
     }
 
-    public int getStatusId() {
-        return statusId;
+    public String getComment() {
+        return comment;
     }
 
-    public void setStatusId(int statusId) {
-        this.statusId = statusId;
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public int getUserId() {
@@ -61,8 +61,10 @@ public class StatusHistory {
 
     @Override
     public String toString() {
-        return "StatusHistory{" + "id=" + id + ", date='" + date + '\'' +
-                ", statusId='" + statusId + '\'' + ", userId=" + userId +
-                ", orderId=" + orderId + '}' + "\n";
+        return "Comment{" + "id=" + id + ", comment='" + comment +
+                ", date='" + date + '\'' +
+                ", orderId='" + orderId +
+                '\'' + ", userId='" + userId + '\'' +
+                '}' + "\n";
     }
 }

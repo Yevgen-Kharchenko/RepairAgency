@@ -32,9 +32,9 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
 
         return result;
     }
-    
-    public boolean createUpdate(String query, StatementMapper<T> statementMapper){
-        try(PreparedStatement preparedStatement = DataSourceFactory.getPreparedStatement(query);) {
+
+    public boolean createUpdate(String query, StatementMapper<T> statementMapper) {
+        try (PreparedStatement preparedStatement = DataSourceFactory.getPreparedStatement(query);) {
             statementMapper.map(preparedStatement);
 
             int result = preparedStatement.executeUpdate();
@@ -47,4 +47,3 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return false;
     }
 }
-

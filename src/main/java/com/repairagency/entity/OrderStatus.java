@@ -1,20 +1,22 @@
 package com.repairagency.entity;
 
+import com.repairagency.enums.Status;
+
 import java.time.LocalDate;
 
-public class Comment {
+public class OrderStatus {
     private int id;
-    private String comment;
     private LocalDate date;
+    private Status status;
     private int userId;
     private int orderId;
 
-    public Comment(int id, String comment,
-                   LocalDate date,
-                    int userId, int orderId) {
+    public OrderStatus(int id,
+                       LocalDate date, Status status,
+                       int userId, int orderId) {
         this.id = id;
         this.date = date;
-        this.comment = comment;
+        this.status = status;
         this.userId = userId;
         this.orderId = orderId;
     }
@@ -35,12 +37,12 @@ public class Comment {
         this.date = date;
     }
 
-    public String getComment() {
-        return comment;
+    public Status getStatus() {
+        return status;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     public int getUserId() {
@@ -61,10 +63,8 @@ public class Comment {
 
     @Override
     public String toString() {
-        return "Comment{" + "id=" + id + ", comment='" + comment +
-                ", date='" + date + '\'' +
-                ", orderId='" + orderId +
-                '\'' + ", userId='" + userId + '\'' +
-                '}' + "\n";
+        return "StatusHistory{" + "id=" + id + ", date='" + date + '\'' +
+                ", statuses='" + status + '\'' + ", userId=" + userId +
+                ", orderId=" + orderId + '}' + "\n";
     }
 }

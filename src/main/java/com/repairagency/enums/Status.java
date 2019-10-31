@@ -1,6 +1,6 @@
 package com.repairagency.enums;
 
-public enum Statuses {
+public enum Status {
     NEW, OFFER, APPROVED,
     CANCELED, IN_PROGRESS,
     COMPLETED, CLOSED

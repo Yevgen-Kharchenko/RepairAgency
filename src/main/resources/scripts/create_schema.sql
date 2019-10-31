@@ -9,7 +9,7 @@ password varchar(255) not null,
 role enum("CUSTOMER", "ADMIN", "MANAGER", "MASTER"),
 primary key (id));
 
-create table repairsTypes (
+create table repairs_types (
 id int auto_increment,
 title varchar(255) not null,
 primary key (id));
@@ -21,7 +21,7 @@ price double default 0,
 repairsTypesId int,
 userId int,
 primary key(id),
-foreign key (repairsTypesId) references repairsTypes(id),
+foreign key (repairsTypesId) references repairs_types(id),
 foreign key (userId) references user(id));
 
 create table order_status (

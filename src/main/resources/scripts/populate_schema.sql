@@ -9,7 +9,7 @@ insert into `user` (`login`, `password`, `role`) values
 ('Khoryv', 'password', 'CUSTOMER'),
 ('Lybid', 'password', 'CUSTOMER');
 
-insert into repairsTypes (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'), ('VACUUM_CLEANER'), 
+insert into repairs_types (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'), ('VACUUM_CLEANER'),
 							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'), ('OTHER');
 
 insert into `order` (`date`, `price`, `repairsTypesId`, `userId`) 

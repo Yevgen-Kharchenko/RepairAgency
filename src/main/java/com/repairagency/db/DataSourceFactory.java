@@ -35,23 +35,23 @@ public class DataSourceFactory {
             dataSource = mysqlDataSource;
             LOG.info("DataSource is created" + dataSource);
         } catch (IOException e) {
-            LOG.error("Error while reading properties from file!",e);
-        }catch (SQLException e){
+            LOG.error("Error while reading properties from file!", e);
+        } catch (SQLException e) {
             LOG.error("Error while setting Data source");
         }
     }
 
-    public static Connection getConnection(){
+    public static Connection getConnection() {
         Connection connection = null;
         try {
             connection = dataSource.getConnection();
-        }catch (SQLException e){
+        } catch (SQLException e) {
             LOG.error("Error while connection creation", e);
         }
         return connection;
     }
 
-    public static PreparedStatement getPreparedStatement(String query) throws SQLException{
+    public static PreparedStatement getPreparedStatement(String query) throws SQLException {
         return getConnection().prepareStatement(query);
     }
 }
