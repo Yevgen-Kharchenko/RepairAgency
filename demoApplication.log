@@ -1,0 +1,16 @@
+[http-bio-8880-exec-3] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@22d2dcce
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@7af0ac77
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@42922683
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@182847a0
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@572c7be
+[http-bio-8880-exec-4] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@21237428
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@64d77152
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@37028808
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@e6c7ff8
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@25e20163
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@40556ca1
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@6d2afa34
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@244e9ef4
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@43b60071
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@72eafd5b
+[http-bio-8880-exec-1] INFO  com.repairagency.db.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@3ae9009a
