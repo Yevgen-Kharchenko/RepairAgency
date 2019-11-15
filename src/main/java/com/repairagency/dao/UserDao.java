@@ -24,6 +24,7 @@ public class UserDao extends AbstractDao<User> {
             + COLUMN_PASSWORD + "= ?, "
             + COLUMN_ROLE + "= ? WHERE "
             + COLUMN_ID + " = ?";
+//    "select * from students where login =?"
 
     private static final String DELETE_USER = "DELETE FROM `user` "
             + "WHERE " + COLUMN_ID + " = ?";
@@ -34,6 +35,7 @@ public class UserDao extends AbstractDao<User> {
                 resultSet.getString(COLUMN_LOGIN), resultSet.getString(COLUMN_PASSWORD),
                 Role.valueOf(resultSet.getString(COLUMN_ROLE))));
     }
+
 
     @Override
     public boolean create(User entity) {

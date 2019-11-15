@@ -10223,12 +10223,18 @@ mark, .mark {
 }
 
 .text-style-1 {
-  font-weight: 400;
-  font-style: italic;
-  color: #ffffff;
-}
+   font-weight: 400;
+   font-style: italic;
+   color: #ffffff;
+ }
 
-.paragraph-style-1 * {
+ .text-style-3{
+   font-weight: 400;
+   font-style: italic;
+   color: #136cbf;
+ }
+
+ .paragraph-style-1 * {
   margin-right: .25em;
 }
 

@@ -15,3 +15,6 @@
 [http-bio-8880-exec-1] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@72eafd5b
 [http-bio-8880-exec-1] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@3ae9009a
 [http-bio-8880-exec-5] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@7b90ed32
+[main] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@4520ebad
+[main] DEBUG com.repairagency.dao.UserDao  - Delete user: User{id=15, login='null', password='null', role=null}
+
