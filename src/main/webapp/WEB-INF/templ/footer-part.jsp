@@ -25,7 +25,7 @@
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
                         <div class="max-width-300">
-                            <h5 class="h5-variant-1">Newsletter</h5>
+                            <h5 class="h5-variant-1"><fmt:message key="Newsletter"/></h5>
                             <hr>
                             <p class="offset-top-22">Keep up with the latest news, special offers and other discount
                                 information. Enter your e-mail and subscribe to our newsletter.</p>
