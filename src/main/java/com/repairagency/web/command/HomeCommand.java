@@ -22,7 +22,7 @@ public class HomeCommand implements Command{
 //        request.setAttribute("courses", courseService.getAll());
 //        String redirectUrl = request.getContextPath() + "/app/404";
 //        LOG.info("Redirect Url: " + redirectUrl);
-        //return new Page(redirectUrl, true);
+//        return new Page(redirectUrl, true);
         return new Page(HOME_PAGE);
     }
 }

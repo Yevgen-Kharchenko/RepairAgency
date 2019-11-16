@@ -16,7 +16,7 @@ public class CourseService {
     }
 
 //    public List<CourseDTO> getAll() {
-////        List<Course> all = subjectDao.getAll(true);
+//       List<Course> all = subjectDao.getAll(true);
 //        return all.stream().map(course -> {
 //            User lecturer = userDao.getById(course.getLecturerId(), false);
 //            CourseDTO courseDTO = new CourseDTO();

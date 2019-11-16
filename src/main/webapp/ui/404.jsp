@@ -15,7 +15,7 @@
     <header class="page-head">
         <section>
             <div class="shell text-center">
-                <div class="brand-wrap"><a href="index.jsp" class="brand"><img src="ui/images/logo-white-250x40.png" alt="" width="250" height="40"/></a></div>
+                <div class="brand-wrap"><a href="" class="brand"><img src="ui/images/logo-white-250x40.png" alt="" width="250" height="40"/></a></div>
             </div>
         </section>
     </header>
@@ -28,7 +28,8 @@
                         <div class="text-extra-big">404</div>
                         <p class="text-style-2"><fmt:message key="have.mistyped"/></p>
                         <div class="offset-top-35 offset-sm-top-50">
-                            <div class="group-xl"><a href="index.jsp" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="Back.home"/></a><a href="contacts.jsp" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>
+                            <div class="group-xl"><a href="" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.home"/></a>
+                                <a href="contacts" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>
                         </div>
                     </div>
                 </div>
@@ -38,7 +39,7 @@
     <footer class="page-foot">
         <div class="shell text-center">
             <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="all.rights"/>
-                <a href="privacy.jsp"><fmt:message key="privacy.policy"/></a> </p>
+                <a href="privacy"><fmt:message key="privacy.policy"/></a> </p>
         </div>
     </footer>
 </div>

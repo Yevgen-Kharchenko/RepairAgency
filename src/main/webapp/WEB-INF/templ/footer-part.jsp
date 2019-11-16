@@ -10,7 +10,7 @@
             <div class="cell-sm-10 cell-md-12">
                 <div class="range range-md-justify">
                     <div class="cell-sm-6 cell-md-3 wrap-lg-justify-vertical">
-                        <div class="brand-wrap"><a href="index.jsp" class="brand"><img
+                        <div class="brand-wrap"><a href="" class="brand"><img
                                 src="ui/images/logo-light-250x40.png" alt="" width="250" height="40"/></a></div>
                         <div class="offset-top-30 offset-sm-top-65">
                             <ul class="list-inline list-inline-xs">
@@ -91,7 +91,7 @@
                 <div class="range offset-top-55 offset-sm-top-60 offset-lg-top-88">
                     <div class="cell-xs-12">
                         <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="All.Rights"/>
-                            <a href="privacy.jsp"><fmt:message key="Privacy.Policy"/></a> </p>
+                            <a href="privacy"><fmt:message key="Privacy.Policy"/></a> </p>
                     </div>
                 </div>
             </div>

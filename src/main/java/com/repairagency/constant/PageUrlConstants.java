@@ -15,10 +15,9 @@ public class PageUrlConstants {
     public static final String LOGIN_PAGE = "/ui/login-register.jsp";
     public static final String BLOG_PAGE = "/ui/blog-masonry.jsp";
     public static final String BLOG_POST_PAGE = "/ui/blog-post.jsp";
-    public static final String GALLERY_PAGE = "/ui/gallery-masonry.html";
+    public static final String GALLERY_PAGE = "/ui/gallery-masonry.jsp";
     public static final String ABOUT_US_PAGE = "/ui/about.jsp";
     public static final String PRIVACY_PAGE = "/ui/privacy.jsp";
-    public static final String APPOINT_PAGE = "/ui/appointment.jsp";
     public static final String RESPONSES_PAGE = "/ui/responses.jsp";
     public static final String TEAM_PAGE = "/ui/team.jsp";
     public static final String TEAM_PROFILE_PAGE = "/ui/team-member-profile.jsp";

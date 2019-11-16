@@ -24,8 +24,8 @@
                         </div>
                         <div class="offset-top-22 offset-sm-top-0 text-sm-right">
                             <ul class="breadcrumbs-custom">
-                                <li><a href="index.jsp">Home</a></li>
-                                <li><a href="503.jsp">Pages</a></li>
+                                <li><a href="">Home</a></li>
+                                <li><a href="503">Pages</a></li>
                                 <li class="active">Login/Register</li>
                             </ul>
                         </div>
@@ -57,9 +57,9 @@
                                             <button type="submit" class="btn btn-primary">Sign In</button>
                                             <p class="reveal-block reveal-xs-inline-block">or</p>
                                             <ul class="list-inline list-inline-xxs">
-                                                <li><a href="503.jsp" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
-                                                <li><a href="503.jsp" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
-                                                <li><a href="503.jsp" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
+                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
+                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
+                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
                                             </ul>
                                         </div>
                                     </form>
@@ -68,9 +68,9 @@
                                     <div class="text-center">
                                         <p>Enter with</p>
                                         <ul class="list-inline list-inline-xxs offset-top-15">
-                                            <li><a href="503.jsp" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
-                                            <li><a href="503.jsp" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
-                                            <li><a href="503.jsp" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
+                                            <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
+                                            <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
+                                            <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
                                         </ul>
                                         <p class="offset-top-7">or</p>
                                     </div>

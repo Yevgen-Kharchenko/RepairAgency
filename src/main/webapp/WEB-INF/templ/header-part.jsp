@@ -15,7 +15,7 @@
                 <div class="rd-navbar-panel">
                     <button data-rd-navbar-toggle=".rd-navbar-outer-panel" class="rd-navbar-toggle">
                         <span></span></button>
-                    <a href="index.jsp" class="rd-navbar-brand">
+                    <a href="" class="rd-navbar-brand">
                         <div class="rd-navbar-fixed--hidden"><img src="ui/images/logo-light-250x40.png" alt=""
                                                                   width="250" height="40"/></div>
                         <div class="rd-navbar-fixed--visible"><img src="ui/images/logo-light-250x40.png" alt=""
@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="unit-body">
                                         <address class="contact-info">
-                                            <a href="contacts.jsp"><span><fmt:message key="rosecrans.ave"/></span><br>
+                                            <a href="contacts"><span><fmt:message key="rosecrans.ave"/></span><br>
                                                 <span><fmt:message key="ca.90245"/></span></a>
                                         </address>
                                     </div>
@@ -71,42 +71,42 @@
             <div class="rd-navbar-outer-panel">
                 <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
-                        <li class="active"><a href="index.jsp"><fmt:message key="home"/></a></li>
-                        <li><a href="services.jsp"><fmt:message key="services"/></a>
+                        <li class="active"><a href=""><fmt:message key="home"/></a></li>
+                        <li><a href="services"><fmt:message key="services"/></a>
                             <ul class="rd-navbar-dropdown tabs-nav">
-                                <li><a href="services.jsp#ice-maker-repair"><fmt:message key="ice.maker"/></a></li>
-                                <li><a href="services.jsp#stove-repair"><fmt:message key="stove.repair"/></a></li>
-                                <li><a href="services.jsp#appliance-parts"><fmt:message key="appliance.parts"/></a></li>
-                                <li><a href="services.jsp#microwave-repair"><fmt:message key="microwave.repair"/></a></li>
-                                <li><a href="services.jsp#washer-repair"><fmt:message key="washer.repairy"/></a></li>
-                                <li><a href="services.jsp#refrigerator-repair"><fmt:message key="refrigerator.repair"/></a></li>
-                                <li><a href="services.jsp#range-hood-repair"><fmt:message key="range"/></a></li>
+                                <li><a href="services#ice-maker-repair"><fmt:message key="ice.maker"/></a></li>
+                                <li><a href="services#stove-repair"><fmt:message key="stove.repair"/></a></li>
+                                <li><a href="services#appliance-parts"><fmt:message key="appliance.parts"/></a></li>
+                                <li><a href="services#microwave-repair"><fmt:message key="microwave.repair"/></a></li>
+                                <li><a href="services#washer-repair"><fmt:message key="washer.repairy"/></a></li>
+                                <li><a href="services#refrigerator-repair"><fmt:message key="refrigerator.repair"/></a></li>
+                                <li><a href="services#range-hood-repair"><fmt:message key="range"/></a></li>
                             </ul>
                         </li>
-                        <li><a href="about.jsp"><fmt:message key="pages"/></a>
+                        <li><a href="about"><fmt:message key="pages"/></a>
                             <ul class="rd-navbar-dropdown tabs-nav">
                                 <li><a href="about"><fmt:message key="about.us"/></a></li>
-                                <li><a href="team.jsp"><fmt:message key="our.team"/></a></li>
-                                <li><a href="responses.jsp"><fmt:message key="responses"/></a></li>
-                                <li><a href="privacy.jsp"><fmt:message key="privacy.policy"/></a></li>
-                                <li><a href="contacts.jsp"><fmt:message key="contact"/></a></li>
+                                <li><a href="team"><fmt:message key="our.team"/></a></li>
+                                <li><a href="responses"><fmt:message key="responses"/></a></li>
+                                <li><a href="privacy"><fmt:message key="privacy.policy"/></a></li>
+                                <li><a href="contacts"><fmt:message key="contact"/></a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="order.jsp">Order</a>
+                            <a href="order"><fmt:message key="order"/></a>
                         </li>
 
                         <li>
-                            <a href="gallery-masonry.jsp">Gallery</a>
+                            <a href="gallery-masonry"><fmt:message key="gallery"/></a>
                         </li>
                         <li>
-                            <a href="blog-masonry.jsp">Blog</a>
+                            <a href="blog-masonry"><fmt:message key="blog"/></a>
                         </li>
                     </ul>
 
                     <ul class="rd-navbar-nav">
-                        <li><a href="user.jsp">User</a></li>
-                        <li><a href="login-register.jsp">Login</a></li>
+                        <li><a href="user"><fmt:message key="user"/></a></li>
+                        <li><a href="login-register"><fmt:message key="login"/></a></li>
                         <li><a href="language?locale=en" class="text-uppercase">en</a>
                             <a href="language?locale=ua" class="text-uppercase">ua</a></li>
                     </ul>

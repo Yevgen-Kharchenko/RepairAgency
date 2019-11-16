@@ -24,7 +24,7 @@
                         </div>
                         <div class="offset-top-22 offset-sm-top-0 text-sm-right">
                             <ul class="breadcrumbs-custom">
-                                <li><a href="index.jsp">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li class="active">Services</li>
                             </ul>
                         </div>
@@ -53,7 +53,7 @@
                                             <h3>Ice Maker Repair</h3>
                                         </div>
                                         <div class="box-image"><img src="ui/images/services-1-146x156.png" alt="" width="146" height="156"/> </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -84,7 +84,7 @@
                                             <h3>Stove Repair</h3>
                                         </div>
                                         <div class="box-image"><img src="ui/images/services-2-146x156.png" alt="" width="146" height="156"/> </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -115,7 +115,7 @@
                                         <div class="box-header">
                                             <h3>Appliance Parts</h3>
                                         </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order parts</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order parts</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -132,7 +132,7 @@
                                             <h3>Microwave Repair</h3>
                                         </div>
                                         <div class="box-image"><img src="ui/images/services-3-146x156.png" alt="" width="146" height="156"/> </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -165,7 +165,7 @@
                                             <h3>Washer Repair</h3>
                                         </div>
                                         <div class="box-image"><img src="ui/images/services-4-146x156.png" alt="" width="146" height="156"/> </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -193,7 +193,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <p> By addressing the issues with your malfunctioning washing machine as soon as you notice them you can prevent costly repair bills down the line. A leaky water hose or corroded wiring can do serious damage to your property or a loved one. San Diego Service Center can fix any washing machine problem that you have at an affordable price and with minimal hassle. You can call for an appointment through our website. If you are having a problem with your washing machine, San Diego Service Center is the only call you need to make. </p>
+                                    <p> By addressing the issues with your malfunctioning washing machine as soon as you notice them you can prevent costly repair bills down the line. A leaky water hose or corroded wiring can do serious damage to your property or a loved one. San Diego Service Center can fix any washing machine problem that you have at an affordable price and with minimal hassle. You can call for an Order through our website. If you are having a problem with your washing machine, San Diego Service Center is the only call you need to make. </p>
                                 </div>
                                 <div class="tab">
                                     <div class="box-custom-variant-1">
@@ -201,7 +201,7 @@
                                             <h3>Refrigerator Repair</h3>
                                         </div>
                                         <div class="box-image"><img src="ui/images/services-5-146x156.png" alt="" width="146" height="156"/> </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -222,7 +222,7 @@
                                         </div>
                                     </div>
                                     <p>Releasing the chemical refrigerants into your air is illegal and unhealthy and against the law. We have your back though, with the training and tools needed to properly deal with all the environmental codes. Virtually every refrigerator problem can be fixed with the services of San Diego Service Center. We have you covered in every situation that involves refrigerators.</p>
-                                    <p> When you call, make sure you tell the customer service representative that you need commercial refrigerator repair in San Diego. That will guarantee you a high priority appointment and same day service. In most cases, a repair technician will be dispatched immediately to come take a look at your commercial refrigerator and begin making repairs. You dont have to stop business just because you have a commercial appliance problem. We are standing by, ready to help! </p>
+                                    <p> When you call, make sure you tell the customer service representative that you need commercial refrigerator repair in San Diego. That will guarantee you a high priority Order and same day service. In most cases, a repair technician will be dispatched immediately to come take a look at your commercial refrigerator and begin making repairs. You dont have to stop business just because you have a commercial appliance problem. We are standing by, ready to help! </p>
                                 </div>
                                 <div class="tab">
                                     <div class="box-custom-variant-1">
@@ -230,7 +230,7 @@
                                             <h3>Range Hood Repair</h3>
                                         </div>
                                         <div class="box-image"><img src="ui/images/services-6-146x156.png" alt="" width="146" height="156"/> </div>
-                                        <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
+                                        <div class="box-content"><a href="order" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
                                                 <a href="callto:#" class="link link-md link-dark">1-800-1234-567</a>
@@ -258,12 +258,12 @@
                     <div class="cell-sm-8 cell-md-9 offset-top-55 offset-sm-top-88">
                         <div class="range range-condensed">
                             <div data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="4" data-stage-padding="0" data-loop="true" data-margin="30" data-sm-margin="73" data-nav="false" data-dots="true" data-sm-dots-each="2" class="owl-carousel owl-carousel-centered">
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-7-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-8-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-10-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-11-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503" class="link-image link-image-variant-2"><img src="ui/images/services-7-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503" class="link-image link-image-variant-2"><img src="ui/images/services-8-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503" class="link-image link-image-variant-2"><img src="ui/images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503" class="link-image link-image-variant-2"><img src="ui/images/services-10-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503" class="link-image link-image-variant-2"><img src="ui/images/services-11-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503" class="link-image link-image-variant-2"><img src="ui/images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
                             </div>
                         </div>
                         <div class="range offset-top-55 offset-sm-top-88">

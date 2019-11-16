@@ -23,4 +23,36 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+  <filter>
+    <filter-name>localizationFilter</filter-name>
+    <filter-class>com.repairagency.web.filter.LocalizationFilter</filter-class>
+    <init-param>
+      <param-name>locale</param-name>
+      <param-value>en</param-value>
+    </init-param>
+    <init-param>
+      <param-name>bundle</param-name>
+      <param-value>messages</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>localizationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+  <filter-name>encodingFilter</filter-name>
+  <filter-class>com.repairagency.web.filter.EncodingFilter</filter-class>
+  <init-param>
+    <param-name>requestEncoding</param-name>
+    <param-value>UTF-8</param-value>
+  </init-param>
+</filter>
+
+<filter-mapping>
+<filter-name>encodingFilter</filter-name>
+<url-pattern>/*</url-pattern>
+</filter-mapping>
+
 </web-app>

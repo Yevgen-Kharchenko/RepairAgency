@@ -24,7 +24,7 @@
                         </div>
                         <div class="offset-top-22 offset-sm-top-0 text-sm-right">
                             <ul class="breadcrumbs-custom">
-                                <li><a href="index.jsp">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li><a href="#">Gallery</a></li>
                                 <li class="active">Masonry Gallery</li>
                             </ul>

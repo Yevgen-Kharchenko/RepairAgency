@@ -30,9 +30,9 @@
                                     <div class="swiper-slide-text">
                                         <h5 class="text-style-3"><fmt:message key="industry.leader"/></h5>
                                     </div>
-                                    <div class="offset-top-35"><a href="appointment.jsp"
+                                    <div class="offset-top-35"><a href="order"
                                                                   class="btn btn-primary btn-mod-1">Make An
-                                        Appointment</a></div>
+                                        Order</a></div>
                                 </div>
                             </div>
                         </div>
@@ -44,9 +44,9 @@
                             <div class="range">
                                 <div class="cell-sm-8 cell-md-8 cell-lg-6">
                                     <h1> PROFESSIONAL REPAIR SERVICES</h1>
-                                    <div class="offset-top-35 offset-sm-top-65"><a href="appointment.jsp"
+                                    <div class="offset-top-35 offset-sm-top-65"><a href="order"
                                                                                    class="btn btn-primary btn-mod-1">Make
-                                        An Appointment</a></div>
+                                        An Order</a></div>
                                 </div>
                             </div>
                         </div>
@@ -61,9 +61,9 @@
                                     <div class="swiper-slide-text">
                                         <h5 class="text-style-3"> We offer the best repair service for all kinds. </h5>
                                     </div>
-                                    <div class="offset-top-35"><a href="appointment.jsp"
+                                    <div class="offset-top-35"><a href="order"
                                                                   class="btn btn-primary btn-mod-1">Make An
-                                        Appointment</a></div>
+                                        Order</a></div>
                                 </div>
                             </div>
                         </div>
@@ -149,69 +149,69 @@
                              data-center-padding="30px" data-sm-center-padding="0.5"
                              class="slick-slider slick-slider-style-1">
                             <div class="item height-fill">
-                                <div class="product"><a href="services.jsp#ice-maker-repair" class="product-image"><img
+                                <div class="product"><a href="services#ice-maker-repair" class="product-image"><img
                                         src="ui/images/home-1-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services.jsp#ice-maker-repair">Ice Maker Repair</a></h5>
+                                            <h5><a href="services#ice-maker-repair">Ice Maker Repair</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item height-fill">
-                                <div class="product"><a href="services.jsp#stove-repair" class="product-image"><img
+                                <div class="product"><a href="services#stove-repair" class="product-image"><img
                                         src="ui/images/home-2-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services.jsp#stove-repair">Stove Repair</a></h5>
+                                            <h5><a href="services#stove-repair">Stove Repair</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item height-fill">
-                                <div class="product"><a href="services.jsp#microwave-repair" class="product-image"><img
+                                <div class="product"><a href="services#microwave-repair" class="product-image"><img
                                         src="ui/images/home-3-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services.jsp#microwave-repair">Microwave Repair</a></h5>
+                                            <h5><a href="services#microwave-repair">Microwave Repair</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item height-fill">
-                                <div class="product"><a href="services.jsp#washer-repair" class="product-image"><img
+                                <div class="product"><a href="services#washer-repair" class="product-image"><img
                                         src="ui/images/home-4-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services.jsp#washer-repair">Washer Repair</a></h5>
+                                            <h5><a href="services#washer-repair">Washer Repair</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item height-fill">
-                                <div class="product"><a href="services.jsp#refrigerator-repair"
+                                <div class="product"><a href="services#refrigerator-repair"
                                                         class="product-image"><img src="ui/images/home-5-223x227.jpg"
                                                                                    alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services.jsp#refrigerator-repair">Refrigerator Repair</a></h5>
+                                            <h5><a href="services#refrigerator-repair">Refrigerator Repair</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item height-fill">
-                                <div class="product"><a href="services.jsp#range-hood-repair"
+                                <div class="product"><a href="services#range-hood-repair"
                                                         class="product-image"><img src="ui/images/home-6-223x227.jpg"
                                                                                    alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services.jsp#range-hood-repair">Range Hood Repair</a></h5>
+                                            <h5><a href="services#range-hood-repair">Range Hood Repair</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -220,7 +220,7 @@
                     </div>
                 </div>
                 <div class="shell offset-top-30 offset-sm-top-40">
-                    <div class="text-center"><a href="services.jsp" class="btn btn-primary min-width-230">view all
+                    <div class="text-center"><a href="services" class="btn btn-primary min-width-230">view all
                         services</a></div>
                 </div>
             </div>
@@ -241,17 +241,17 @@
                                  data-stage-padding="0" data-loop="true" data-margin="30" data-sm-margin="73"
                                  data-nav="false" data-dots="true" data-sm-dots-each="2"
                                  class="owl-carousel owl-carousel-style-1">
-                                <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
+                                <div class="item"><a href="503" class="link-image link-image-contrast"><img
                                         src="ui/images/home-7-184x54.png" alt="" width="184" height="54"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
+                                <div class="item"><a href="503" class="link-image link-image-contrast"><img
                                         src="ui/images/home-8-184x54.png" alt="" width="184" height="54"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
+                                <div class="item"><a href="503" class="link-image link-image-contrast"><img
                                         src="ui/images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
+                                <div class="item"><a href="503" class="link-image link-image-contrast"><img
                                         src="ui/images/home-10-184x54.png" alt="" width="184" height="54"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
+                                <div class="item"><a href="503" class="link-image link-image-contrast"><img
                                         src="ui/images/home-11-184x54.png" alt="" width="184" height="54"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
+                                <div class="item"><a href="503" class="link-image link-image-contrast"><img
                                         src="ui/images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
                             </div>
                         </div>
@@ -417,7 +417,7 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post.jsp">How to Repair a Gas Range or an Electric Range</a>
+                                        <h6><a href="blog-post">How to Repair a Gas Range or an Electric Range</a>
                                         </h6>
                                     </div>
                                     <div class="post-meta">
@@ -443,7 +443,7 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post.jsp">20 Tools Every Homeowner Should Have</a></h6>
+                                        <h6><a href="blog-post">20 Tools Every Homeowner Should Have</a></h6>
                                     </div>
                                     <div class="post-meta">
                                         <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -469,7 +469,7 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post.jsp">How to Repair Pipes</a></h6>
+                                        <h6><a href="blog-post">How to Repair Pipes</a></h6>
                                     </div>
                                     <div class="post-meta">
                                         <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -494,7 +494,7 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post.jsp">How to Repair Android Tablets</a></h6>
+                                        <h6><a href="blog-post">How to Repair Android Tablets</a></h6>
                                     </div>
                                     <div class="post-meta">
                                         <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -522,7 +522,7 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post.jsp">Why You Need a Professional for Appliance
+                                        <h6><a href="blog-post">Why You Need a Professional for Appliance
                                             Repair</a></h6>
                                     </div>
                                     <div class="post-meta">
@@ -550,7 +550,7 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post.jsp">How to Solder</a></h6>
+                                        <h6><a href="blog-post">How to Solder</a></h6>
                                     </div>
                                     <div class="post-meta">
                                         <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -575,7 +575,7 @@
                 </div>
             </div>
             <div class="shell offset-top-30 offset-sm-top-60">
-                <div class="text-center"><a href="blog-masonry.jsp" class="btn btn-primary min-width-230">view all blog
+                <div class="text-center"><a href="blog-masonry" class="btn btn-primary min-width-230">view all blog
                     posts</a></div>
             </div>
         </section>

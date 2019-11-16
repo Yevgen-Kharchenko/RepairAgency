@@ -24,7 +24,7 @@
                         </div>
                         <div class="offset-top-22 offset-sm-top-0 text-sm-right">
                             <ul class="breadcrumbs-custom">
-                                <li><a href="index.jsp">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li><a href="#">Pages</a></li>
                                 <li class="active">About Us</li>
                             </ul>
@@ -122,7 +122,7 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile.jsp">Philip Hanson</a></h6>
+                                <h6><a href="team-member-profile">Philip Hanson</a></h6>
                                 <p class="text-silver-chalice">Electrician</p>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile.jsp">Adam Fowler</a></h6>
+                                <h6><a href="team-member-profile">Adam Fowler</a></h6>
                                 <p class="text-silver-chalice">Plumber</p>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile.jsp">Phillip Miller</a></h6>
+                                <h6><a href="team-member-profile">Phillip Miller</a></h6>
                                 <p class="text-silver-chalice">Serviceman</p>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile.jsp">Billy Gibson</a></h6>
+                                <h6><a href="team-member-profile">Billy Gibson</a></h6>
                                 <p class="text-silver-chalice">Supervisor</p>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                 </div>
             </div>
             <div class="shell offset-top-30 offset-sm-top-60">
-                <div class="text-center"><a href="team.jsp" class="btn btn-primary min-width-230">view all team members</a></div>
+                <div class="text-center"><a href="team" class="btn btn-primary min-width-230">view all team members</a></div>
             </div>
         </section>
     </main>

@@ -24,7 +24,7 @@
                         </div>
                         <div class="offset-top-22 offset-sm-top-0 text-sm-right">
                             <ul class="breadcrumbs-custom">
-                                <li><a href="index.jsp">Home</a></li>
+                                <li><a href="">Home</a></li>
                                 <li><a href="#">Blog</a></li>
                                 <li class="active">Masonry Blog</li>
                             </ul>
@@ -44,7 +44,7 @@
                                         <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
-                                                <h6><a href="blog-post.jsp">How to Repair a Gas Range or an Electric Range</a></h6>
+                                                <h6><a href="blog-post">How to Repair a Gas Range or an Electric Range</a></h6>
                                             </div>
                                             <div class="post-meta">
                                                 <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -66,7 +66,7 @@
                                         <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
-                                                <h6><a href="blog-post.jsp">20 Tools Every Homeowner Should Have</a></h6>
+                                                <h6><a href="blog-post">20 Tools Every Homeowner Should Have</a></h6>
                                             </div>
                                             <div class="post-meta">
                                                 <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -88,7 +88,7 @@
                                         <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
-                                                <h6><a href="blog-post.jsp">How to Repair Android Tablets</a></h6>
+                                                <h6><a href="blog-post">How to Repair Android Tablets</a></h6>
                                             </div>
                                             <div class="post-meta">
                                                 <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -110,7 +110,7 @@
                                         <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
-                                                <h6><a href="blog-post.jsp">How to Repair Pipes</a></h6>
+                                                <h6><a href="blog-post">How to Repair Pipes</a></h6>
                                             </div>
                                             <div class="post-meta">
                                                 <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
@@ -146,7 +146,7 @@
                                 <div class="list-item">
                                     <h5>Search</h5>
                                     <hr>
-                                    <form action="search-results.jsp" method="GET" class="rd-search rd-search-style-1">
+                                    <form action="search-results" method="GET" class="rd-search rd-search-style-1">
                                         <div class="form-group">
                                             <label for="rd-search-form-input-1" class="form-label">Search...</label>
                                             <input id="rd-search-form-input-1" type="text" name="s" autocomplete="off" class="form-control">
@@ -187,7 +187,7 @@
                                         <li>
                                             <article class="post-recent">
                                                 <div class="post-header">
-                                                    <h6><a href="blog-post.jsp">How to Repair a Gas Range or an Electric Range</a></h6>
+                                                    <h6><a href="blog-post">How to Repair a Gas Range or an Electric Range</a></h6>
                                                 </div>
                                                 <div class="post-meta"></div>
                                                 <time datetime="2016-05-28">May 28, 2016</time>
@@ -196,7 +196,7 @@
                                         <li>
                                             <article class="post-recent">
                                                 <div class="post-header">
-                                                    <h6><a href="blog-post.jsp">Why You Need a Professional for Appliance Repair</a></h6>
+                                                    <h6><a href="blog-post">Why You Need a Professional for Appliance Repair</a></h6>
                                                 </div>
                                                 <div class="post-meta"></div>
                                                 <time datetime="2016-05-28">May 28, 2016</time>
@@ -205,7 +205,7 @@
                                         <li>
                                             <article class="post-recent">
                                                 <div class="post-header">
-                                                    <h6><a href="blog-post.jsp">How to Repair Pipes</a></h6>
+                                                    <h6><a href="blog-post">How to Repair Pipes</a></h6>
                                                 </div>
                                                 <div class="post-meta"></div>
                                                 <time datetime="2016-05-28">May 28, 2016</time>
