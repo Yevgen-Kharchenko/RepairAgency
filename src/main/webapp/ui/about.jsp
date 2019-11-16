@@ -39,7 +39,7 @@
                     <div class="cell-sm-8 cell-md-6">
                         <div class="inset-md-right-30">
                             <div class="thumbnail thumbnail-video">
-                                <figure><img src="images/540x310.jpg" alt="" width="540" height="310"/> </figure>
+                                <figure><img src="ui/images/540x310.jpg" alt="" width="540" height="310"/> </figure>
                                 <div class="caption"><a data-lightbox="iframe" href="https://youtu.be/hsYbe1RxUxM" class="icon icon-xxl icon-white-contrast icon-circle mdi mdi-play-circle-outline"></a></div>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                 <div class="range">
                     <div class="cell-xs-6 cell-sm-3">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Philip Hanson</a></h6>
                                 <p class="text-silver-chalice">Electrician</p>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="cell-xs-6 cell-sm-3 offset-top-35 offset-xs-top-0">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Adam Fowler</a></h6>
                                 <p class="text-silver-chalice">Plumber</p>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="cell-xs-6 cell-sm-3 offset-top-35 offset-sm-top-0">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Phillip Miller</a></h6>
                                 <p class="text-silver-chalice">Serviceman</p>
@@ -147,7 +147,7 @@
                     </div>
                     <div class="cell-xs-6 cell-sm-3 offset-top-35 offset-sm-top-0">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Billy Gibson</a></h6>
                                 <p class="text-silver-chalice">Supervisor</p>

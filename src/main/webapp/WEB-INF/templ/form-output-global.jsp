@@ -40,5 +40,5 @@
     </div>
 </div>
 </div>
-<script src="js/core.min.js"></script>
-<script src="js/script.js"></script>
+<script src="ui/js/core.min.js"></script>
+<script src="ui/js/script.js"></script>

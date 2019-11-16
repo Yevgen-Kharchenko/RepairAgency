@@ -45,14 +45,14 @@
                                 <time datetime="2016-05-26">May 26, 2016 at 10:34 am</time>
                                 <span>by</span><span>Benjamin Powell</span> </div>
                             <div class="post-body">
-                                <figure class="post-image"><img src="images/770x510.jpg" alt="" width="770" height="510"/> </figure>
+                                <figure class="post-image"><img src="ui/images/770x510.jpg" alt="" width="770" height="510"/> </figure>
                                 <div class="post-text">
                                     <p>You probably have a hammer, but that's just a start. These 20 tools and devices are superstars for household projects and repairs. If you love tools or just need to stock a basic toolbox, here are the top 20 necessary items to get your small project done. How many do you have?</p>
                                     <p>Philips screwdriver. A Philips or X-shape screwdriver is probably one of the most common tools in any toolbox. If you have a handle that accepts interchangeable tips, you can cover a wide range of screw types and sizes.</p>
                                     <p>Flathead screwdriver. A flathead or straight screwdriver is invaluable; most light switch plates use straight screws, for example. Having the right size flathead can make a difference, so start with at least a set of three (small, medium and large) to be able to handle most jobs.</p>
                                     <p> Tape measure. Your tape measure is indispensable for estimating material quantities, figuring out placement of objects, and calculating floor plans and furniture sizes. It's always a good idea to measure more than once to make sure you've got it right. </p>
                                 </div>
-                                <figure class="post-image"><img src="images/770x510.jpg" alt="" width="770" height="510"/> </figure>
+                                <figure class="post-image"><img src="ui/images/770x510.jpg" alt="" width="770" height="510"/> </figure>
                                 <div class="post-text">
                                     <p>Level. Some people are good at eyeballing whether something is level or not, but this tool takes all the guesswork away. It takes only a slight error to make objects look off-kilter.</p>
                                     <p>Utility knife. From cutting paint around windows that are stuck closed to opening boxes, scoring drywall or even trimming the edges of carpet, the uses are so many that you'll be surprised how you ever got by without one.</p>
@@ -85,7 +85,7 @@
                             <article class="post-info">
                                 <div class="unit unit-spacing-md unit-sm-horizontal">
                                     <div class="unit-left">
-                                        <figure><img src="images/170x170.jpg" alt="" width="170" height="170"/> </figure>
+                                        <figure><img src="ui/images/170x170.jpg" alt="" width="170" height="170"/> </figure>
                                     </div>
                                     <div class="unit-body">
                                         <h6><a href="#">Benjamin Powell</a></h6>
@@ -103,7 +103,7 @@
                                     <div class="comment-body">
                                         <div class="unit unit-spacing-sm unit-sm-horizontal">
                                             <div class="unit-left">
-                                                <figure><img src="images/70x70.jpg" alt="" width="70" height="70"/> </figure>
+                                                <figure><img src="ui/images/70x70.jpg" alt="" width="70" height="70"/> </figure>
                                             </div>
                                             <div class="unit-body">
                                                 <div class="comment-header">
@@ -122,7 +122,7 @@
                                     <div class="comment-body">
                                         <div class="unit unit-spacing-sm unit-sm-horizontal">
                                             <div class="unit-left">
-                                                <figure><img src="images/70x70.jpg" alt="" width="70" height="70"/> </figure>
+                                                <figure><img src="ui/images/70x70.jpg" alt="" width="70" height="70"/> </figure>
                                             </div>
                                             <div class="unit-body">
                                                 <div class="comment-header">
@@ -188,7 +188,7 @@
                             <div class="range offset-top-30">
                                 <div class="cell-sm-6">
                                     <article class="post post-variant-2 post-mod-1">
-                                        <figure class="post-image"><img src="images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post.jsp">How to Repair Android Tablets</a></h6>
@@ -210,7 +210,7 @@
                                 </div>
                                 <div class="cell-sm-6 offset-top-60 offset-sm-top-0">
                                     <article class="post post-variant-2 post-mod-1">
-                                        <figure class="post-image"><img src="images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post.jsp">How to Repair Pipes</a></h6>

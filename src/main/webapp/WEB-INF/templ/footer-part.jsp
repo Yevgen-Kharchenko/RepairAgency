@@ -11,7 +11,7 @@
                 <div class="range range-md-justify">
                     <div class="cell-sm-6 cell-md-3 wrap-lg-justify-vertical">
                         <div class="brand-wrap"><a href="index.jsp" class="brand"><img
-                                src="images/logo-light-250x40.png" alt="" width="250" height="40"/></a></div>
+                                src="ui/images/logo-light-250x40.png" alt="" width="250" height="40"/></a></div>
                         <div class="offset-top-30 offset-sm-top-65">
                             <ul class="list-inline list-inline-xs">
                                 <li><a href="#" class="icon icon-xs icon-gray fa-facebook"></a></li>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
                         <div class="max-width-300">
-                            <h5 class="h5-variant-1">Newsletter</h5>
+                            <h5 class="h5-variant-1"><fmt:message key="Newsletter"/></h5>
                             <hr>
                             <p class="offset-top-22">Keep up with the latest news, special offers and other discount
                                 information. Enter your e-mail and subscribe to our newsletter.</p>
@@ -91,7 +91,7 @@
                 <div class="range offset-top-55 offset-sm-top-60 offset-lg-top-88">
                     <div class="cell-xs-12">
                         <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="All.Rights"/>
-                            <a href="privacy.jsp"><fmt:message key="Privacy.Policy"/>Terms of Use and Privacy Policy</a> </p>
+                            <a href="privacy.jsp"><fmt:message key="Privacy.Policy"/></a> </p>
                     </div>
                 </div>
             </div>

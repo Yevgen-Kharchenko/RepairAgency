@@ -15,7 +15,7 @@
     <header class="page-head">
         <section>
             <div class="shell text-center">
-                <div class="brand-wrap"><a href="index.jsp" class="brand"><img src="images/logo-white-250x40.png" alt="" width="250" height="40"/></a></div>
+                <div class="brand-wrap"><a href="index.jsp" class="brand"><img src="ui/images/logo-white-250x40.png" alt="" width="250" height="40"/></a></div>
             </div>
         </section>
     </header>

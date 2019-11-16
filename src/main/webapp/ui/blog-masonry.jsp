@@ -41,7 +41,7 @@
                             <div data-isotope-layout="moduloColumns" class="isotope">
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post.jsp">How to Repair a Gas Range or an Electric Range</a></h6>
@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post.jsp">20 Tools Every Homeowner Should Have</a></h6>
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post.jsp">How to Repair Android Tablets</a></h6>
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post.jsp">How to Repair Pipes</a></h6>

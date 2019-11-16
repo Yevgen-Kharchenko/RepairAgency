@@ -19,7 +19,7 @@
     <main class="page-content">
         <div data-autoplay="false" data-slide-effect="fade" class="swiper-container swiper-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/1.jpg" alt="" width="1920" height="600"/>
+                <div class="swiper-slide"><img src="ui/images/1.jpg" alt="" width="1920" height="600"/>
                     <div class="swiper-slide-caption">
                         <div class="shell text-center text-sm-left">
                             <div class="range">
@@ -28,7 +28,7 @@
                                         <fmt:message key="banner.content"/>
                                     </h1>
                                     <div class="swiper-slide-text">
-                                        <h5 class="text-style-3">Industry Leader for Over 10 Years.</h5>
+                                        <h5 class="text-style-3"><fmt:message key="industry.leader"/></h5>
                                     </div>
                                     <div class="offset-top-35"><a href="appointment.jsp"
                                                                   class="btn btn-primary btn-mod-1">Make An
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide"><img src="images/home-slide-1-1920x600.jpg" alt="" width="1920" height="600"/>
+                <div class="swiper-slide"><img src="ui/images/home-slide-1-1920x600.jpg" alt="" width="1920" height="600"/>
                     <div class="swiper-slide-caption">
                         <div class="shell text-center text-sm-left">
                             <div class="range">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide"><img src="images/1920x600-2.jpg" alt="" width="1920" height="600"/>
+                <div class="swiper-slide"><img src="ui/images/1920x600-2.jpg" alt="" width="1920" height="600"/>
                     <div class="swiper-slide-caption">
                         <div class="shell text-center text-sm-left">
                             <div class="range">
@@ -150,7 +150,7 @@
                              class="slick-slider slick-slider-style-1">
                             <div class="item height-fill">
                                 <div class="product"><a href="services.jsp#ice-maker-repair" class="product-image"><img
-                                        src="images/home-1-223x227.jpg" alt="" width="223" height="227"/></a>
+                                        src="ui/images/home-1-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
@@ -161,7 +161,7 @@
                             </div>
                             <div class="item height-fill">
                                 <div class="product"><a href="services.jsp#stove-repair" class="product-image"><img
-                                        src="images/home-2-223x227.jpg" alt="" width="223" height="227"/></a>
+                                        src="ui/images/home-2-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
@@ -172,7 +172,7 @@
                             </div>
                             <div class="item height-fill">
                                 <div class="product"><a href="services.jsp#microwave-repair" class="product-image"><img
-                                        src="images/home-3-223x227.jpg" alt="" width="223" height="227"/></a>
+                                        src="ui/images/home-3-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
@@ -183,7 +183,7 @@
                             </div>
                             <div class="item height-fill">
                                 <div class="product"><a href="services.jsp#washer-repair" class="product-image"><img
-                                        src="images/home-4-223x227.jpg" alt="" width="223" height="227"/></a>
+                                        src="ui/images/home-4-223x227.jpg" alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
@@ -194,7 +194,7 @@
                             </div>
                             <div class="item height-fill">
                                 <div class="product"><a href="services.jsp#refrigerator-repair"
-                                                        class="product-image"><img src="images/home-5-223x227.jpg"
+                                                        class="product-image"><img src="ui/images/home-5-223x227.jpg"
                                                                                    alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
@@ -206,7 +206,7 @@
                             </div>
                             <div class="item height-fill">
                                 <div class="product"><a href="services.jsp#range-hood-repair"
-                                                        class="product-image"><img src="images/home-6-223x227.jpg"
+                                                        class="product-image"><img src="ui/images/home-6-223x227.jpg"
                                                                                    alt="" width="223" height="227"/></a>
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
@@ -226,7 +226,7 @@
             </div>
         </section>
         <section data-on="false" data-lg-on="true" class="rd-parallax bg-gray-base rd-parallax-overlay">
-            <div data-speed="0.5" data-type="media" data-url="images/1920x800-1.jpg" class="rd-parallax-layer"></div>
+            <div data-speed="0.5" data-type="media" data-url="ui/images/1920x800-1.jpg" class="rd-parallax-layer"></div>
             <div data-speed="0" data-type="html" class="rd-parallax-layer">
                 <div class="section-60 section-sm-top-110 section-sm-bottom-100">
                     <div class="shell">
@@ -242,17 +242,17 @@
                                  data-nav="false" data-dots="true" data-sm-dots-each="2"
                                  class="owl-carousel owl-carousel-style-1">
                                 <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
-                                        src="images/home-7-184x54.png" alt="" width="184" height="54"/></a></div>
+                                        src="ui/images/home-7-184x54.png" alt="" width="184" height="54"/></a></div>
                                 <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
-                                        src="images/home-8-184x54.png" alt="" width="184" height="54"/></a></div>
+                                        src="ui/images/home-8-184x54.png" alt="" width="184" height="54"/></a></div>
                                 <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
-                                        src="images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
+                                        src="ui/images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
                                 <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
-                                        src="images/home-10-184x54.png" alt="" width="184" height="54"/></a></div>
+                                        src="ui/images/home-10-184x54.png" alt="" width="184" height="54"/></a></div>
                                 <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
-                                        src="images/home-11-184x54.png" alt="" width="184" height="54"/></a></div>
+                                        src="ui/images/home-11-184x54.png" alt="" width="184" height="54"/></a></div>
                                 <div class="item"><a href="503.jsp" class="link-image link-image-contrast"><img
-                                        src="images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
+                                        src="ui/images/home-9-184x54.png" alt="" width="184" height="54"/></a></div>
                             </div>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Jennifer West</cite>
@@ -299,7 +299,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Patrick Carlson</cite>
@@ -319,7 +319,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-14-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Christine Bryant</cite>
@@ -340,7 +340,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>William Wallace</cite>
@@ -360,7 +360,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Jennifer West</cite>
@@ -381,7 +381,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>William Wallace</cite>
@@ -413,7 +413,7 @@
                     <div data-isotope-layout="moduloColumns" class="isotope isotope-spacing-1">
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="images/home-16-370x247.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-16-370x247.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
@@ -439,7 +439,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="images/home-17-370x247.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-17-370x247.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
@@ -465,7 +465,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="images/home-18-370x247.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-18-370x247.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
@@ -490,7 +490,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="images/home-19-.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-19-.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
@@ -518,7 +518,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="images/home-20-370x247.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-20-370x247.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
@@ -546,7 +546,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="images/home-21-370x247.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-21-370x247.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">

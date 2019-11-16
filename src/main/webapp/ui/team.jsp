@@ -44,7 +44,7 @@
                 <div class="range">
                     <div class="cell-xs-6 cell-sm-3">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Philip Hanson</a></h6>
                                 <p class="text-silver-chalice">Electrician</p>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="cell-xs-6 cell-sm-3 offset-top-35 offset-xs-top-0">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Adam Fowler</a></h6>
                                 <p class="text-silver-chalice">Plumber</p>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="cell-xs-6 cell-sm-3 offset-top-35 offset-sm-top-0">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Phillip Miller</a></h6>
                                 <p class="text-silver-chalice">Serviceman</p>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="cell-xs-6 cell-sm-3 offset-top-35 offset-sm-top-0">
                         <div class="thumbnail-variant-1">
-                            <figure class="thumbnail-image"><img src="images/270x270.jpg" alt="" width="270" height="270"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
                                 <h6><a href="team-member-profile.jsp">Billy Gibson</a></h6>
                                 <p class="text-silver-chalice">Supervisor</p>
@@ -92,7 +92,7 @@
                 <div class="range range-xs-center">
                     <div class="cell-xs-10 cell-sm-6 cell-md-4">
                         <div class="thumbnail-variant-2">
-                            <figure class="thumbnail-image"><img src="images/370x370.jpg" alt="" width="370" height="370"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/370x370.jpg" alt="" width="370" height="370"/> </figure>
                             <div class="caption">
                                 <h4><a href="team-member-profile.jsp">Philip Hanson</a></h4>
                                 <p class="text-silver-chalice">Electrician</p>
@@ -108,7 +108,7 @@
                     </div>
                     <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
                         <div class="thumbnail-variant-2">
-                            <figure class="thumbnail-image"><img src="images/370x370.jpg" alt="" width="370" height="370"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/370x370.jpg" alt="" width="370" height="370"/> </figure>
                             <div class="caption">
                                 <h4><a href="team-member-profile.jsp">Adam Fowler</a></h4>
                                 <p class="text-silver-chalice">Plumber</p>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="cell-xs-10 cell-sm-6 cell-md-4 offset-top-55 offset-md-top-0">
                         <div class="thumbnail-variant-2">
-                            <figure class="thumbnail-image"><img src="images/370x370.jpg" alt="" width="370" height="370"/> </figure>
+                            <figure class="thumbnail-image"><img src="ui/images/370x370.jpg" alt="" width="370" height="370"/> </figure>
                             <div class="caption">
                                 <h4><a href="team-member-profile.jsp">Phillip Miller</a></h4>
                                 <p class="text-silver-chalice">Serviceman</p>
@@ -155,7 +155,7 @@
                             <div class="profile-preview-header">
                                 <div class="unit unit-xs-horizontal unit-spacing-md">
                                     <div class="unit-left">
-                                        <figure><img src="images/130x130.jpg" alt="" width="130" height="130"/> </figure>
+                                        <figure><img src="ui/images/130x130.jpg" alt="" width="130" height="130"/> </figure>
                                     </div>
                                     <div class="unit-body">
                                         <h6><a href="team-member-profile.jsp">Philip Hanson</a></h6>
@@ -187,7 +187,7 @@
                             <div class="profile-preview-header">
                                 <div class="unit unit-xs-horizontal unit-spacing-md">
                                     <div class="unit-left">
-                                        <figure><img src="images/130x130.jpg" alt="" width="130" height="130"/> </figure>
+                                        <figure><img src="ui/images/130x130.jpg" alt="" width="130" height="130"/> </figure>
                                     </div>
                                     <div class="unit-body">
                                         <h6><a href="team-member-profile.jsp">Adam Fowler</a></h6>
@@ -219,7 +219,7 @@
                             <div class="profile-preview-header">
                                 <div class="unit unit-xs-horizontal unit-spacing-md">
                                     <div class="unit-left">
-                                        <figure><img src="images/130x130.jpg" alt="" width="130" height="130"/> </figure>
+                                        <figure><img src="ui/images/130x130.jpg" alt="" width="130" height="130"/> </figure>
                                     </div>
                                     <div class="unit-body">
                                         <h6><a href="team-member-profile.jsp">Phillip Miller</a></h6>

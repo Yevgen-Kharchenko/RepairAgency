@@ -32,7 +32,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Jennifer West</cite>
@@ -53,7 +53,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Patrick Carlson</cite>
@@ -73,7 +73,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-14-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Christine Bryant</cite>
@@ -94,7 +94,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-15-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>William Wallace</cite>
@@ -114,7 +114,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-12-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>Jennifer West</cite>
@@ -135,7 +135,7 @@
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="images/home-13-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
                                         <div class="unit-body"><cite>William Wallace</cite>

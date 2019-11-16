@@ -41,7 +41,7 @@
                             <div class="profile-header text-center text-sm-left text-md-center">
                                 <div class="unit unit-sm-horizontal unit-md-vertical unot-spacing-xl unit-middle">
                                     <div class="unit-left">
-                                        <figure><img src="images/350x350.jpg" alt="" width="350" height="350"/> </figure>
+                                        <figure><img src="ui/images/350x350.jpg" alt="" width="350" height="350"/> </figure>
                                     </div>
                                     <div class="unit-body"><a href="appointment.jsp" class="btn btn-primary">make an appointment</a>
                                         <ul class="list">
@@ -131,8 +131,8 @@
                 <div class="range range-mod-1">
                     <div class="cell-sm-6 cell-md-4">
                         <div class="thumbnail thumbnail-variant-3">
-                            <figure><img src="images/370x270.jpg" alt="" width="370" height="270"/> </figure>
-                            <a href="images/770x510.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                            <figure><img src="ui/images/370x270.jpg" alt="" width="370" height="270"/> </figure>
+                            <a href="ui/images/770x510.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                             <div class="caption"><a href="503.jsp" class="thumbnail-link"></a>
                                 <div class="caption-text">
                                     <p>Testing electrical equipment requires some experience of dealing with various electrical tools, and here Christopher pays attention to their correct usage.</p>
@@ -142,8 +142,8 @@
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-30 offset-sm-top-0">
                         <div class="thumbnail thumbnail-variant-3">
-                            <figure><img src="images/370x270.jpg" alt="" width="370" height="270"/> </figure>
-                            <a href="images/770x510.jpg" data-photo-swipe-item="" data-size="1200x900" class="thumbnail-original-link"></a>
+                            <figure><img src="ui/images/370x270.jpg" alt="" width="370" height="270"/> </figure>
+                            <a href="ui/images/770x510.jpg" data-photo-swipe-item="" data-size="1200x900" class="thumbnail-original-link"></a>
                             <div class="caption"><a href="503.jsp" class="thumbnail-link"></a>
                                 <div class="caption-text">
                                     <p>Mr. Holmes has a lot of experience in electrical repair, and this project includes representation of useful instruments any home owner may need.</p>
@@ -153,8 +153,8 @@
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-30 offset-md-top-0">
                         <div class="thumbnail thumbnail-variant-3">
-                            <figure><img src="images/370x270.jpg" alt="" width="370" height="270"/> </figure>
-                            <a href="images/770x510.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                            <figure><img src="ui/images/370x270.jpg" alt="" width="370" height="270"/> </figure>
+                            <a href="ui/images/770x510.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                             <div class="caption"><a href="503.jsp" class="thumbnail-link"></a>
                                 <div class="caption-text">
                                     <p>Christophers new project introduces a new method of repairing tablets, smartphones and other portable gadgets that are widely used today.</p>

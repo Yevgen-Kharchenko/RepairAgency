@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <fmt:setLocale value="${locale}"/>
@@ -16,9 +16,9 @@
                     <button data-rd-navbar-toggle=".rd-navbar-outer-panel" class="rd-navbar-toggle">
                         <span></span></button>
                     <a href="index.jsp" class="rd-navbar-brand">
-                        <div class="rd-navbar-fixed--hidden"><img src="images/logo-light-250x40.png" alt=""
+                        <div class="rd-navbar-fixed--hidden"><img src="ui/images/logo-light-250x40.png" alt=""
                                                                   width="250" height="40"/></div>
-                        <div class="rd-navbar-fixed--visible"><img src="images/logo-light-250x40.png" alt=""
+                        <div class="rd-navbar-fixed--visible"><img src="ui/images/logo-light-250x40.png" alt=""
                                                                    width="250" height="40"/></div>
                     </a></div>
                 <div class="rd-navbar-aside">
@@ -33,8 +33,8 @@
                                     </div>
                                     <div class="unit-body">
                                         <address class="contact-info">
-                                            <a href="contacts.jsp"><span>2381 Rosecrans Ave, Suite 200 El Segundo, </span><br>
-                                                <span>CA 90245. USA</span></a>
+                                            <a href="contacts.jsp"><span><fmt:message key="rosecrans.ave"/></span><br>
+                                                <span><fmt:message key="ca.90245"/></span></a>
                                         </address>
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="unit-body">
                                         <address class="contact-info">
-                                            <span>Mon-Fri: 9:00am-6:30pm</span><span>Sat-Sun: 10:00am-6:00pm</span>
+                                            <span><fmt:message key="mon.fri"/></span><span><fmt:message key="sat.sun"/></span>
                                         </address>
                                     </div>
                                 </div>
@@ -72,24 +72,24 @@
                 <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
                         <li class="active"><a href="index.jsp"><fmt:message key="home"/></a></li>
-                        <li><a href="services.jsp">Services</a>
+                        <li><a href="services.jsp"><fmt:message key="services"/></a>
                             <ul class="rd-navbar-dropdown tabs-nav">
-                                <li><a href="services.jsp#ice-maker-repair">Ice Maker Repair</a></li>
-                                <li><a href="services.jsp#stove-repair">Stove Repair</a></li>
-                                <li><a href="services.jsp#appliance-parts">Appliance Parts</a></li>
-                                <li><a href="services.jsp#microwave-repair">Microwave Repair</a></li>
-                                <li><a href="services.jsp#washer-repair">Washer Repair</a></li>
-                                <li><a href="services.jsp#refrigerator-repair">Refrigerator Repair</a></li>
-                                <li><a href="services.jsp#range-hood-repair">Range Hood Repair</a></li>
+                                <li><a href="services.jsp#ice-maker-repair"><fmt:message key="ice.maker"/></a></li>
+                                <li><a href="services.jsp#stove-repair"><fmt:message key="stove.repair"/></a></li>
+                                <li><a href="services.jsp#appliance-parts"><fmt:message key="appliance.parts"/></a></li>
+                                <li><a href="services.jsp#microwave-repair"><fmt:message key="microwave.repair"/></a></li>
+                                <li><a href="services.jsp#washer-repair"><fmt:message key="washer.repairy"/></a></li>
+                                <li><a href="services.jsp#refrigerator-repair"><fmt:message key="refrigerator.repair"/></a></li>
+                                <li><a href="services.jsp#range-hood-repair"><fmt:message key="range"/></a></li>
                             </ul>
                         </li>
-                        <li><a href="about.jsp">Pages</a>
+                        <li><a href="about.jsp"><fmt:message key="pages"/></a>
                             <ul class="rd-navbar-dropdown tabs-nav">
-                                <li><a href="about.jsp">About Us</a></li>
-                                <li><a href="team.jsp">Our Team</a></li>
-                                <li><a href="responses.jsp">Responses</a></li>
-                                <li><a href="privacy.jsp">Privacy Policy</a></li>
-                                <li><a href="contacts.jsp">Contact</a></li>
+                                <li><a href="about"><fmt:message key="about.us"/></a></li>
+                                <li><a href="team.jsp"><fmt:message key="our.team"/></a></li>
+                                <li><a href="responses.jsp"><fmt:message key="responses"/></a></li>
+                                <li><a href="privacy.jsp"><fmt:message key="privacy.policy"/></a></li>
+                                <li><a href="contacts.jsp"><fmt:message key="contact"/></a></li>
                             </ul>
                         </li>
                         <li>

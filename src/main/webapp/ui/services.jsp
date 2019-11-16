@@ -52,7 +52,7 @@
                                         <div class="box-header">
                                             <h3>Ice Maker Repair</h3>
                                         </div>
-                                        <div class="box-image"><img src="images/services-1-146x156.png" alt="" width="146" height="156"/> </div>
+                                        <div class="box-image"><img src="ui/images/services-1-146x156.png" alt="" width="146" height="156"/> </div>
                                         <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
@@ -83,7 +83,7 @@
                                         <div class="box-header">
                                             <h3>Stove Repair</h3>
                                         </div>
-                                        <div class="box-image"><img src="images/services-2-146x156.png" alt="" width="146" height="156"/> </div>
+                                        <div class="box-image"><img src="ui/images/services-2-146x156.png" alt="" width="146" height="156"/> </div>
                                         <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
@@ -131,7 +131,7 @@
                                         <div class="box-header">
                                             <h3>Microwave Repair</h3>
                                         </div>
-                                        <div class="box-image"><img src="images/services-3-146x156.png" alt="" width="146" height="156"/> </div>
+                                        <div class="box-image"><img src="ui/images/services-3-146x156.png" alt="" width="146" height="156"/> </div>
                                         <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
@@ -164,7 +164,7 @@
                                         <div class="box-header">
                                             <h3>Washer Repair</h3>
                                         </div>
-                                        <div class="box-image"><img src="images/services-4-146x156.png" alt="" width="146" height="156"/> </div>
+                                        <div class="box-image"><img src="ui/images/services-4-146x156.png" alt="" width="146" height="156"/> </div>
                                         <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
@@ -200,7 +200,7 @@
                                         <div class="box-header">
                                             <h3>Refrigerator Repair</h3>
                                         </div>
-                                        <div class="box-image"><img src="images/services-5-146x156.png" alt="" width="146" height="156"/> </div>
+                                        <div class="box-image"><img src="ui/images/services-5-146x156.png" alt="" width="146" height="156"/> </div>
                                         <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
@@ -229,7 +229,7 @@
                                         <div class="box-header">
                                             <h3>Range Hood Repair</h3>
                                         </div>
-                                        <div class="box-image"><img src="images/services-6-146x156.png" alt="" width="146" height="156"/> </div>
+                                        <div class="box-image"><img src="ui/images/services-6-146x156.png" alt="" width="146" height="156"/> </div>
                                         <div class="box-content"><a href="order.jsp" class="btn btn-primary">order repair</a>
                                             <address class="contact-info-inline">
                                                 <p>or call us</p>
@@ -258,12 +258,12 @@
                     <div class="cell-sm-8 cell-md-9 offset-top-55 offset-sm-top-88">
                         <div class="range range-condensed">
                             <div data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="4" data-stage-padding="0" data-loop="true" data-margin="30" data-sm-margin="73" data-nav="false" data-dots="true" data-sm-dots-each="2" class="owl-carousel owl-carousel-centered">
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="images/services-7-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="images/services-8-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="images/services-10-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="images/services-11-175x39.png" alt="" width="175" height="39"/></a></div>
-                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-7-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-8-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-10-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-11-175x39.png" alt="" width="175" height="39"/></a></div>
+                                <div class="item"><a href="503.jsp" class="link-image link-image-variant-2"><img src="ui/images/services-9-175x39.png" alt="" width="175" height="39"/></a></div>
                             </div>
                         </div>
                         <div class="range offset-top-55 offset-sm-top-88">

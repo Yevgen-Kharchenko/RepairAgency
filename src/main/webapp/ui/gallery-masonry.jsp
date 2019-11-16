@@ -56,8 +56,8 @@
                         <div data-isotope-layout="masonry" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="row isotope isotope-spacing-1">
                             <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="images/370x240.jpg" alt="" width="370" height="240"/> </figure>
-                                    <a href="images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/370x240.jpg" alt="" width="370" height="240"/> </figure>
+                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6>Professional Consultations</h6>
@@ -68,8 +68,8 @@
                             </div>
                             <div data-filter="Category 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="images/370x510.jpg" alt="" width="370" height="510"/> </figure>
-                                    <a href="images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/370x510.jpg" alt="" width="370" height="510"/> </figure>
+                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6>Gas Stoves</h6>
@@ -80,8 +80,8 @@
                             </div>
                             <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="images/370x240.jpg" alt="" width="370" height="240"/> </figure>
-                                    <a href="images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/370x240.jpg" alt="" width="370" height="240"/> </figure>
+                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6>Parts Department</h6>
@@ -92,8 +92,8 @@
                             </div>
                             <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="images/370x510.jpg" alt="" width="370" height="510"/> </figure>
-                                    <a href="images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/370x510.jpg" alt="" width="370" height="510"/> </figure>
+                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6>Kitchen Equipment</h6>
@@ -104,8 +104,8 @@
                             </div>
                             <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="images/370x510.jpg" alt="" width="370" height="510"/> </figure>
-                                    <a href="images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/370x510.jpg" alt="" width="370" height="510"/> </figure>
+                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6>Small Repair</h6>
@@ -116,8 +116,8 @@
                             </div>
                             <div data-filter="Category 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="images/370x240.jpg" alt="" width="370" height="240"/> </figure>
-                                    <a href="images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/370x240.jpg" alt="" width="370" height="240"/> </figure>
+                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6>Domestic Equipment</h6>
