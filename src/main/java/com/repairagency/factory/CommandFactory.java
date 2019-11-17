@@ -33,6 +33,7 @@ public class CommandFactory {
         getCommandMap.put("/language", new LanguageCommand());
 
         postCommandMap.put("/", new HomeCommand());
+        postCommandMap.put("/login-register", new LoginCommand());
     }
 
     private CommandFactory() {

@@ -24,7 +24,7 @@ public class UserDao extends AbstractDao<User> {
             + COLUMN_PASSWORD + "= ?, "
             + COLUMN_ROLE + "= ? WHERE "
             + COLUMN_ID + " = ?";
-//    "select * from students where login =?"
+
 
     private static final String DELETE_USER = "DELETE FROM `user` "
             + "WHERE " + COLUMN_ID + " = ?";

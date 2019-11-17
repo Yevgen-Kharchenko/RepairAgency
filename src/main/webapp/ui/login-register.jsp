@@ -44,24 +44,41 @@
                             </ul>
                             <div class="resp-tabs-container offset-top-40">
                                 <div class="animated fadeIn">
-                                    <form class="rd-mailform text-left">
-                                        <div class="form-group">
-                                            <label for="login-email" class="form-label-outside">E-Mail</label>
-                                            <input id="login-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="login-password" class="form-label-outside">Password</label>
-                                            <input id="login-password" type="password" name="password" data-constraints="@Required" class="form-control">
-                                        </div>
-                                        <div class="group group-middle offset-top-30 text-center text-xs-left">
-                                            <button type="submit" class="btn btn-primary">Sign In</button>
-                                            <p class="reveal-block reveal-xs-inline-block">or</p>
-                                            <ul class="list-inline list-inline-xxs">
-                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
-                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
-                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
-                                            </ul>
-                                        </div>
+                                    <c:if test="${not empty error}">
+                                        <c:out value ="${error}"/>
+                                    </c:if>
+<!--                                    <form class="rd-mailform text-left" action="login-register" method="post">-->
+<!--&lt;!&ndash;                                        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <label for="login-email" class="form-label-outside">E-Mail</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <input id="login-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--                                        <div class="form-group">-->
+<!--                                            <label for="login-username" class="form-label-outside">Username</label>-->
+<!--                                            <input id="login-username" type="login" name="login" data-constraints="@Required" class="form-control">-->
+<!--                                        </div>-->
+<!--                                        <div class="form-group">-->
+<!--                                            <label for="login-password" class="form-label-outside">Password</label>-->
+<!--                                            <input id="login-password" type="password" name="password" data-constraints="@Required" class="form-control">-->
+<!--                                        </div>-->
+<!--                                        <div class="group group-middle offset-top-30 text-center text-xs-left">-->
+<!--                                            <button type="submit" class="btn btn-primary">Sign In</button>-->
+<!--                                            <p class="reveal-block reveal-xs-inline-block">or</p>-->
+<!--                                            <ul class="list-inline list-inline-xxs">-->
+<!--                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>-->
+<!--                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>-->
+<!--                                                <li><a href="503" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>-->
+<!--                                            </ul>-->
+<!--                                        </div>-->
+<!--                                    </form>-->
+                                    <c:if test="${not empty error}">
+                                        <c:out value ="${error}"/>
+                                    </c:if>
+                                    <form action="login-register" method="post">
+                                        Login:<input type="login" name="login"/><br/>
+                                        Password:<input type="password" name="password"/><br/>
+
+                                        <input type="submit" value="login">
+
                                     </form>
                                 </div>
                                 <div class="animated fadeIn">

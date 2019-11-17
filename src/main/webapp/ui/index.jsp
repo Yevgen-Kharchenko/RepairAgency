@@ -14,9 +14,11 @@
 </head>
 
 <body>
+
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
+        User in session ${user.name}
         <div data-autoplay="false" data-slide-effect="fade" class="swiper-container swiper-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="ui/images/1.jpg" alt="" width="1920" height="600"/>
