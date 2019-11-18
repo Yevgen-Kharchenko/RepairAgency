@@ -25,7 +25,7 @@
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-55 offset-sm-top-0">
                         <div class="max-width-300">
-                            <h5 class="h5-variant-1"><fmt:message key="Newsletter"/></h5>
+                            <h5 class="h5-variant-1"><fmt:message key="newsletter"/></h5>
                             <hr>
                             <p class="offset-top-22">Keep up with the latest news, special offers and other discount
                                 information. Enter your e-mail and subscribe to our newsletter.</p>
@@ -90,8 +90,8 @@
                 </div>
                 <div class="range offset-top-55 offset-sm-top-60 offset-lg-top-88">
                     <div class="cell-xs-12">
-                        <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="All.Rights"/>
-                            <a href="privacy"><fmt:message key="Privacy.Policy"/></a> </p>
+                        <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="all.rights"/>
+                            <a href="privacy"><fmt:message key="privacy.policy"/></a> </p>
                     </div>
                 </div>
             </div>

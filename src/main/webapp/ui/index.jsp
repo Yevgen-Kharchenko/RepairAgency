@@ -285,7 +285,7 @@
                                                 <figure class="quote-image"><img src="ui/images/defaultuser.jpg" alt=""
                                                                                  width="47" height="47"/></figure>
                                             </div>
-                                            <div class="unit-body"><cite>${responses.date}</cite>
+                                            <div class="unit-body"><cite>${responses.customer.name}</cite>
                                                 <p class="small">${responses.date}</p>
                                                 <p class="small">${responses.orderId}</p>
                                             </div>

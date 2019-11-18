@@ -8,8 +8,17 @@ public class ResponsesDTO {
     private int orderId;
     private String response;
     private UserDTO customer;
+    private RepairDTO repair;
 
     public ResponsesDTO() {
+    }
+
+    public RepairDTO getRepair() {
+        return repair;
+    }
+
+    public void setRepair(RepairDTO repair) {
+        this.repair = repair;
     }
 
     public int getOrderId() {

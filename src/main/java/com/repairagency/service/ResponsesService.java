@@ -15,10 +15,12 @@ public class ResponsesService {
 
     private EntityDao<User> userDao;
     private EntityDao<Responses> responsesDao;
+//    private EntityDao<RepairsTypes> repairTypesDao;
 
     public ResponsesService() {
         this.userDao = DaoFactory.getEntityDao(DaoType.USER);
         this.responsesDao = DaoFactory.getEntityDao(DaoType.RESPONSES);
+//        this.repairTypesDao = DaoFactory.getEntityDao(DaoType.REPAIR);
     }
 
     public List<ResponsesDTO> getAll() {
@@ -38,3 +40,4 @@ public class ResponsesService {
         }).collect(Collectors.toList());
     }
 }
+
