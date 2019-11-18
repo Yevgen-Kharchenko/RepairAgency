@@ -14,7 +14,8 @@
 </head>
 
 <body>
-
+${locale}
+${bundle}
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">

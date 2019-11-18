@@ -6394,3 +6394,458 @@
 [http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
 [http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
 [http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@4247083e
+[http-bio-8880-exec-3] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-2] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/core.min.js
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/core.min.js
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/style.css
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/style.css
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/script.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/script.js
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/css.css
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/css.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/logo-light-250x40.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/logo-light-250x40.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x600-2.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x600-2.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-7-184x54.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-7-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-11-184x54.png
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-11-184x54.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-10-184x54.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-10-184x54.png
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-9-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-9-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-8-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-8-184x54.png
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/bg-color-1.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/bg-color-1.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/linecons.woff
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/linecons.woff
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/ajax-loader.gif
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/ajax-loader.gif
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x800-1.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x800-1.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@4387c1c6
+[http-bio-8880-exec-1] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/style.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/style.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/logo-light-250x40.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/logo-light-250x40.png
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x600-2.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x600-2.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/css.css
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/css.css
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-8-184x54.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-8-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-7-184x54.png
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-10-184x54.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-7-184x54.png
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-10-184x54.png
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-9-184x54.png
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-9-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-11-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-11-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/bg-color-1.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/bg-color-1.png
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/linecons.woff
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/linecons.woff
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/core.min.js
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/core.min.js
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/script.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/script.js
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/ajax-loader.gif
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/ajax-loader.gif
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x800-1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x800-1.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@4a087730
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-5] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-6] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/language
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /language. New Path: /app/language
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /language
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-2] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-2] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@57e24732
+[http-bio-8880-exec-1] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/css.css
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/css.css
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/logo-light-250x40.png
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/logo-light-250x40.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/style.css
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/script.js
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/script.js
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/core.min.js
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/core.min.js
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/style.css
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x600-2.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x600-2.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-7-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-7-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-9-184x54.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-9-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-10-184x54.png
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-8-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-10-184x54.png
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-8-184x54.png
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-11-184x54.png
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-11-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/bg-color-1.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/bg-color-1.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/ajax-loader.gif
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/linecons.woff
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/linecons.woff
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/materialdesignicons-webfont.woff2
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@21e9e951
+[http-bio-8880-exec-1] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/css.css
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/css.css
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/style.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/style.css
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/logo-light-250x40.png
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/logo-light-250x40.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/core.min.js
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/core.min.js
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x600-2.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x600-2.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/script.js
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-8-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-8-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-9-184x54.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-7-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-9-184x54.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-7-184x54.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-10-184x54.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-10-184x54.png
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-11-184x54.png
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-11-184x54.png
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/ajax-loader.gif
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/ajax-loader.gif
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x800-1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x800-1.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/linecons.woff
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/linecons.woff
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-3] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@5df45ae5
+[http-bio-8880-exec-3] INFO  com.repairagency.web.command.HomeCommand  - Redirect Url: /RepairAgency/app/404
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
