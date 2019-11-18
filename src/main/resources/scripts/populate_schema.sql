@@ -1,16 +1,16 @@
 ﻿use repair_agency;
 
-insert into `user` (`login`, `password`, `role`) values 
-('admin', 'admin', 'ADMIN'),
-('manager', 'manager', 'MANAGER'),
-('master', 'master', 'MASTER'),
-('Kyi', 'password', 'CUSTOMER'),
-('Shchek', 'password', 'CUSTOMER'),
-('Khoryv', 'password', 'CUSTOMER'),
-('Lybid', 'password', 'CUSTOMER');
+insert into `user` (`username`, `login`, `password`, `role`) values
+('Адміненко Сергій', 'admin@g.com', 'admin', 'ADMIN'),
+('Менеджерский Іван', 'manager@g.com', 'manager', 'MANAGER'),
+('Мастеровий Петро', 'master@g.com', 'master', 'MASTER'),
+('Папа Карло', 'user1@g.com', 'password', 'CUSTOMER'),
+('Буратіно', 'user2@g.com', 'password', 'CUSTOMER'),
+('Дядя Федір', 'user3@g.com', 'password', 'CUSTOMER'),
+('Дженіфер Лопес', 'user4@g.com', 'password', 'CUSTOMER');
 
 insert into repairs_types (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'), ('VACUUM_CLEANER'),
-							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'), ('OTHER');
+							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'), ('OTHER'), ('STOVE'), ('WASHER'), ('RANGE_HOOD'), ('ICE_MAKER');
 
 insert into `order` (`date`, `price`, `repairsTypesId`, `userId`) 
 		values ('2019-08-20 10:00:00',100.0,1,4), ('2019-08-23 10:00:00',150.0,2,5), ('2019-08-25 10:00:00',200.0,3,6),

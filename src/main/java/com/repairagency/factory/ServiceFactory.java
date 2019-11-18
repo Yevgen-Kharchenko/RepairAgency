@@ -1,14 +1,14 @@
 package com.repairagency.factory;
 
-import com.repairagency.service.CourseService;
+import com.repairagency.service.ResponsesService;
 
 public class ServiceFactory {
     private ServiceFactory() {
     }
-    
-    private static CourseService courseService = new CourseService();
-    
-    public static CourseService getCourseService(){
-        return courseService;
+
+    private static ResponsesService responsesService = new ResponsesService();
+
+    public static ResponsesService getResponsesService() {
+        return responsesService;
     }
 }

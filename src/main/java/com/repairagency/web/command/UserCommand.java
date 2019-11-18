@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import static com.repairagency.constant.PageUrlConstants.USER_PAGE;
 
-public class UserCommand implements Command{
+public class UserCommand implements Command {
     private static final String COUNT_ATTRIBUTE = "count";
     private EntityDao<User> userDao;
 

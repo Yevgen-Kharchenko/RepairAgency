@@ -9,7 +9,7 @@ import static com.repairagency.constant.PageUrlConstants.NOT_FOUND_PAGE;
 public class NotFoundCommand implements Command {
 
     @Override
-    public Page perform(HttpServletRequest request){
+    public Page perform(HttpServletRequest request) {
         return new Page(NOT_FOUND_PAGE);
     }
 }

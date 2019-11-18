@@ -1,10 +1,10 @@
 package com.repairagency.web.command;
 
-        import com.repairagency.web.data.Page;
+import com.repairagency.web.data.Page;
 
-        import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
-        import static com.repairagency.constant.PageUrlConstants.ABOUT_US_PAGE;
+import static com.repairagency.constant.PageUrlConstants.ABOUT_US_PAGE;
 
 public class AboutUsCommand implements Command {
     @Override

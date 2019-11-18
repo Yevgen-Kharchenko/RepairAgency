@@ -275,27 +275,30 @@
                     <div data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-stage-padding="15"
                          data-loop="true" data-margin="30" data-nav="false" data-dots="true" data-md-dots-each="2"
                          class="owl-carousel">
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Jennifer West</cite>
-                                            <p class="small">Housewife</p>
+
+                        <c:forEach items="${responses}" var="responses">
+                            <div class="item">
+                                <blockquote class="quote-variant-1">
+                                    <div class="quote-meta">
+                                        <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                                            <div class="unit-left">
+                                                <figure class="quote-image"><img src="ui/images/defaultuser.jpg" alt=""
+                                                                                 width="47" height="47"/></figure>
+                                            </div>
+                                            <div class="unit-body"><cite>${responses.date}</cite>
+                                                <p class="small">${responses.date}</p>
+                                                <p class="small">${responses.orderId}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this company. I had a washer break down and they had it
-                                        back up and running within 30 minutes of service call. The service men were very
-                                        professional and prompt. If you have appliance damages, give them a call, they
-                                        will surely repair.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
+                                    <div class="quote-body">
+                                        <p><q>${responses.response}</q></p>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </c:forEach>
+
+
                         <div class="item">
                             <blockquote class="quote-variant-1">
                                 <div class="quote-meta">

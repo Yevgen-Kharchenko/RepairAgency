@@ -17,6 +17,7 @@
     <main class="page-content">
         <div class="text-sm-left">
             <h1>User Page</h1>
+           <h2 ${count}></h2>
         </div>
     </main>
     <c:import url="/WEB-INF/templ/footer-part.jsp"/>

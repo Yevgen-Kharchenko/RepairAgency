@@ -27,129 +27,131 @@
                     <div data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-stage-padding="15"
                          data-loop="true" data-margin="30" data-nav="false" data-dots="true" data-md-dots-each="2"
                          class="owl-carousel">
+
+                        <c:forEach items="${responses}" var="responses">
                         <div class="item">
                             <blockquote class="quote-variant-1">
                                 <div class="quote-meta">
                                     <div class="unit unit-spacing-xs unit-middle unit-horizontal">
                                         <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
+                                            <figure class="quote-image"><img src="ui/images/defaultuser.jpg" alt=""
                                                                              width="47" height="47"/></figure>
                                         </div>
-                                        <div class="unit-body"><cite>Jennifer West</cite>
-                                            <p class="small">Housewife</p>
+                                        <div class="unit-body"><cite>${responses.date}</cite>
+                                            <p class="small">${responses.date}</p>
+                                            <p class="small">${responses.orderId}</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="quote-body">
-                                    <p><q>I highly recommend this company. I had a washer break down and they had it
-                                        back up and running within 30 minutes of service call. The service men were very
-                                        professional and prompt. If you have appliance damages, give them a call, they
-                                        will surely repair.</q></p>
+                                    <p><q>${responses.response}</q></p>
                                 </div>
                             </blockquote>
                         </div>
+                        </c:forEach>
+
                         <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Patrick Carlson</cite>
-                                            <p class="small">Web Designer</p>
-                                        </div>
+                        <blockquote class="quote-variant-1">
+                            <div class="quote-meta">
+                                <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                                    <div class="unit-left">
+                                        <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
+                                                                         width="47" height="47"/></figure>
+                                    </div>
+                                    <div class="unit-body"><cite>Patrick Carlson</cite>
+                                        <p class="small">Web Designer</p>
                                     </div>
                                 </div>
-                                <div class="quote-body">
-                                    <p><q>Great service from this family-owned (and veteran-owned) company! They fixed
-                                        my washer machine in a timely and professional manner. Highly recommend. Thanks,
-                                        guys, for a good work!</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Christine Bryant</cite>
-                                            <p class="small">Journalist</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q> Thomas had a good knowledge of our LG refrigerator and easily identified why
-                                        the ice maker wasn't working. He ordered the part and came back to change it out
-                                        and it works perfectly now. Tom and Sam work tirelessly to make calling them a
-                                        good experience. </q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>William Wallace</cite>
-                                            <p class="small">Manager</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this service center. The best service I have ever received
-                                        from an appliance repair company. If needs, I will definitely use them again for
-                                        our repair needs.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Jennifer West</cite>
-                                            <p class="small">Housewife</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this company. I had a washer break down and they had it
-                                        back up and running within 30 minutes of service call. The service men were very
-                                        professional and prompt. If you have appliance damages, give them a call, they
-                                        will surely repair.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>William Wallace</cite>
-                                            <p class="small">Manager</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this service center. The best service I have ever received
-                                        from an appliance repair company. If needs, I will definitely use them again for
-                                        our repair needs.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
+                            </div>
+                            <div class="quote-body">
+                                <p><q>Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!</q></p>
+                            </div>
+                        </blockquote>
+                    </div>
+<!--                        <div class="item">-->
+<!--                            <blockquote class="quote-variant-1">-->
+<!--                                <div class="quote-meta">-->
+<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
+<!--                                        <div class="unit-left">-->
+<!--                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""-->
+<!--                                                                             width="47" height="47"/></figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="unit-body"><cite>Christine Bryant</cite>-->
+<!--                                            <p class="small">Journalist</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="quote-body">-->
+<!--                                    <p><q> Thomas had a good knowledge of our LG refrigerator and easily identified why-->
+<!--                                        the ice maker wasn't working. He ordered the part and came back to change it out-->
+<!--                                        and it works perfectly now. Tom and Sam work tirelessly to make calling them a-->
+<!--                                        good experience. </q></p>-->
+<!--                                </div>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                        <div class="item">-->
+<!--                            <blockquote class="quote-variant-1">-->
+<!--                                <div class="quote-meta">-->
+<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
+<!--                                        <div class="unit-left">-->
+<!--                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""-->
+<!--                                                                             width="47" height="47"/></figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="unit-body"><cite>William Wallace</cite>-->
+<!--                                            <p class="small">Manager</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="quote-body">-->
+<!--                                    <p><q>I highly recommend this service center. The best service I have ever received-->
+<!--                                        from an appliance repair company. If needs, I will definitely use them again for-->
+<!--                                        our repair needs.</q></p>-->
+<!--                                </div>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                        <div class="item">-->
+<!--                            <blockquote class="quote-variant-1">-->
+<!--                                <div class="quote-meta">-->
+<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
+<!--                                        <div class="unit-left">-->
+<!--                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""-->
+<!--                                                                             width="47" height="47"/></figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="unit-body"><cite>Jennifer West</cite>-->
+<!--                                            <p class="small">Housewife</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="quote-body">-->
+<!--                                    <p><q>I highly recommend this company. I had a washer break down and they had it-->
+<!--                                        back up and running within 30 minutes of service call. The service men were very-->
+<!--                                        professional and prompt. If you have appliance damages, give them a call, they-->
+<!--                                        will surely repair.</q></p>-->
+<!--                                </div>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                        <div class="item">-->
+<!--                            <blockquote class="quote-variant-1">-->
+<!--                                <div class="quote-meta">-->
+<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
+<!--                                        <div class="unit-left">-->
+<!--                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""-->
+<!--                                                                             width="47" height="47"/></figure>-->
+<!--                                        </div>-->
+<!--                                        <div class="unit-body"><cite>William Wallace</cite>-->
+<!--                                            <p class="small">Manager</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="quote-body">-->
+<!--                                    <p><q>I highly recommend this service center. The best service I have ever received-->
+<!--                                        from an appliance repair company. If needs, I will definitely use them again for-->
+<!--                                        our repair needs.</q></p>-->
+<!--                                </div>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>

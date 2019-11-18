@@ -4,6 +4,7 @@ use repair_agency;
 
 create table user (
 id Int auto_increment,
+username varchar(255),
 login varchar(255) unique,
 password varchar(255) not null,
 role enum("CUSTOMER", "ADMIN", "MANAGER", "MASTER"),

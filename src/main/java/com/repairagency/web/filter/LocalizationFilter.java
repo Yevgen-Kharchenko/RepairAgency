@@ -18,8 +18,10 @@ public class LocalizationFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) {
+
         this.defaultLocale = filterConfig.getInitParameter(LOCALE);
         this.defaultBundle = filterConfig.getInitParameter(BUNDLE);
+        LOG.info("Set init defaultLocale="+defaultLocale);
     }
 
     @Override

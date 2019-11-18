@@ -32,15 +32,28 @@ public class ResponsesDao extends AbstractDao<Responses> {
     private static final String DELETE_RESPONSES = "DELETE FROM `responses` "
             + "WHERE " + COLUMN_ID + " = ?";
 
+    public static final String SELECT_ALL_FULL =
+            "SELECT * FROM `responses` join `order` on responses.orderId = order.id ";
+
+    public static final String GET_BY_ID_FULL = SELECT_ALL_FULL + "WHERE responses.id = ?";
+    static final String GET_BY_ID = "SELECT * FROM `responses` WHERE id = ?";
+
+    @Override
+    public Responses getById(int id, boolean full) {
+        return full ? getById(GET_BY_ID_FULL, ps -> ps.setInt(1, id), getFullMapper()) :
+                getById(GET_BY_ID, ps -> ps.setInt(1, id), getMapper());
+    }
+
+    @Override
+    public List<Responses> getAll(boolean full) {
+        return full ? getAll(SELECT_ALL_FULL, getFullMapper()) : getAll(SELECT_ALL_RESPONSES, getMapper());
+    }
+
     @Override
     public List<Responses> getAll() {
-        return getAll(SELECT_ALL_RESPONSES,
-                resultSet -> new Responses(resultSet.getInt(COLUMN_ID),
-                        resultSet.getDate(COLUMN_DATE).toLocalDate(),
-                        resultSet.getString(COLUMN_RESPONSE),
-                        resultSet.getInt(COLUMN_USER_ID),
-                        resultSet.getInt(COLUMN_ORDER_ID)));
+        return getAll(SELECT_ALL_RESPONSES, getMapper());
     }
+
 
     @Override
     public boolean create(Responses entity) {
@@ -71,4 +84,22 @@ public class ResponsesDao extends AbstractDao<Responses> {
         return createUpdate(DELETE_RESPONSES, ps ->
                 ps.setInt(1, entity.getId()));
     }
+
+    private EntityMapper<Responses> getFullMapper() {
+        return resultSet -> new Responses(resultSet.getInt(COLUMN_ID),
+                resultSet.getDate(COLUMN_DATE).toLocalDate(),
+                resultSet.getString(COLUMN_RESPONSE),
+                resultSet.getInt(COLUMN_USER_ID),
+                resultSet.getInt(COLUMN_ORDER_ID));
+    }
+
+    private EntityMapper<Responses> getMapper() {
+        return resultSet -> new Responses(resultSet.getInt(COLUMN_ID),
+                resultSet.getDate(COLUMN_DATE).toLocalDate(),
+                resultSet.getString(COLUMN_RESPONSE),
+                resultSet.getInt(COLUMN_USER_ID),
+                resultSet.getInt(COLUMN_ORDER_ID));
+    }
+
+
 }
