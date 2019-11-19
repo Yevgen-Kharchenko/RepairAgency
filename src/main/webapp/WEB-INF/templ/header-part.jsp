@@ -78,7 +78,7 @@
                                 <li><a href="services#stove-repair"><fmt:message key="stove.repair"/></a></li>
                                 <li><a href="services#appliance-parts"><fmt:message key="appliance.parts"/></a></li>
                                 <li><a href="services#microwave-repair"><fmt:message key="microwave.repair"/></a></li>
-                                <li><a href="services#washer-repair"><fmt:message key="washer.repairy"/></a></li>
+                                <li><a href="services#washer-repair"><fmt:message key="washer.repair"/></a></li>
                                 <li><a href="services#refrigerator-repair"><fmt:message key="refrigerator.repair"/></a></li>
                                 <li><a href="services#range-hood-repair"><fmt:message key="range"/></a></li>
                             </ul>
@@ -105,8 +105,38 @@
                     </ul>
 
                     <ul class="rd-navbar-nav">
-                        <li><a href="user"><fmt:message key="user"/></a></li>
-                        <li><a href="login-register"><fmt:message key="login"/></a></li>
+
+                        <li>
+                            <c:choose>
+                                <c:when test="${user.role=='ADMIN'}">
+                                    <a href="admin"><fmt:message key="account"/></a>
+                                </c:when>
+                                <c:when test="${user.role=='MANAGER'}">
+                                    <a href="manager"><fmt:message key="account"/></a>
+                                </c:when>
+                                <c:when test="${user.role=='MASTER'}">
+                                    <a href="master"><fmt:message key="account"/></a>
+                                </c:when>
+                                <c:when test="${user.role=='CUSTOMER'}">
+                                    <a href="user"><fmt:message key="account"/></a>
+                                </c:when>
+                                <c:otherwise>
+                                    <a href=""></a>
+                                </c:otherwise>
+                            </c:choose>
+
+                        </a></li>
+                        <li>
+                        <c:choose>
+                            <c:when test="${not empty user}">
+                                <a href="logout"><fmt:message key="logout"/></a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="login-register"><fmt:message key="login"/></a>
+                            </c:otherwise>
+                        </c:choose>
+
+                        </a></li>
                         <li><a href="language?locale=en" class="text-uppercase">en</a>
                             <a href="language?locale=ua" class="text-uppercase">ua</a></li>
                     </ul>

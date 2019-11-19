@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter("/app/*")
+@WebFilter("/*")
 public class AuthenticationFilter implements Filter {
     private static final Logger LOG = Logger.getLogger(AuthenticationFilter.class);
 
@@ -34,7 +34,7 @@ public class AuthenticationFilter implements Filter {
             return;
         }
         String contextPath = httpServletRequest.getContextPath();
-        
+
         HttpSession session = httpServletRequest.getSession();
         User user = (User) session.getAttribute("user");
         if (user == null) {

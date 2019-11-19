@@ -31,9 +31,11 @@ public class CommandFactory {
         getCommandMap.put("/team", new TeamCommand());
         getCommandMap.put("/team-member-profile", new TeamProfileCommand());
         getCommandMap.put("/language", new LanguageCommand());
+        getCommandMap.put("/logout", new LogoutCommand());
 
         postCommandMap.put("/", new HomeCommand());
-        postCommandMap.put("/login-register", new LoginCommand());
+        postCommandMap.put("/login", new LoginCommand());
+        postCommandMap.put("/register", new RegisterCommand());
     }
 
     private CommandFactory() {

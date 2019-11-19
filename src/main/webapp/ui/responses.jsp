@@ -15,7 +15,56 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        <section class="section-60 section-sm-top-110 section-sm-bottom-100">
+
+    <section class="section-top-60 section-sm-top-50 section-sm-bottom-50">
+    <div class="shell">
+        <div class="range">
+            <div class="cell-md-10 cell-lg-8">
+                <h5>Leave a testimonial</h5>
+
+                <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform">
+                <!--                            <div class="range">-->
+                <!--                                <div class="cell-sm-6">-->
+                <!--                                    <div class="form-group">-->
+                <!--                                        <label for="contact-first-name" class="form-label-outside">First name</label>-->
+                <!--                                        <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="cell-sm-6 offset-top-18 offset-sm-top-0">-->
+                <!--                                    <div class="form-group">-->
+                <!--                                        <label for="contact-last-name" class="form-label-outside">Last name</label>-->
+                <!--                                        <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="cell-sm-6 offset-top-18">-->
+                <!--                                    <div class="form-group">-->
+                <!--                                        <label for="contact-email" class="form-label-outside">E-mail</label>-->
+                <!--                                        <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <!--                                <div class="cell-sm-6 offset-top-18">-->
+                <!--                                    <div class="form-group">-->
+                <!--                                        <label for="contact-phone" class="form-label-outside">Phone</label>-->
+                <!--                                        <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">-->
+                <!--                                    </div>-->
+                <!--                                </div>-->
+                <div class="cell-xs-12 offset-top-18">
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label-outside">Message</label>
+                        <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="cell-xs-12 offset-top-30">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</section>
+
+        <section class="section-60 section-sm-top-50 section-sm-bottom-50">
             <div class="shell">
                 <div class="range text-center">
                     <div class="cell-xs-12">
@@ -39,7 +88,7 @@
                                         </div>
                                         <div class="unit-body"><cite>${responses.customer.name}</cite>
                                             <p class="small">${responses.date}</p>
-                                            <p class="small">${responses.orderId}</p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -70,141 +119,96 @@
                             </div>
                         </blockquote>
                     </div>
-<!--                        <div class="item">-->
-<!--                            <blockquote class="quote-variant-1">-->
-<!--                                <div class="quote-meta">-->
-<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
-<!--                                        <div class="unit-left">-->
-<!--                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""-->
-<!--                                                                             width="47" height="47"/></figure>-->
-<!--                                        </div>-->
-<!--                                        <div class="unit-body"><cite>Christine Bryant</cite>-->
-<!--                                            <p class="small">Journalist</p>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="quote-body">-->
-<!--                                    <p><q> Thomas had a good knowledge of our LG refrigerator and easily identified why-->
-<!--                                        the ice maker wasn't working. He ordered the part and came back to change it out-->
-<!--                                        and it works perfectly now. Tom and Sam work tirelessly to make calling them a-->
-<!--                                        good experience. </q></p>-->
-<!--                                </div>-->
-<!--                            </blockquote>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <blockquote class="quote-variant-1">-->
-<!--                                <div class="quote-meta">-->
-<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
-<!--                                        <div class="unit-left">-->
-<!--                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""-->
-<!--                                                                             width="47" height="47"/></figure>-->
-<!--                                        </div>-->
-<!--                                        <div class="unit-body"><cite>William Wallace</cite>-->
-<!--                                            <p class="small">Manager</p>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="quote-body">-->
-<!--                                    <p><q>I highly recommend this service center. The best service I have ever received-->
-<!--                                        from an appliance repair company. If needs, I will definitely use them again for-->
-<!--                                        our repair needs.</q></p>-->
-<!--                                </div>-->
-<!--                            </blockquote>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <blockquote class="quote-variant-1">-->
-<!--                                <div class="quote-meta">-->
-<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
-<!--                                        <div class="unit-left">-->
-<!--                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""-->
-<!--                                                                             width="47" height="47"/></figure>-->
-<!--                                        </div>-->
-<!--                                        <div class="unit-body"><cite>Jennifer West</cite>-->
-<!--                                            <p class="small">Housewife</p>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="quote-body">-->
-<!--                                    <p><q>I highly recommend this company. I had a washer break down and they had it-->
-<!--                                        back up and running within 30 minutes of service call. The service men were very-->
-<!--                                        professional and prompt. If you have appliance damages, give them a call, they-->
-<!--                                        will surely repair.</q></p>-->
-<!--                                </div>-->
-<!--                            </blockquote>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <blockquote class="quote-variant-1">-->
-<!--                                <div class="quote-meta">-->
-<!--                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">-->
-<!--                                        <div class="unit-left">-->
-<!--                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""-->
-<!--                                                                             width="47" height="47"/></figure>-->
-<!--                                        </div>-->
-<!--                                        <div class="unit-body"><cite>William Wallace</cite>-->
-<!--                                            <p class="small">Manager</p>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="quote-body">-->
-<!--                                    <p><q>I highly recommend this service center. The best service I have ever received-->
-<!--                                        from an appliance repair company. If needs, I will definitely use them again for-->
-<!--                                        our repair needs.</q></p>-->
-<!--                                </div>-->
-<!--                            </blockquote>-->
-<!--                        </div>-->
+                        <div class="item">
+                            <blockquote class="quote-variant-1">
+                                <div class="quote-meta">
+                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                                        <div class="unit-left">
+                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""
+                                                                             width="47" height="47"/></figure>
+                                        </div>
+                                        <div class="unit-body"><cite>Christine Bryant</cite>
+                                            <p class="small">Journalist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quote-body">
+                                    <p><q> Thomas had a good knowledge of our LG refrigerator and easily identified why
+                                        the ice maker wasn't working. He ordered the part and came back to change it out
+                                        and it works perfectly now. Tom and Sam work tirelessly to make calling them a
+                                        good experience. </q></p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <blockquote class="quote-variant-1">
+                                <div class="quote-meta">
+                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                                        <div class="unit-left">
+                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""
+                                                                             width="47" height="47"/></figure>
+                                        </div>
+                                        <div class="unit-body"><cite>William Wallace</cite>
+                                            <p class="small">Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quote-body">
+                                    <p><q>I highly recommend this service center. The best service I have ever received
+                                        from an appliance repair company. If needs, I will definitely use them again for
+                                        our repair needs.</q></p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <blockquote class="quote-variant-1">
+                                <div class="quote-meta">
+                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                                        <div class="unit-left">
+                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
+                                                                             width="47" height="47"/></figure>
+                                        </div>
+                                        <div class="unit-body"><cite>Jennifer West</cite>
+                                            <p class="small">Housewife</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quote-body">
+                                    <p><q>I highly recommend this company. I had a washer break down and they had it
+                                        back up and running within 30 minutes of service call. The service men were very
+                                        professional and prompt. If you have appliance damages, give them a call, they
+                                        will surely repair.</q></p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <blockquote class="quote-variant-1">
+                                <div class="quote-meta">
+                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
+                                        <div class="unit-left">
+                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
+                                                                             width="47" height="47"/></figure>
+                                        </div>
+                                        <div class="unit-body"><cite>William Wallace</cite>
+                                            <p class="small">Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quote-body">
+                                    <p><q>I highly recommend this service center. The best service I have ever received
+                                        from an appliance repair company. If needs, I will definitely use them again for
+                                        our repair needs.</q></p>
+                                </div>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+<section class="section-30 section-sm-top-10 section-sm-bottom-10">
+<div></div>
+</section>
 
-
-        <section class="section-top-60 section-sm-top-90">
-            <div class="shell">
-                <div class="range">
-                    <div class="cell-md-10 cell-lg-8">
-                        <h5>Contact Form</h5>
-                        <hr>
-                        <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform">
-                            <div class="range">
-                                <div class="cell-sm-6">
-                                    <div class="form-group">
-                                        <label for="contact-first-name" class="form-label-outside">First name</label>
-                                        <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
-                                    <div class="form-group">
-                                        <label for="contact-last-name" class="form-label-outside">Last name</label>
-                                        <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6 offset-top-18">
-                                    <div class="form-group">
-                                        <label for="contact-email" class="form-label-outside">E-mail</label>
-                                        <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6 offset-top-18">
-                                    <div class="form-group">
-                                        <label for="contact-phone" class="form-label-outside">Phone</label>
-                                        <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-xs-12 offset-top-18">
-                                    <div class="form-group">
-                                        <label for="contact-message" class="form-label-outside">Message</label>
-                                        <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="cell-xs-12 offset-top-30">
-                                    <button type="submit" class="btn btn-primary">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     <c:import url="/WEB-INF/templ/footer-part.jsp"/>
 </div>

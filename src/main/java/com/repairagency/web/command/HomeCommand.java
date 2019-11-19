@@ -20,8 +20,6 @@ public class HomeCommand implements Command {
     @Override
     public Page perform(HttpServletRequest request) {
         request.setAttribute("responses", responsesService.getAll());
-        String redirectUrl = request.getContextPath() + "/app/404";
-        LOG.info("Redirect Url: " + redirectUrl);
         return new Page(HOME_PAGE);
     }
 }

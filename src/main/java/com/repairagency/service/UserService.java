@@ -1,33 +1,46 @@
 package com.repairagency.service;
 
-import com.repairagency.dao.UserDao;
+import com.repairagency.dao.EntityDao;
 import com.repairagency.entity.User;
+import com.repairagency.enums.DaoType;
+import com.repairagency.enums.Role;
+import com.repairagency.factory.DaoFactory;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class UserService {
-    private static UserDao userDao = new UserDao();
-    private static List<User> usersList = userDao.getAll();
-    private static Map<String, User> userMap = new HashMap<>();
+    private EntityDao<User> userDao;
 
-    static {
-        for (User user : usersList) {
-            userMap.put(user.getLogin(), user);
-        }
+    public UserService() {
+        this.userDao = DaoFactory.getEntityDao(DaoType.USER);
     }
 
-    public boolean validateUser(String login, String password) {
-        User user = userMap.get(login);
-        if (user == null) {
-            return false;
-        }
-
-        return user.getPassword().equals(password);
+    public int validateUser(String login, String password) {
+        List<User> all = userDao.getAll();
+        User user = all.stream().filter(u -> u.getLogin().equals(login)
+                && u.getPassword().equals(password))
+                .findFirst().orElseGet(() -> new User());
+        return user.getId();
     }
 
-    public User getUser(String login) {
-        return userMap.get(login);
+    public boolean validateLogin(String login) {
+        List<User> all = userDao.getAll();
+        for (User user:all) {
+            if(user.getLogin().equals(login)) {
+                System.out.println("Not validate login: "+user.getLogin());
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public User getUser(int id) {
+        return userDao.getById(id, false);
+    }
+
+    public User registrationUser(String username, String login, String password) {
+        User newUser = new User(username,login,password, Role.CUSTOMER);
+        userDao.create(newUser);
+        return newUser;
     }
 }

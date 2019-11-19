@@ -1,12 +1,12 @@
 package com.repairagency.web.filter;
 
-import org.apache.log4j.Logger;
+        import org.apache.log4j.Logger;
 
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.io.IOException;
+        import javax.servlet.*;
+        import javax.servlet.http.HttpServletRequest;
+        import javax.servlet.http.HttpServletResponse;
+        import javax.servlet.http.HttpSession;
+        import java.io.IOException;
 
 public class LocalizationFilter implements Filter {
     private static final Logger LOG = Logger.getLogger(LocalizationFilter.class);
@@ -17,7 +17,7 @@ public class LocalizationFilter implements Filter {
     private String defaultBundle;
 
     @Override
-    public void init(FilterConfig filterConfig) {
+    public void init(FilterConfig filterConfig) throws ServletException {
 
         this.defaultLocale = filterConfig.getInitParameter(LOCALE);
         this.defaultBundle = filterConfig.getInitParameter(BUNDLE);

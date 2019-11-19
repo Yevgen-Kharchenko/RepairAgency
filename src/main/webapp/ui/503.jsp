@@ -29,7 +29,7 @@
                         <p class="text-style-2"><fmt:message key="offline"/><br>
                             <fmt:message key="come.back"/></p>
                         <div class="offset-top-35 offset-sm-top-50">
-                            <div class="group-xl"><a href="" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="Back.home"/></a><a href="contacts" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>
+                            <div class="group-xl"><a href="" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.home"/></a><a href="contacts" class="btn btn-white-outline btn-mod-2"><fmt:message key="contact.us"/></a></div>
                         </div>
                     </div>
                 </div>
@@ -38,8 +38,8 @@
     </main>
     <footer class="page-foot">
         <div class="shell text-center">
-            <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="All.Rights"/>
-                <a href="privacy"><fmt:message key="Privacy.Policy"/></a> </p>
+            <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="all.rights"/>
+                <a href="privacy"><fmt:message key="privacy.policy"/></a> </p>
         </div>
     </footer>
 </div>
