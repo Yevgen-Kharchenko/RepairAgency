@@ -17,6 +17,12 @@ public class Responses {
         this.orderId = orderId;
     }
 
+    public Responses(LocalDate date, String response, int userId) {
+        this.date = date;
+        this.response = response;
+        this.userId = userId;
+    }
+
     public LocalDate getDate() {
         return date;
     }

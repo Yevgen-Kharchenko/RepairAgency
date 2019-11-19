@@ -9,10 +9,10 @@ public class SecurityConfig {
     private static Map<Role, List<String>> securityPages = new HashMap<>();
 
     static {
-        securityPages.put(Role.ADMIN, Arrays.asList("/admin.jsp", "/admin", "/user", "/manager", "/master", "/responses"));
-        securityPages.put(Role.CUSTOMER, Arrays.asList("/user", "/responses"));
-        securityPages.put(Role.MANAGER, Arrays.asList("/manager", "/master"));
-        securityPages.put(Role.MASTER, Arrays.asList("/master"));
+        securityPages.put(Role.ADMIN, Arrays.asList("/admin.jsp", "/admin", "/user", "/user.jsp", "/manager", "/manager.jsp", "/master", "/master.jsp", "/responses", "/responses.jsp"));
+        securityPages.put(Role.CUSTOMER, Arrays.asList("/user",  "/user.jsp", "/responses", "/responses.jsp"));
+        securityPages.put(Role.MANAGER, Arrays.asList("/manager", "/manager.jsp", "/master", "/master.jsp"));
+        securityPages.put(Role.MASTER, Arrays.asList("/master", "/master.jsp"));
     }
 
     public static boolean isSecurePage(String page) {

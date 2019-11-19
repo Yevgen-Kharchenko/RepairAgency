@@ -7,11 +7,14 @@ import com.repairagency.entity.Responses;
 import com.repairagency.entity.User;
 import com.repairagency.enums.DaoType;
 import com.repairagency.factory.DaoFactory;
+import org.apache.log4j.Logger;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ResponsesService {
+    private static final Logger LOG = Logger.getLogger(ResponsesService.class);
 
     private EntityDao<User> userDao;
     private EntityDao<Responses> responsesDao;
@@ -38,6 +41,11 @@ public class ResponsesService {
             responsesDTO.setCustomer(userDTO);
             return responsesDTO;
         }).collect(Collectors.toList());
+    }
+
+    public void setResponse (LocalDate date, String message, int userId) {
+        responsesDao.create(new Responses(date,message,userId));
+        LOG.info("response create : "+ date+message+userId);
     }
 }
 

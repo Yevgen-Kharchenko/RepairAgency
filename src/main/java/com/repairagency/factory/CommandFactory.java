@@ -36,6 +36,7 @@ public class CommandFactory {
         postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("/login", new LoginCommand());
         postCommandMap.put("/register", new RegisterCommand());
+        postCommandMap.put("/responses", new ResponsesCommand());
     }
 
     private CommandFactory() {

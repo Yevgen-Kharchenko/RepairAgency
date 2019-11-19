@@ -32,14 +32,16 @@ public class RegisterCommand extends UniCommand {
         HttpSession session = request.getSession();
 
         if (userService.validateLogin(login)) {
-            User user = userService.registrationUser(username,login,password);
-            LOG.debug("registration user: + " + user);
-            session.setAttribute("user", user);
-            return new Page("/", true);
+            User newUser = userService.registrationUser(username,login,password);
+            LOG.debug("registration user: + " + newUser);
+            int userId = userService.validateUser(login, password);
+            if (userId != 0) {
+                User user = userService.getUser(userId);
+                session.setAttribute("user", user);
+                return new Page("/", true);
+            }
         }
-
         session.setAttribute("error", "Not validate login");
         return new Page("/", true);
-
     }
 }

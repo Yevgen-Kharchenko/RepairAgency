@@ -18,7 +18,7 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        User in session ${user.username} ${user.role}
+        User in session ${user.username}, ${user.role}, ${user.id}
 
         <div data-autoplay="false" data-slide-effect="fade" class="swiper-container swiper-slider">
             <div class="swiper-wrapper">
