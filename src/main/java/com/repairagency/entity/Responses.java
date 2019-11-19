@@ -17,10 +17,11 @@ public class Responses {
         this.orderId = orderId;
     }
 
-    public Responses(LocalDate date, String response, int userId) {
+    public Responses(LocalDate date, String response, int userId, int orderId) {
         this.date = date;
         this.response = response;
         this.userId = userId;
+        this.orderId = orderId;
     }
 
     public LocalDate getDate() {

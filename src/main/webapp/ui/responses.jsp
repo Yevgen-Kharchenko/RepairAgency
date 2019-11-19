@@ -23,30 +23,30 @@
                         <h5>Leave a testimonial</h5>
                         <form data-form-output="form-output-global" data-form-type="contact" method="post" action="responses" class="rd-mailform">
                             <div class="range">
-                                <div class="cell-sm-6">
-                                    <div class="form-group">
-                                        <label for="contact-first-name" class="form-label-outside">First name</label>
-                                        <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
-                                    <div class="form-group">
-                                        <label for="contact-last-name" class="form-label-outside">Last name</label>
-                                        <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6 offset-top-18">
-                                    <div class="form-group">
-                                        <label for="contact-email" class="form-label-outside">E-mail</label>
-                                        <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6 offset-top-18">
-                                    <div class="form-group">
-                                        <label for="contact-phone" class="form-label-outside">Phone</label>
-                                        <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
-                                    </div>
-                                </div>
+<!--                                <div class="cell-sm-6">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label for="contact-first-name" class="form-label-outside">First name</label>-->
+<!--                                        <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="cell-sm-6 offset-top-18 offset-sm-top-0">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label for="contact-last-name" class="form-label-outside">Last name</label>-->
+<!--                                        <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="cell-sm-6 offset-top-18">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label for="contact-email" class="form-label-outside">E-mail</label>-->
+<!--                                        <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="cell-sm-6 offset-top-18">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <label for="contact-phone" class="form-label-outside">Phone</label>-->
+<!--                                        <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">-->
+<!--                                    </div>-->
+<!--                                </div>-->
                                 <div class="cell-xs-12 offset-top-18">
                                     <div class="form-group">
                                         <label for="contact-message" class="form-label-outside">Message</label>

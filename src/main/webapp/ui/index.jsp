@@ -288,7 +288,6 @@
                                             </div>
                                             <div class="unit-body"><cite>${responses.customer.name}</cite>
                                                 <p class="small">${responses.date}</p>
-                                                <p class="small">${responses.orderId}</p>
                                             </div>
                                         </div>
                                     </div>

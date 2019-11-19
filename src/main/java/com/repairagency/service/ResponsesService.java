@@ -44,8 +44,9 @@ public class ResponsesService {
     }
 
     public void setResponse (LocalDate date, String message, int userId) {
-        responsesDao.create(new Responses(date,message,userId));
-        LOG.info("response create : "+ date+message+userId);
+        Responses responses = new Responses(date,message,userId,1);
+        responsesDao.create(responses);
+        LOG.info("response create : "+ responses.toString());
     }
 }
 

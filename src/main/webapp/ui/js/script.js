@@ -1172,7 +1172,7 @@ $(document).ready(function() {
                         }
                     }
                     form.addClass('success');
-                    result = result.length === 5 ? result : 'MF255';
+                    result = result.length === 5 ? result : /*'MF255'*/;
                     output.text(msg[result]);
                     if (result === "MF000") {
                         if (output.hasClass("snackbars")) {

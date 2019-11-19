@@ -10761,3 +10761,710 @@
 [http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
 [http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
 [http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - User not logged
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@3da128b9
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-5] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-6] DEBUG com.repairagency.dao.ResponsesDao  - Create Responses: + Response{id=0, date='2019-11-19, response='Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!', userId='1', orderId='0'}
+
+[http-bio-8880-exec-6] ERROR com.repairagency.dao.AbstractDao  - Could not create entity!!
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`repair_agency`.`responses`, CONSTRAINT `responses_ibfk_2` FOREIGN KEY (`orderId`) REFERENCES `order` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.repairagency.dao.AbstractDao.createUpdate(AbstractDao.java:67)
+	at com.repairagency.dao.ResponsesDao.create(ResponsesDao.java:61)
+	at com.repairagency.dao.ResponsesDao.create(ResponsesDao.java:9)
+	at com.repairagency.service.ResponsesService.setResponse(ResponsesService.java:47)
+	at com.repairagency.web.command.ResponsesCommand.performPost(ResponsesCommand.java:37)
+	at com.repairagency.web.command.UniCommand.perform(UniCommand.java:15)
+	at com.repairagency.web.DispatcherServlet.processRequest(DispatcherServlet.java:35)
+	at com.repairagency.web.DispatcherServlet.doPost(DispatcherServlet.java:26)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at com.repairagency.web.filter.StaticResourceFilter.doFilter(StaticResourceFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.EncodingFilter.doFilter(EncodingFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.LocalizationFilter.doFilter(LocalizationFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+[http-bio-8880-exec-6] INFO  com.repairagency.service.ResponsesService  - response create : 2019-11-19Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!1
+[http-bio-8880-exec-6] INFO  com.repairagency.web.command.ResponsesCommand  - response : Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - User not logged
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-7] DEBUG com.repairagency.dao.ResponsesDao  - Create Responses: + Response{id=0, date='2019-11-19, response='Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!', userId='1', orderId='0'}
+
+[http-bio-8880-exec-7] ERROR com.repairagency.dao.AbstractDao  - Could not create entity!!
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`repair_agency`.`responses`, CONSTRAINT `responses_ibfk_2` FOREIGN KEY (`orderId`) REFERENCES `order` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.repairagency.dao.AbstractDao.createUpdate(AbstractDao.java:67)
+	at com.repairagency.dao.ResponsesDao.create(ResponsesDao.java:61)
+	at com.repairagency.dao.ResponsesDao.create(ResponsesDao.java:9)
+	at com.repairagency.service.ResponsesService.setResponse(ResponsesService.java:47)
+	at com.repairagency.web.command.ResponsesCommand.performPost(ResponsesCommand.java:37)
+	at com.repairagency.web.command.UniCommand.perform(UniCommand.java:15)
+	at com.repairagency.web.DispatcherServlet.processRequest(DispatcherServlet.java:35)
+	at com.repairagency.web.DispatcherServlet.doPost(DispatcherServlet.java:26)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at com.repairagency.web.filter.StaticResourceFilter.doFilter(StaticResourceFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.EncodingFilter.doFilter(EncodingFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.LocalizationFilter.doFilter(LocalizationFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+[http-bio-8880-exec-7] INFO  com.repairagency.service.ResponsesService  - response create : 2019-11-19Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!1
+[http-bio-8880-exec-7] INFO  com.repairagency.web.command.ResponsesCommand  - response : Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - User not logged
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-4] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@608e2d9f
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-5] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-8] INFO  com.repairagency.dao.ResponsesDao  - Create Responses: + Response{id=0, date='2019-11-19, response='Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!', userId='1', orderId='0'}
+
+[http-bio-8880-exec-8] ERROR com.repairagency.dao.AbstractDao  - Could not create entity!!
+java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`repair_agency`.`responses`, CONSTRAINT `responses_ibfk_2` FOREIGN KEY (`orderId`) REFERENCES `order` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at com.repairagency.dao.AbstractDao.createUpdate(AbstractDao.java:67)
+	at com.repairagency.dao.ResponsesDao.create(ResponsesDao.java:61)
+	at com.repairagency.dao.ResponsesDao.create(ResponsesDao.java:9)
+	at com.repairagency.service.ResponsesService.setResponse(ResponsesService.java:48)
+	at com.repairagency.web.command.ResponsesCommand.performPost(ResponsesCommand.java:37)
+	at com.repairagency.web.command.UniCommand.perform(UniCommand.java:15)
+	at com.repairagency.web.DispatcherServlet.processRequest(DispatcherServlet.java:35)
+	at com.repairagency.web.DispatcherServlet.doPost(DispatcherServlet.java:26)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at com.repairagency.web.filter.StaticResourceFilter.doFilter(StaticResourceFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.AuthenticationFilter.doFilter(AuthenticationFilter.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.EncodingFilter.doFilter(EncodingFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.repairagency.web.filter.LocalizationFilter.doFilter(LocalizationFilter.java:37)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+[http-bio-8880-exec-8] INFO  com.repairagency.service.ResponsesService  - response create : Response{id=0, date='2019-11-19, response='Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!', userId='1', orderId='0'}
+
+[http-bio-8880-exec-8] INFO  com.repairagency.web.command.ResponsesCommand  - response : Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - User not logged
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@5df80986
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-5] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-6] INFO  com.repairagency.dao.ResponsesDao  - Create Responses: + Response{id=0, date='2019-11-19, response='Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!', userId='1', orderId='1'}
+
+[http-bio-8880-exec-6] INFO  com.repairagency.service.ResponsesService  - response create : Response{id=0, date='2019-11-19, response='Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!', userId='1', orderId='1'}
+
+[http-bio-8880-exec-6] INFO  com.repairagency.web.command.ResponsesCommand  - response : Great service from this family-owned (and veteran-owned) company! They fixed
+                                    my washer machine in a timely and professional manner. Highly recommend. Thanks,
+                                    guys, for a good work!
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-7] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-10] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /materialdesignicons.css.map
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /materialdesignicons.css.map
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/materialdesignicons.css.map
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/materialdesignicons.css.map
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /materialdesignicons.css.map
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /materialdesignicons.css.map
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-2] INFO  com.repairagency.persistance.DataSourceFactory  - DataSource is createdcom.mysql.cj.jdbc.MysqlDataSource@1b0dac84
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/style.css
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/style.css
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /style.css
+[http-bio-8880-exec-7] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /style.css
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-slide-1-1920x600.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-slide-1-1920x600.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-slide-1-1920x600.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-slide-1-1920x600.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-slide-1-1920x600.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /logo-light-250x40.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /logo-light-250x40.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/logo-light-250x40.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/logo-light-250x40.png
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /logo-light-250x40.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /1.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /1.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /logo-light-250x40.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /css.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /css.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/css/css.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/css/css.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /css.css
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /css.css
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-1-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-3-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-5-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-5-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-5-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-5-223x227.jpg
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-5-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-6-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-6-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-6-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-6-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-6-223x227.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-7-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-7-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-7-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-7-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-7-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-7-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-2-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-2-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-2-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-2-223x227.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-2-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /1920x600-2.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /1920x600-2.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x600-2.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x600-2.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /1920x600-2.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /1920x600-2.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-8-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-8-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-8-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-8-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-8-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-8-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-11-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-11-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-11-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-11-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-9-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-11-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-9-184x54.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-11-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-9-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-9-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-9-184x54.png
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-9-184x54.png
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-4-223x227.jpg
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-4-223x227.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-10-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-10-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-10-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-10-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-10-184x54.png
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-10-184x54.png
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /defaultuser.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /defaultuser.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/defaultuser.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/defaultuser.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /defaultuser.jpg
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /defaultuser.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-13-47x47.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-13-47x47.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-13-47x47.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-13-47x47.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-13-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-12-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-12-47x47.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-16-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-16-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-16-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-16-370x247.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-16-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-15-47x47.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-15-47x47.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-14-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-14-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-14-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-14-47x47.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-14-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-15-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-15-47x47.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-15-47x47.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-17-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-17-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-17-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-17-370x247.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-17-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-18-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-18-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-18-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-18-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-18-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /bg-color-1.png
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /bg-color-1.png
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /linecons.woff
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /linecons.woff
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/linecons.woff
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/linecons.woff
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /linecons.woff
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /linecons.woff
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /core.min.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /core.min.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/core.min.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/core.min.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /core.min.js
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /core.min.js
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-21-370x247.jpg
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-21-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-20-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-20-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-20-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-20-370x247.jpg
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-20-370x247.jpg
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/js/script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/js/script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /script.js
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /fontawesome-webfont.woff2
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /fontawesome-webfont.woff2
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/fontawesome-webfont.woff2
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /fontawesome-webfont.woff2
+[http-bio-8880-exec-10] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /fontawesome-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /materialdesignicons-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /materialdesignicons-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/fonts/materialdesignicons-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /materialdesignicons-webfont.woff2
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /materialdesignicons-webfont.woff2
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /ajax-loader.gif
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /1920x800-1.jpg
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - User not logged
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-9] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-9] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-8] INFO  com.repairagency.dao.ResponsesDao  - Create Responses: + Response{id=0, date='2019-11-19, response='your message', userId='1', orderId='1'}
+
+[http-bio-8880-exec-8] INFO  com.repairagency.service.ResponsesService  - response create : Response{id=0, date='2019-11-19, response='your message', userId='1', orderId='1'}
+
+[http-bio-8880-exec-8] INFO  com.repairagency.web.command.ResponsesCommand  - response : your message
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-8] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /responses. New Path: /app/responses
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /responses
+[http-bio-8880-exec-1] INFO  com.repairagency.dao.ResponsesDao  - Create Responses: + Response{id=0, date='2019-11-19, response='Thomas had a good knowledge of our LG refrigerator and easily identified why the ice maker wasn't working. He ordered the part and came back to change it out and it works perfectly now. Tom and Sam work tirelessly to make calling them a good experience.', userId='1', orderId='1'}
+
+[http-bio-8880-exec-1] INFO  com.repairagency.service.ResponsesService  - response create : Response{id=0, date='2019-11-19, response='Thomas had a good knowledge of our LG refrigerator and easily identified why the ice maker wasn't working. He ordered the part and came back to change it out and it works perfectly now. Tom and Sam work tirelessly to make calling them a good experience.', userId='1', orderId='1'}
+
+[http-bio-8880-exec-1] INFO  com.repairagency.web.command.ResponsesCommand  - response : Thomas had a good knowledge of our LG refrigerator and easily identified why the ice maker wasn't working. He ordered the part and came back to change it out and it works perfectly now. Tom and Sam work tirelessly to make calling them a good experience.
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-1] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/ui/images/home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.StaticResourceFilter  - Static resource: /ui/images/home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /home-19-.jpg
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /home-19-.jpg

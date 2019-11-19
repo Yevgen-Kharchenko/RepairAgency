@@ -57,7 +57,7 @@ public class ResponsesDao extends AbstractDao<Responses> {
 
     @Override
     public boolean create(Responses entity) {
-        LOG.debug("Create Responses: + " + entity);
+        LOG.info("Create Responses: + " + entity);
         return createUpdate(INSERT_INTO_RESPONSES, ps -> {
             ps.setDate(1, Date.valueOf(entity.getDate()));
             ps.setString(2, entity.getResponse());
