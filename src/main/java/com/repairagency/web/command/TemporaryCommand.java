@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import static com.repairagency.constant.PageUrlConstants.SERVICE_TEMPORARY_PAGE;
 
-public class TemporalyCommand implements Command {
+public class TemporaryCommand implements Command {
     @Override
     public Page perform(HttpServletRequest request) {
         return new Page(SERVICE_TEMPORARY_PAGE);

@@ -16,7 +16,7 @@ public class CommandFactory {
         getCommandMap.put("/404", defaultCommand);
         getCommandMap.put("/about", new AboutUsCommand());
         getCommandMap.put("/contacts", new ContactsCommand());
-        getCommandMap.put("/503", new TemporalyCommand());
+        getCommandMap.put("/503", new TemporaryCommand());
         getCommandMap.put("/admin", new AdminCommand());
         getCommandMap.put("/blog-masonry", new BlogMasonryCommand());
         getCommandMap.put("/blog-post", new BlogPostCommand());
