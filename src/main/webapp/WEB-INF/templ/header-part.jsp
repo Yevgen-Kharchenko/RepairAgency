@@ -110,6 +110,12 @@
                             <c:choose>
                                 <c:when test="${user.role=='ADMIN'}">
                                     <a href="admin"><fmt:message key="account"/></a>
+                                    <ul class="rd-navbar-dropdown tabs-nav">
+                                        <li><a href="admin"><fmt:message key="admin"/></a></li>
+                                        <li><a href="manager"><fmt:message key="manager"/></a></li>
+                                        <li><a href="master"><fmt:message key="master"/></a></li>
+                                        <li><a href="user"><fmt:message key="user"/></a></li>
+                                    </ul>
                                 </c:when>
                                 <c:when test="${user.role=='MANAGER'}">
                                     <a href="manager"><fmt:message key="account"/></a>

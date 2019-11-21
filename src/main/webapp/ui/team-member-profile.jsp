@@ -15,24 +15,7 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        <section class="section-40 section-lg-64 bg-gray-lighter">
-            <div class="breadcrumbs-wrap">
-                <div class="shell text-center">
-                    <div class="wrap-sm-justify-horizontal">
-                        <div class="text-sm-left">
-                            <h1>Team Member Profile</h1>
-                        </div>
-                        <div class="offset-top-22 offset-sm-top-0 text-sm-right">
-                            <ul class="breadcrumbs-custom">
-                                <li><a href="">Home</a></li>
-                                <li><a href="about">Pages</a></li>
-                                <li class="active">Team Member Profile</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <section class="section-60 section-sm-top-90 section-sm-bottom-110">
             <div class="profile">
                 <div class="shell">

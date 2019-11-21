@@ -15,144 +15,80 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        <div class="text-sm-left">
-            <h1>User Page</h1>
-           <h2 ${count}></h2>
+
+<section class="section-top-60 section-sm-top-90 section-sm-bottom-110">
+      <div class="shell">
+        <div class="range">
+          <div class="cell-md-10 cell-lg-8">
+            <h5>Hello, ${user.username}!</h5>
+			<h6>You can view your orders or change your <a href="profile.jsp" class="search_link">profile!</a></h6>
+            <hr>
+            <div class="offset-top-32">
+              <div class="table-mobile">
+                <table class="table table-primary table-striped-variant-1">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Repair type</th>
+                        <th>Price</th>
+                        <th>Edit</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2019-09-15</td>
+                        <td>REFRIGERATOR</td>
+                        <td>500,00</td>
+                        <td>
+                            <a href="profile.jsp" class="search_link"><span
+                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2019-09-15</td>
+                        <td>REFRIGERATOR</td>
+                        <td>500,00</td>
+                        <td>
+                            <a href="profile.jsp" class="search_link"><span
+                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2019-09-15</td>
+                        <td>REFRIGERATOR</td>
+                        <td>500,00</td>
+                        <td>
+                            <a href="profile.jsp" class="search_link"><span
+                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2019-09-15</td>
+                        <td>REFRIGERATOR</td>
+                        <td>500,00</td>
+                        <td>
+                            <a href="profile.jsp" class="search_link"><span
+                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-<section class="section-top-60 section-sm-top-90">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h5>Boxed Grid System</h5>
-                <hr>
-            </div>
+      </div>
+    </section>
+
+        </main>
+<c:import url="/WEB-INF/templ/footer-part.jsp"/>
         </div>
-        <div class="row grid-system-row offset-top-32">
-            <div class="col-xs-12">
-                <div class="grid-element">
-                    <h6>1/1</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row grid-system-row offset-top-32">
-            <div class="col-xs-6">
-                <div class="grid-element">
-                    <h6>1/2</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="grid-element">
-                    <h6>1/2</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row grid-system-row offset-top-32">
-            <div class="col-xs-4">
-                <div class="grid-element">
-                    <h6>1/3</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="grid-element">
-                    <h6>1/3</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="grid-element">
-                    <h6>1/3</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row grid-system-row offset-top-32">
-            <div class="col-xs-3">
-                <div class="grid-element">
-                    <h6>1/4</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you.</p>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div class="grid-element">
-                    <h6>1/4</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you.</p>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div class="grid-element">
-                    <h6>1/4</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you.</p>
-                </div>
-            </div>
-            <div class="col-xs-3">
-                <div class="grid-element">
-                    <h6>1/4</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row grid-system-row offset-top-32">
-            <div class="col-xs-2">
-                <div class="grid-element grid-element-spacing-1">
-                    <h6>1/6</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function.</p>
-                </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="grid-element grid-element-spacing-1">
-                    <h6>1/6</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function.</p>
-                </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="grid-element grid-element-spacing-1">
-                    <h6>1/6</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function.</p>
-                </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="grid-element grid-element-spacing-1">
-                    <h6>1/6</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function.</p>
-                </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="grid-element grid-element-spacing-1">
-                    <h6>1/6</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function.</p>
-                </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="grid-element grid-element-spacing-1">
-                    <h6>1/6</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row grid-system-row offset-top-32">
-            <div class="col-xs-4">
-                <div class="grid-element">
-                    <h6>1/3</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you.</p>
-                </div>
-            </div>
-            <div class="col-xs-8">
-                <div class="grid-element min-height-lg-204">
-                    <h6>2/3</h6>
-                    <p>Do you need tablet repair service? Its easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    </main>
-    <c:import url="/WEB-INF/templ/footer-part.jsp"/>
-</div>
 <c:import url="/WEB-INF/templ/form-output-global.jsp"/>
-</body>
-<!-- End Google Tag Manager -->
-</html>
+        </body>
+        <!-- End Google Tag Manager -->
+        </html>

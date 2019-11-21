@@ -8,6 +8,7 @@ import com.repairagency.web.data.Page;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import static com.repairagency.constant.PageUrlConstants.HOME_PAGE;
 import static com.repairagency.constant.PageUrlConstants.LOGIN_PAGE;
 
 public class LoginCommand extends UniCommand {
@@ -33,7 +34,7 @@ public class LoginCommand extends UniCommand {
         if (userId != 0) {
             User user = userService.getUser(userId);
             session.setAttribute("user", user);
-            return new Page("/", true);
+            return new Page(HOME_PAGE);
         }
 
         session.setAttribute("error", "Login or password invalid!");

@@ -18,7 +18,7 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        User in session ${user.username}, ${user.role}, ${user.id}
+
 
         <div data-autoplay="false" data-slide-effect="fade" class="swiper-container swiper-slider">
             <div class="swiper-wrapper">
@@ -495,7 +495,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-4 isotope-item">
                             <article class="post post-variant-1">
-                                <figure class="post-image"><img src="ui/images/home-19-.jpg" alt="" width="370"
+                                <figure class="post-image"><img src="ui/images/home-19-370x247.jpg" alt="" width="370"
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">

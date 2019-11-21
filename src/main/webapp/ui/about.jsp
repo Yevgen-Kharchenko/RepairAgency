@@ -15,24 +15,7 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        <section class="section-40 section-lg-64 bg-gray-lighter">
-            <div class="breadcrumbs-wrap">
-                <div class="shell text-center">
-                    <div class="wrap-sm-justify-horizontal">
-                        <div class="text-sm-left">
-                            <h1>About Us</h1>
-                        </div>
-                        <div class="offset-top-22 offset-sm-top-0 text-sm-right">
-                            <ul class="breadcrumbs-custom">
-                                <li><a href="">Home</a></li>
-                                <li><a href="#">Pages</a></li>
-                                <li class="active">About Us</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <section class="section-60 section-sm-90 section-md-110">
             <div class="shell">
                 <div class="range range-sm-center">
@@ -45,10 +28,10 @@
                         </div>
                     </div>
                     <div class="cell-sm-8 cell-md-6 offset-top-45 offset-md-top-0">
-                        <h2>A Few Words About Us</h2>
+                        <h2><fmt:message key="a.few"/></h2>
                         <div class="divider divider-md divider-primary divider-sm-left"></div>
-                        <p class="offset-top-30 offset-md-top-55">Service Center has been in operation in San Diego since 1982. We are a family-owned and family-run business, which means customers receive more care than at a franchise or large corporation.</p>
-                        <p>Our goal is high quality service and customer satisfaction. This is achieved through our highly qualified professional team of friendly technicians whose main goal is to satisfy your needs. We are proud of our continuous relationships with over 100,000 (and growing) households.</p>
+                        <p class="offset-top-30 offset-md-top-55"><fmt:message key="service.center"/>.</p>
+                        <p><fmt:message key="our.goal"/></p>
                     </div>
                 </div>
             </div>
@@ -57,7 +40,7 @@
             <div class="shell">
                 <div class="range text-center">
                     <div class="cell-xs-12">
-                        <h2>Our Advantages</h2>
+                        <h2><fmt:message key="our.advantages"/></h2>
                         <div class="divider divider-md divider-primary"></div>
                     </div>
                 </div>
@@ -69,7 +52,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Satisfaction Guaranteed</p>
+                                <p class="text-style-2"><fmt:message key="satisfaction.guaranteed"/></p>
                             </div>
                         </div>
                     </div>
@@ -80,7 +63,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Years on Market</p>
+                                <p class="text-style-2"><fmt:message key="years"/></p>
                             </div>
                         </div>
                     </div>
@@ -91,7 +74,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Happy Customers</p>
+                                <p class="text-style-2"><fmt:message key="happy.customer"/></p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +85,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Items of Equipment Repaired</p>
+                                <p class="text-style-2"><fmt:message key="items"/></p>
                             </div>
                         </div>
                     </div>
@@ -113,7 +96,7 @@
             <div class="shell">
                 <div class="range text-center">
                     <div class="cell-xs-12">
-                        <h2>Our Team</h2>
+                        <h2><fmt:message key="our.team"/></h2>
                         <div class="divider divider-md divider-primary"></div>
                     </div>
                 </div>
@@ -122,8 +105,8 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile">Philip Hanson</a></h6>
-                                <p class="text-silver-chalice">Electrician</p>
+                                <h6><a href="team-member-profile"><fmt:message key="philip.hanso"/></a></h6>
+                                <p class="text-silver-chalice"><fmt:message key="electrician"/></p>
                             </div>
                         </div>
                     </div>
@@ -131,8 +114,8 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile">Adam Fowler</a></h6>
-                                <p class="text-silver-chalice">Plumber</p>
+                                <h6><a href="team-member-profile"><fmt:message key="adam.fowler"/></a></h6>
+                                <p class="text-silver-chalice"><fmt:message key="plumber"/></p>
                             </div>
                         </div>
                     </div>
@@ -140,8 +123,8 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile">Phillip Miller</a></h6>
-                                <p class="text-silver-chalice">Serviceman</p>
+                                <h6><a href="team-member-profile"><fmt:message key="phillip.miller"/></a></h6>
+                                <p class="text-silver-chalice"><fmt:message key="serviceman"/></p>
                             </div>
                         </div>
                     </div>
@@ -149,15 +132,15 @@
                         <div class="thumbnail-variant-1">
                             <figure class="thumbnail-image"><img src="ui/images/270x270.jpg" alt="" width="270" height="270"/> </figure>
                             <div class="caption">
-                                <h6><a href="team-member-profile">Billy Gibson</a></h6>
-                                <p class="text-silver-chalice">Supervisor</p>
+                                <h6><a href="team-member-profile"><fmt:message key="billy.gibson"/></a></h6>
+                                <p class="text-silver-chalice"><fmt:message key="superviso"/></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="shell offset-top-30 offset-sm-top-60">
-                <div class="text-center"><a href="team" class="btn btn-primary min-width-230">view all team members</a></div>
+                <div class="text-center"><a href="team" class="btn btn-primary min-width-230"><fmt:message key="view.all"/></a></div>
             </div>
         </section>
     </main>

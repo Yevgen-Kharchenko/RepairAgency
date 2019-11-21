@@ -15,28 +15,12 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-        <section class="section-40 section-lg-64 bg-gray-lighter">
-            <div class="breadcrumbs-wrap">
-                <div class="shell text-center">
-                    <div class="wrap-sm-justify-horizontal">
-                        <div class="text-sm-left">
-                            <h1>Contacts</h1>
-                        </div>
-                        <div class="offset-top-22 offset-sm-top-0 text-sm-right">
-                            <ul class="breadcrumbs-custom">
-                                <li><a href="">Home</a></li>
-                                <li class="active">Contacts</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <section class="section-60 section-sm-90">
             <div class="shell">
                 <div class="range">
                     <div class="cell-md-8">
-                        <h5>Get in Touch</h5>
+                        <h5>Contacts</h5>
                         <hr>
                         <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally.</p>
                         <p>We would be happy to answer your questions.</p>
