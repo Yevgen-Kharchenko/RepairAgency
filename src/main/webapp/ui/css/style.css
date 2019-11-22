@@ -10628,7 +10628,7 @@ dl {
 }
 
 .list-bordered a, .list-bordered a:active, .list-bordered a:focus {
-  color: #ffffff;
+  color: #313132
 }
 
 .list-bordered a:hover {
@@ -28136,7 +28136,7 @@ footer  .contact-info{max-width:none}
 
 .grid-element {
   padding: 12px 5px;
-  color: #ffffff;
+  color: #313132;
   background: #f9f9f9;
 }
 

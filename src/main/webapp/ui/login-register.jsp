@@ -20,7 +20,7 @@
         <c:out value ="${error}"/>
     </c:if>
 </h5></div>
-        <section class="section-60 section-sm-top-40">
+        <section class="section-10 section-sm-top-10">
             <div class="shell">
                 <div class="range range-sm-center">
                     <div class="cell-sm-6 cell-md-5 cell-lg-4">

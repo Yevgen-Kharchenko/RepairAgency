@@ -16,12 +16,12 @@
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
 
-<section class="section-top-60 section-sm-top-90 section-sm-bottom-110">
+<section class="section-top-20 section-sm-top-40 section-sm-bottom-110">
       <div class="shell">
         <div class="range">
           <div class="cell-md-10 cell-lg-8">
             <h5>Hello, ${user.username}!</h5>
-			<h6>You can view your orders or change your <a href="profile.jsp" class="search_link">profile!</a></h6>
+			<h6>You can view your orders or change your <a href="profile" class="search_link">profile!</a></h6>
             <hr>
             <div class="offset-top-32">
               <div class="table-mobile">
@@ -32,6 +32,7 @@
                         <th>Date</th>
                         <th>Repair type</th>
                         <th>Price</th>
+						<th>Status</th>
                         <th>Edit</th>
                     </tr>
                     </thead>
@@ -40,9 +41,10 @@
                         <td>1</td>
                         <td>2019-09-15</td>
                         <td>REFRIGERATOR</td>
+						<td>NEW</td>
                         <td>500,00</td>
                         <td>
-                            <a href="profile.jsp" class="search_link"><span
+                            <a href="order-comment" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>
@@ -50,9 +52,10 @@
                         <td>2</td>
                         <td>2019-09-15</td>
                         <td>REFRIGERATOR</td>
+						<td>OFFER</td>
                         <td>500,00</td>
                         <td>
-                            <a href="profile.jsp" class="search_link"><span
+                            <a href="order-comment" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>
@@ -60,9 +63,10 @@
                         <td>3</td>
                         <td>2019-09-15</td>
                         <td>REFRIGERATOR</td>
+						<td>IN_PROGRESS</td>
                         <td>500,00</td>
                         <td>
-                            <a href="profile.jsp" class="search_link"><span
+                            <a href="order-comment" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>
@@ -70,9 +74,10 @@
                         <td>4</td>
                         <td>2019-09-15</td>
                         <td>REFRIGERATOR</td>
+						<td>CLOSED</td>
                         <td>500,00</td>
                         <td>
-                            <a href="profile.jsp" class="search_link"><span
+                            <a href="order-comment" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>

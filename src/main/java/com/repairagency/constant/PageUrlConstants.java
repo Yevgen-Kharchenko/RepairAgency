@@ -21,4 +21,6 @@ public class PageUrlConstants {
     public static final String RESPONSES_PAGE = "/ui/responses.jsp";
     public static final String TEAM_PAGE = "/ui/team.jsp";
     public static final String TEAM_PROFILE_PAGE = "/ui/team-member-profile.jsp";
+    public static final String USER_PROFILE_PAGE = "/ui/profile.jsp";
+    public static final String ORDER_COMMENT_PAGE = "/ui/order-comment.jsp";
 }

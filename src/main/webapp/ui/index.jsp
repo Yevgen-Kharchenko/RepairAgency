@@ -34,8 +34,7 @@
                                         <h5 class="text-style-3"><fmt:message key="industry.leader"/></h5>
                                     </div>
                                     <div class="offset-top-35"><a href="order"
-                                                                  class="btn btn-primary btn-mod-1">Make An
-                                        Order</a></div>
+                                                                  class="btn btn-primary btn-mod-1"><fmt:message key="make.an"/></a></div>
                                 </div>
                             </div>
                         </div>
@@ -46,10 +45,8 @@
                         <div class="shell text-center text-sm-left">
                             <div class="range">
                                 <div class="cell-sm-8 cell-md-8 cell-lg-6">
-                                    <h1> PROFESSIONAL REPAIR SERVICES</h1>
-                                    <div class="offset-top-35 offset-sm-top-65"><a href="order"
-                                                                                   class="btn btn-primary btn-mod-1">Make
-                                        An Order</a></div>
+                                    <h1><fmt:message key="professional"/> </h1>
+                                    <div class="offset-top-35 offset-sm-top-65"><a href="order" class="btn btn-primary btn-mod-1"><fmt:message key="make.an"/></a></div>
                                 </div>
                             </div>
                         </div>
@@ -60,13 +57,12 @@
                         <div class="shell text-center text-sm-left">
                             <div class="range">
                                 <div class="cell-sm-8 cell-md-8 cell-lg-7">
-                                    <h1> WE CAN DO ANYTHING!</h1>
+                                    <h1><fmt:message key="we.can"/></h1>
                                     <div class="swiper-slide-text">
-                                        <h5 class="text-style-3"> We offer the best repair service for all kinds. </h5>
+                                        <h5 class="text-style-3"><fmt:message key="we.offer"/></h5>
                                     </div>
                                     <div class="offset-top-35"><a href="order"
-                                                                  class="btn btn-primary btn-mod-1">Make An
-                                        Order</a></div>
+                                                                  class="btn btn-primary btn-mod-1"><fmt:message key="make.an"/></a></div>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +86,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Satisfaction Guaranteed</p>
+                                <p class="text-style-2"><fmt:message key="satisfaction.guaranteed"/></p>
                             </div>
                         </div>
                     </div>
@@ -101,7 +97,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Years on Market</p>
+                                <p class="text-style-2"><fmt:message key="years"/></p>
                             </div>
                         </div>
                     </div>
@@ -112,7 +108,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Happy Customers</p>
+                                <p class="text-style-2"><fmt:message key="happy.customers"/></p>
                             </div>
                         </div>
                     </div>
@@ -123,7 +119,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2">Items of Equipment Repaired</p>
+                                <p class="text-style-2"><fmt:message key="items"/></p>
                             </div>
                         </div>
                     </div>
@@ -136,9 +132,8 @@
                 <div class="shell text-center">
                     <div class="range">
                         <div class="cell-xs-12">
-                            <h2>Our Services</h2>
-                            <p class="big">You can rest assured that repairs are only performed with your prior approval
-                                of the work</p>
+                            <h2><fmt:message key="our.services"/></h2>
+                            <p class="big"><fmt:message key="text.a"/></p>
                         </div>
                     </div>
                 </div>
@@ -313,9 +308,7 @@
                                     </div>
                                 </div>
                                 <div class="quote-body">
-                                    <p><q>Great service from this family-owned (and veteran-owned) company! They fixed
-                                        my washer machine in a timely and professional manner. Highly recommend. Thanks,
-                                        guys, for a good work!</q></p>
+                                    <p><q><fmt:message key="text.b"/></q></p>
                                 </div>
                             </blockquote>
                         </div>
@@ -333,10 +326,7 @@
                                     </div>
                                 </div>
                                 <div class="quote-body">
-                                    <p><q> Thomas had a good knowledge of our LG refrigerator and easily identified why
-                                        the ice maker wasn't working. He ordered the part and came back to change it out
-                                        and it works perfectly now. Tom and Sam work tirelessly to make calling them a
-                                        good experience. </q></p>
+                                    <p><q><fmt:message key="text.c"/></q></p>
                                 </div>
                             </blockquote>
                         </div>

@@ -32,11 +32,15 @@ public class CommandFactory {
         getCommandMap.put("/team-member-profile", new TeamProfileCommand());
         getCommandMap.put("/language", new LanguageCommand());
         getCommandMap.put("/logout", new LogoutCommand());
+        getCommandMap.put("/profile", new ProfileCommand());
+        getCommandMap.put("/order-comment", new OrderCommentCommand());
 
         postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("/login", new LoginCommand());
         postCommandMap.put("/register", new RegisterCommand());
         postCommandMap.put("/responses", new ResponsesCommand());
+        postCommandMap.put("/profile", new ProfileCommand());
+        postCommandMap.put("/order-comment", new OrderCommentCommand());
     }
 
     private CommandFactory() {

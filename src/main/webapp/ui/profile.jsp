@@ -15,105 +15,60 @@
 <div class="page">
     <c:import url="/WEB-INF/templ/header-part.jsp"/>
     <main class="page-content">
-<div class="range range-sm-center"><h5>
-    <c:if test="${not empty error}">
-        <c:out value ="${error}"/>
-    </c:if>
-</h5></div>
-        <section class="section-60 section-sm-top-40">
-            <div class="shell">
-                <div class="range range-sm-center">
-                    <div class="cell-sm-6 cell-md-5 cell-lg-4">
-                        <div class="responsive-tabs responsive-tabs-default responsive-tabs-horizontal responsive-tabs-silver-chalice">
-                            <ul class="resp-tabs-list text-center">
-                                <li>Profile</li>
-                                <li>Edit</li>
-                            </ul>
-                            <div class="resp-tabs-container offset-top-40">
-                                <div class="animated fadeIn">
-
-                                    <section class="section-60 section-sm-top-90 section-sm-bottom-110">
-									  <div class="shell">
-										<div class="range">
-										  <div class="cell-md-10 cell-lg-8">
-											<h5>Bordered Table</h5>
-											<hr>
-											<div class="offset-top-30">
-											  <div class="table-mobile">
-												<table class="table table-bordered table-striped">
-												  <thead>
-													<tr>
-													  
-													  <th>First Name</th>
-													  <th>Last Name</th>
-													  
-													</tr>
-												  </thead>
-												  <tbody>
-													<tr>
-													  
-													  <td>First Name</td>
-													  <td>Richard</td>
-													  
-													</tr>
-													<tr>
-													  <
-													  <td>Last Name</td>
-													  <td>Hawkins</td>
-													  
-													</tr>
-													<tr>
-													  
-													  <td>email</td>
-													  <td>@brucebrooks</td>
-													  
-													</tr>
-													<tr>
-													  
-													  <td>Phone</td>
-													  <td>123-456-78-90</td>
-													  
-													</tr>
-												  </tbody>
-												</table>
-											  </div>
-											</div>
-										  </div>
-										</div>
-									  </div>
-								</section>
-                                </div>
-
-                                <div class="animated fadeIn">
-                                    
-                                    <div class="offset-top-25">
-                                        <form class="rd-mailform text-left" action="register" method="post">
-                                            <div class="form-group">
-                                                <label for="register-username" class="form-label-outside">Your name</label>
-                                                <input id="register-username" type="text" name="username" data-constraints="@Required" class="form-control">
-                                            </div>
-                                            <div class="form-group offset-top-18">
-                                                <label for="register-email" class="form-label-outside">E-Mail</label>
-                                                <input id="register-email" type="text" name="login" data-constraints="@Email @Required" class="form-control">
-                                            </div>
-                                            <div class="form-group offset-top-18">
-                                                <label for="register-password" class="form-label-outside">Password</label>
-                                                <input id="register-password" type="password" name="password" data-constraints="@Required" class="form-control">
-                                            </div>
-
-                                            <div class="offset-top-18 text-center">
-                                                <button type="submit" class="btn btn-primary">Edit</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+<section class="section-top-20 section-sm-top-40 section-sm-bottom-110">
+      <div class="shell">
+        <div class="range">
+          <div class="cell-md-10 cell-lg-8">
+            <h5>Edit Profile</h5>
+            <hr>
+            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform">
+              <div class="range">
+                <div class="cell-sm-6">
+                  <div class="form-group">
+                    <label for="contact-first-name" class="form-label-outside">First name</label>
+                    <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
+                  </div>
                 </div>
-            </div>
-        </section>
+                <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
+                  <div class="form-group">
+                    <label for="contact-last-name" class="form-label-outside">Last name</label>
+                    <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-6 offset-top-18">
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label-outside">E-mail</label>
+                    <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-6 offset-top-18">
+                  <div class="form-group">
+                    <label for="contact-phone" class="form-label-outside">Phone</label>
+                    <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-6 offset-top-18">
+                  <div class="form-group">
+                    <label for="register-password" class="form-label-outside">Password</label>
+                        <input id="register-password" type="password" name="password" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+                <div class="cell-sm-6 offset-top-18">
+                  <div class="form-group">
+                    <label for="register-confirm-password" class="form-label-outside">Confirm password</label>
+                        <input id="register-confirm-password" type="password" name="password" data-constraints="@Required" class="form-control">
+                  </div>
+                </div>
+				</div>
+                <div class="cell-xs-12 offset-top-30">
+                  <button type="submit" class="btn btn-primary">Edit Profile</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     </main>
     <c:import url="/WEB-INF/templ/footer-part.jsp"/>
 </div>
