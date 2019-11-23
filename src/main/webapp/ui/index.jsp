@@ -108,7 +108,7 @@
                             </div>
                             <div class="divider-center divider-md divider-denim"></div>
                             <div class="counter-text">
-                                <p class="text-style-2"><fmt:message key="happy.customers"/></p>
+                                <p class="text-style-2"><fmt:message key="happy.customer"/></p>
                             </div>
                         </div>
                     </div>

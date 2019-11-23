@@ -39,7 +39,7 @@
     <footer class="page-foot">
         <div class="shell text-center">
             <p class="rights">&#169;&nbsp;<span id="copyright-year"></span><fmt:message key="all.rights"/>
-                <a href="privacy"><fmt:message key="privacy.policy"/></a> </p>
+                <a href="privacy"><fmt:message key="privacy.policy.terms"/></a> </p>
         </div>
     </footer>
 </div>

@@ -293,11 +293,11 @@
                                     <h5>Categories</h5>
                                     <hr>
                                     <ul class="list-marked-variant-2 list-marked-gray">
-                                        <li><a href="#">Ice Maker Repair</a></li>
-                                        <li><a href="#">Stove Repair</a></li>
-                                        <li><a href="#">Appliance Parts</a></li>
-                                        <li><a href="#">Microwave Repair</a></li>
-                                        <li><a href="#">Washer Repair</a></li>
+                                        <li><a href="#"><fmt:message key="ice.maker"/></a></li>
+                                        <li><a href="#"><fmt:message key="stove.repair"/></a></li>
+                                        <li><a href="#"><fmt:message key="appliance.parts"/></a></li>
+                                        <li><a href="#"><fmt:message key="microwave.repair"/></a></li>
+                                        <li><a href="#"><fmt:message key="washer.repair"/></a></li>
                                     </ul>
                                 </div>
                                 <div class="list-item">

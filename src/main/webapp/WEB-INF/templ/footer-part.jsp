@@ -27,18 +27,16 @@
                         <div class="max-width-300">
                             <h5 class="h5-variant-1"><fmt:message key="newsletter"/></h5>
                             <hr>
-                            <p class="offset-top-22">Keep up with the latest news, special offers and other discount
-                                information. Enter your e-mail and subscribe to our newsletter.</p>
+                            <p class="offset-top-22"><fmt:message key="keep.up"/></p>
                             <form data-form-output="form-output-global" data-form-type="subscribe" method="post"
                                   action="#"
                                   class="rd-mailform rd-mailform-inline rd-mailform-inline-sm offset-top-10">
                                 <div class="form-group">
-                                    <label for="footer-subscribe-email" class="form-label">Enter your
-                                        e-mail...</label>
+                                    <label for="footer-subscribe-email" class="form-label"><fmt:message key="enter.mail"/></label>
                                     <input id="footer-subscribe-email" type="email" name="email"
                                            data-constraints="@Email @Required" class="form-control">
                                 </div>
-                                <button type="submit" class="btn btn-xs btn-primary btn-no-shadow">subscribe
+                                <button type="submit" class="btn btn-xs btn-primary btn-no-shadow"><fmt:message key="subscribe"/>
                                 </button>
                             </form>
                         </div>
@@ -46,7 +44,7 @@
                     <div class="cell-md-4 cell-lg-5 offset-top-55 offset-md-top-0">
                         <div class="range">
                             <div class="cell-xs-12">
-                                <h5 class="h5-variant-1">Contact Us</h5>
+                                <h5 class="h5-variant-1"><fmt:message key="contact.us"/></h5>
                                 <hr>
                             </div>
                             <div class="cell-xs-5 cell-sm-6 cell-md-12 cell-lg-6 offset-top-18 text-xs-left">
@@ -73,14 +71,12 @@
                                     <div class="unit unit-xs-horizontal unit-spacing-xs">
                                         <div class="unit-left icon-adjust-vertical"><span
                                                 class="icon icon-xs icon-white mdi mdi-map-marker"></span></div>
-                                        <div class="unit-body"><a href="#" class="nowrap">2381 Rosecrans Ave, Suite
-                                            200 El <br>
-                                            CA 90245. USA</a></div>
+                                        <div class="unit-body"><a href="#" class="nowrap"><fmt:message key="rosecrans.ave"/><br><fmt:message key="ca.90245"/></a></div>
                                     </div>
                                     <div class="unit unit-xs-horizontal unit-spacing-xs offset-top-22">
                                         <div class="unit-left icon-adjust-vertical"><span
                                                 class="icon icon-xs icon-white mdi fa-clock-o"></span></div>
-                                        <div class="unit-body"><span>Mon-Fri: 9:00am-6:30pm</span><span>Sat-Sun: 10:00am-6:00pm</span>
+                                        <div class="unit-body"><span><fmt:message key="mon.fri"/></span><span><fmt:message key="sat.sun"/></span>
                                         </div>
                                     </div>
                                 </address>

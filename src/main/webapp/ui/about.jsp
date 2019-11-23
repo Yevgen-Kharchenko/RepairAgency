@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title>About us</title>
+    <title><fmt:message key="about.us"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
