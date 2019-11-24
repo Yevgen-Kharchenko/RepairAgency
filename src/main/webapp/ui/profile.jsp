@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title>Profile</title>
+    <title><fmt:message key="profile2"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -19,49 +19,49 @@
       <div class="shell">
         <div class="range">
           <div class="cell-md-10 cell-lg-8">
-            <h5>Edit Profile</h5>
+            <h5><fmt:message key="edit.profile"/></h5>
             <hr>
             <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform">
               <div class="range">
                 <div class="cell-sm-6">
                   <div class="form-group">
-                    <label for="contact-first-name" class="form-label-outside">First name</label>
+                    <label for="contact-first-name" class="form-label-outside"><fmt:message key="first.name"/></label>
                     <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
                   <div class="form-group">
-                    <label for="contact-last-name" class="form-label-outside">Last name</label>
+                    <label for="contact-last-name" class="form-label-outside"><fmt:message key="last.name"/></label>
                     <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
-                    <label for="contact-email" class="form-label-outside">E-mail</label>
+                    <label for="contact-email" class="form-label-outside"><fmt:message key="email"/></label>
                     <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
-                    <label for="contact-phone" class="form-label-outside">Phone</label>
+                    <label for="contact-phone" class="form-label-outside"><fmt:message key="phone"/></label>
                     <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
-                    <label for="register-password" class="form-label-outside">Password</label>
+                    <label for="register-password" class="form-label-outside"><fmt:message key="password"/></label>
                         <input id="register-password" type="password" name="password" data-constraints="@Required" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
-                    <label for="register-confirm-password" class="form-label-outside">Confirm password</label>
+                    <label for="register-confirm-password" class="form-label-outside"><fmt:message key="confirm.password"/></label>
                         <input id="register-confirm-password" type="password" name="password" data-constraints="@Required" class="form-control">
                   </div>
                 </div>
 				</div>
                 <div class="cell-xs-12 offset-top-30">
-                  <button type="submit" class="btn btn-primary">Edit Profile</button>
+                  <button type="submit" class="btn btn-primary"><fmt:message key="edit.profile"/></button>
                 </div>
               </div>
             </form>

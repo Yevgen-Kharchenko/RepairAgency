@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title>Manager</title>
+    <title><fmt:message key="manager"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -20,18 +20,18 @@
             <div class="shell">
             <div class="range">
                 <div class="cell-md-10 cell-lg-12">
-                    <h5>Hello, ${user.username}!</h5>
-                    <h6>You can view orders by status or change your <a href="profile"
-                                                                        class="search_link">profile!</a></h6>
+                    <h5><fmt:message key="hello"/> ${user.username}!</h5>
+                    <h6><fmt:message key="you.can.manager"/><a href="profile"
+                                                                        class="search_link"><fmt:message key="profile"/></a></h6>
                     <hr>
                     <div class="offset-top-32">
                         <div data-type="accordion" class="responsive-tabs responsive-tabs-horizontal">
                             <ul class="resp-tabs-list">
-                                <li>New</li>
-                                <li>Offer</li>
-                                <li>In progress</li>
-                                <li>Completed</li>
-                                <li>Canceled</li>
+                                <li><fmt:message key="new"/></li>
+								<li><fmt:message key="offer"/></li>
+								<li><fmt:message key="in.progress"/></li>
+								<li><fmt:message key="complete"/></li>
+								<li><fmt:message key="canceled"/></li>
                             </ul>
                             <div class="resp-tabs-container">
                                 <div class="animated fadeIn">
@@ -44,15 +44,15 @@
                                                             <table class="table table-primary table-striped-variant-1">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th>Order ID</th>
-                                                                    <th>Date</th>
-                                                                    <th>Repair type</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>E-mail</th>
-                                                                    <th>Phone</th>
-                                                                    <th>Price</th>
-                                                                    <th>Edit</th>
+                                                                    <th><fmt:message key="order.id"/></th>
+																	<th><fmt:message key="date"/></th>
+																	<th><fmt:message key="repair.type"/></th>
+																	<th><fmt:message key="first.name"/></th>
+																	<th><fmt:message key="last.name"/></th>
+																	<th><fmt:message key="email"/></th>
+																	<th><fmt:message key="phone"/></th>
+																	<th><fmt:message key="price"/></th>
+																	<th><fmt:message key="edit"/></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -131,15 +131,15 @@
                                                             <table class="table table-primary table-striped-variant-1">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th>Order ID</th>
-                                                                    <th>Date</th>
-                                                                    <th>Repair type</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>E-mail</th>
-                                                                    <th>Phone</th>
-                                                                    <th>Price</th>
-                                                                    <th>Edit</th>
+                                                                    <th><fmt:message key="order.id"/></th>
+																	<th><fmt:message key="date"/></th>
+																	<th><fmt:message key="repair.type"/></th>
+																	<th><fmt:message key="first.name"/></th>
+																	<th><fmt:message key="last.name"/></th>
+																	<th><fmt:message key="email"/></th>
+																	<th><fmt:message key="phone"/></th>
+																	<th><fmt:message key="price"/></th>
+																	<th><fmt:message key="edit"/></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -218,15 +218,15 @@
                                                             <table class="table table-primary table-striped-variant-1">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th>Order ID</th>
-                                                                    <th>Date</th>
-                                                                    <th>Repair type</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>E-mail</th>
-                                                                    <th>Phone</th>
-                                                                    <th>Price</th>
-                                                                    <th>Edit</th>
+                                                                    <th><fmt:message key="order.id"/></th>
+																	<th><fmt:message key="date"/></th>
+																	<th><fmt:message key="repair.type"/></th>
+																	<th><fmt:message key="first.name"/></th>
+																	<th><fmt:message key="last.name"/></th>
+																	<th><fmt:message key="email"/></th>
+																	<th><fmt:message key="phone"/></th>
+																	<th><fmt:message key="price"/></th>
+																	<th><fmt:message key="edit"/></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -305,15 +305,15 @@
                                                             <table class="table table-primary table-striped-variant-1">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th>Order ID</th>
-                                                                    <th>Date</th>
-                                                                    <th>Repair type</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>E-mail</th>
-                                                                    <th>Phone</th>
-                                                                    <th>Price</th>
-                                                                    <th>Edit</th>
+                                                                    <th><fmt:message key="order.id"/></th>
+																	<th><fmt:message key="date"/></th>
+																	<th><fmt:message key="repair.type"/></th>
+																	<th><fmt:message key="first.name"/></th>
+																	<th><fmt:message key="last.name"/></th>
+																	<th><fmt:message key="email"/></th>
+																	<th><fmt:message key="phone"/></th>
+																	<th><fmt:message key="price"/></th>
+																	<th><fmt:message key="edit"/></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -392,15 +392,15 @@
                                                             <table class="table table-primary table-striped-variant-1">
                                                                 <thead>
                                                                 <tr>
-                                                                    <th>Order ID</th>
-                                                                    <th>Date</th>
-                                                                    <th>Repair type</th>
-                                                                    <th>First Name</th>
-                                                                    <th>Last Name</th>
-                                                                    <th>E-mail</th>
-                                                                    <th>Phone</th>
-                                                                    <th>Price</th>
-                                                                    <th>Edit</th>
+                                                                    <th><fmt:message key="order.id"/></th>
+																	<th><fmt:message key="date"/></th>
+																	<th><fmt:message key="repair.type"/></th>
+																	<th><fmt:message key="first.name"/></th>
+																	<th><fmt:message key="last.name"/></th>
+																	<th><fmt:message key="email"/></th>
+																	<th><fmt:message key="phone"/></th>
+																	<th><fmt:message key="price"/></th>
+																	<th><fmt:message key="edit"/></th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>

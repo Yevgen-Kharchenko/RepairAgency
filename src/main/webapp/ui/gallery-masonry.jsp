@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title></title>
+    <title><fmt:message key="gallery"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-xs-12">
-                        <h2>Masonry Gallery</h2>
+                        <h2><fmt:message key="gallery."/></h2>
                         <div class="divider divider-md divider-primary"></div>
                     </div>
                 </div>
@@ -28,10 +28,10 @@
                     <div class="col-xs-12">
                         <div class="isotope-filters isotope-filters-horizontal">
                             <ul class="list-inline">
-                                <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active">All</a></li>
-                                <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#">Tab 1</a></li>
-                                <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#">Tab 2</a></li>
-                                <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="#">Tab 3</a></li>
+                                <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active"><fmt:message key="all"/></a></li>
+                                <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#"><fmt:message key="tab"/> 1</a></li>
+                                <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#"><fmt:message key="tab"/> 2</a></li>
+                                <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="#"><fmt:message key="tab"/> 3</a></li>
                             </ul>
                         </div>
                     </div>
@@ -39,72 +39,72 @@
                         <div data-isotope-layout="masonry" data-isotope-group="gallery" data-photo-swipe-gallery="gallery" class="row isotope isotope-spacing-1">
                             <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="ui/images/370x240.jpg" alt="" width="370" height="240"/> </figure>
-                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/home-16-370x247.jpg" alt="" width="370" height="240"/> </figure>
+                                    <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
-                                            <h6>Professional Consultations</h6>
-                                            <p>Looking for an answer to your question connected with repair of modern equipment? We can help.</p>
+                                            <h6><fmt:message key="professional.consultations"/></h6>
+                                            <p><fmt:message key="looking.for"/></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div data-filter="Category 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="ui/images/370x510.jpg" alt="" width="370" height="510"/> </figure>
-                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/gallery-masonry-4-370x510.jpg" alt="" width="370" height="510"/> </figure>
+                                    <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
-                                            <h6>Gas Stoves</h6>
-                                            <p>If you have just bought a new stove or need a repair of a used gas equipment, just contact our specialists.</p>
+                                            <h6><fmt:message key="gas.stoves"/></h6>
+                                            <p><fmt:message key="if.you.have"/></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="ui/images/370x240.jpg" alt="" width="370" height="240"/> </figure>
-                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/home-17-370x247.jpg" alt="" width="370" height="240"/> </figure>
+                                    <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
-                                            <h6>Parts Department</h6>
-                                            <p>We have a wide-ranging inventory of commonly used parts for your major household appliances.</p>
+                                            <h6><fmt:message key="parts.department"/></h6>
+                                            <p><fmt:message key="we.have"/></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="ui/images/370x510.jpg" alt="" width="370" height="510"/> </figure>
-                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/gallery-masonry-2-370x510.jpg" alt="" width="370" height="510"/> </figure>
+                                    <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
-                                            <h6>Kitchen Equipment</h6>
-                                            <p>This type of equipment is sometimes very uncertain in its operation, but our services can make them work stable.</p>
+                                            <h6><fmt:message key="kitchen.equipment"/></h6>
+                                            <p><fmt:message key="this.type"/></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="ui/images/370x510.jpg" alt="" width="370" height="510"/> </figure>
-                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/gallery-masonry-6-370x510.jpg" alt="" width="370" height="510"/> </figure>
+                                    <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
-                                            <h6>Small Repair</h6>
-                                            <p>Sometimes our clients need to repair small parts of their devices that they use from day to day.</p>
+                                            <h6><fmt:message key="small.repair"/></h6>
+                                            <p><fmt:message key="sometimes"/></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div data-filter="Category 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item">
                                 <div class="thumbnail thumbnail-variant-4">
-                                    <figure><img src="ui/images/370x240.jpg" alt="" width="370" height="240"/> </figure>
-                                    <a href="ui/images/1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                                    <figure><img src="ui/images/home-18-370x247.jpg" alt="" width="370" height="240"/> </figure>
+                                    <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
                                     <div class="caption"><a href="#" class="thumbnail-link"></a>
                                         <div class="caption-text">
-                                            <h6>Domestic Equipment</h6>
-                                            <p>Have a problem with your washing machine functioning? Our service men will make it work as a new one.</p>
+                                            <h6><fmt:message key="domestic.equipment"/></h6>
+                                            <p><fmt:message key="have.a.problem"/></p>
                                         </div>
                                     </div>
                                 </div>

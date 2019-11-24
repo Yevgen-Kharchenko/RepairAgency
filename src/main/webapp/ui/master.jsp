@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title>Master</title>
+    <title><fmt:message key="master"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -19,18 +19,18 @@
       <div class="shell">
         <div class="range">
           <div class="cell-md-10 cell-lg-8">
-            <h5>Hello, ${user.username}!</h5>
-			<h6>You can make repairs as ordered or change your <a href="profile" class="search_link">profile!</a></h6>
+            <h5><fmt:message key="hello"/> ${user.username}!</h5>
+			<h6><fmt:message key="you.can.master"/><a href="profile" class="search_link"><fmt:message key="profile"/></a></h6>
             <hr>
             <div class="offset-top-32">
               <div class="table-mobile">
                 <table class="table table-primary table-striped-variant-1">
                     <thead>
                     <tr>
-                        <th>Order ID</th>
-                        <th>Date</th>
-                        <th>Repair type</th>
-                        <th>Edit</th>
+                        <th><fmt:message key="order.id"/></th>
+                        <th><fmt:message key="date"/></th>
+						<th><fmt:message key="repair.type"/></th>
+                        <th><fmt:message key="edit"/></th>
                     </tr>
                     </thead>
                     <tbody>

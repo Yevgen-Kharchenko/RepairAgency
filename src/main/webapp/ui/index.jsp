@@ -152,7 +152,7 @@
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services#ice-maker-repair">Ice Maker Repair</a></h5>
+                                            <h5><a href="services#ice-maker-repair"><fmt:message key="ice.maker"/></a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services#stove-repair">Stove Repair</a></h5>
+                                            <h5><a href="services#stove-repair"><fmt:message key="stove.repair"/></a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +174,7 @@
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services#microwave-repair">Microwave Repair</a></h5>
+                                            <h5><a href="services#microwave-repair"><fmt:message key="microwave.repair"/></a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +185,7 @@
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services#washer-repair">Washer Repair</a></h5>
+                                            <h5><a href="services#washer-repair"><fmt:message key="washer.repair"/></a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services#refrigerator-repair">Refrigerator Repair</a></h5>
+                                            <h5><a href="services#refrigerator-repair"><fmt:message key="refrigerator.repair"/></a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +209,7 @@
                                     <div class="product-caption">
                                         <div class="divider divider-sm divider-primary"></div>
                                         <div class="product-title">
-                                            <h5><a href="services#range-hood-repair">Range Hood Repair</a></h5>
+                                            <h5><a href="services#range-hood-repair"><fmt:message key="range"/></a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -218,8 +218,7 @@
                     </div>
                 </div>
                 <div class="shell offset-top-30 offset-sm-top-40">
-                    <div class="text-center"><a href="services" class="btn btn-primary min-width-230">view all
-                        services</a></div>
+                    <div class="text-center"><a href="services" class="btn btn-primary min-width-230"><fmt:message key="view.all.services"/></a></div>
                 </div>
             </div>
         </section>
@@ -230,7 +229,7 @@
                     <div class="shell">
                         <div class="range text-center">
                             <div class="cell-xs-12">
-                                <h2>Manufacturers</h2>
+                                <h2><fmt:message key="manufacturers"/></h2>
                                 <div class="divider divider-md divider-primary"></div>
                             </div>
                         </div>
@@ -263,7 +262,7 @@
             <div class="shell">
                 <div class="range text-center">
                     <div class="cell-xs-12">
-                        <h2>Happy Customer Testimonials</h2>
+                        <h2><fmt:message key="happy.customer.testimonials"/></h2>
                         <div class="divider divider-md divider-primary"></div>
                     </div>
                 </div>
@@ -292,105 +291,6 @@
                                 </blockquote>
                             </div>
                         </c:forEach>
-
-
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Patrick Carlson</cite>
-                                            <p class="small">Web Designer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q><fmt:message key="text.b"/></q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-14-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Christine Bryant</cite>
-                                            <p class="small">Journalist</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q><fmt:message key="text.c"/></q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-15-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>William Wallace</cite>
-                                            <p class="small">Manager</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this service center. The best service I have ever received
-                                        from an appliance repair company. If needs, I will definitely use them again for
-                                        our repair needs.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-12-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>Jennifer West</cite>
-                                            <p class="small">Housewife</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this company. I had a washer break down and they had it
-                                        back up and running within 30 minutes of service call. The service men were very
-                                        professional and prompt. If you have appliance damages, give them a call, they
-                                        will surely repair.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
-                        <div class="item">
-                            <blockquote class="quote-variant-1">
-                                <div class="quote-meta">
-                                    <div class="unit unit-spacing-xs unit-middle unit-horizontal">
-                                        <div class="unit-left">
-                                            <figure class="quote-image"><img src="ui/images/home-13-47x47.jpg" alt=""
-                                                                             width="47" height="47"/></figure>
-                                        </div>
-                                        <div class="unit-body"><cite>William Wallace</cite>
-                                            <p class="small">Manager</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quote-body">
-                                    <p><q>I highly recommend this service center. The best service I have ever received
-                                        from an appliance repair company. If needs, I will definitely use them again for
-                                        our repair needs.</q></p>
-                                </div>
-                            </blockquote>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -400,7 +300,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <h2>Latest Blog Posts</h2>
+                        <h2><fmt:message key="latest.blog.posts"/></h2>
                         <div class="divider divider-md divider-primary"></div>
                     </div>
                 </div>
@@ -412,21 +312,19 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post">How to Repair a Gas Range or an Electric Range</a>
+                                        <h6><a href="blog-post"><fmt:message key="how.to.repair"/></a>
                                         </h6>
                                     </div>
                                     <div class="post-meta">
-                                        <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                        <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                     </div>
                                     <div class="post-text">
-                                        <p>If the burners on your stove don't light or the oven isn't heating, you can
-                                            usually solve the problem in five minutes and save the cost of a service
-                                            call. A quick cleaning usually puts your range back in business.</p>
+                                        <p><fmt:message key="if.the.burners"/></p>
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#">Repair</a></li>
-                                            <li><a href="#">Range</a></li>
+                                            <li><a href="#"><fmt:message key="repair"/></a></li>
+                                            <li><a href="#"><fmt:message key="range2"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -438,21 +336,18 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post">20 Tools Every Homeowner Should Have</a></h6>
+                                        <h6><a href="blog-post"><fmt:message key="tools.every"/></a></h6>
                                     </div>
                                     <div class="post-meta">
-                                        <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                        <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                     </div>
                                     <div class="post-text">
-                                        <p>You probably have a hammer, but that's just a start. These 20 tools and
-                                            devices are superstars for household projects and repairs. If you love tools
-                                            or just need to stock a basic toolbox, here are the top 20 necessary items
-                                            to get your small project done. How many do you have?</p>
+                                        <p><fmt:message key="you.probably"/></p>
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#">Repair</a></li>
-                                            <li><a href="#">Tools</a></li>
+                                            <li><a href="#"><fmt:message key="repair"/></a></li>
+                                            <li><a href="#"><fmt:message key="tools"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -464,20 +359,18 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post">How to Repair Pipes</a></h6>
+                                        <h6><a href="blog-post"><fmt:message key="how.to.repair3"/></a></h6>
                                     </div>
                                     <div class="post-meta">
-                                        <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                        <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                     </div>
                                     <div class="post-text">
-                                        <p>Pipes in your plumbing system can leak, drip condensate and freeze, causing a
-                                            number of problems. The following steps will instruct you on how to repair
-                                            pipes without calling a plumber.</p>
+                                        <p><fmt:message key="pipes.in"/></p>
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#">Repair</a></li>
-                                            <li><a href="#">Pipes</a></li>
+                                            <li><a href="#"><fmt:message key="repair"/></a></li>
+                                            <li><a href="#"><fmt:message key="pipes"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -489,23 +382,18 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post">How to Repair Android Tablets</a></h6>
+                                        <h6><a href="blog-post"><fmt:message key="how.to.repair2"/></a></h6>
                                     </div>
                                     <div class="post-meta">
-                                        <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                        <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                     </div>
                                     <div class="post-text">
-                                        <p>Do you need tablet repair service? It's easy to fall in love with your
-                                            tablet, as it offers the perfect combination of size and function. Whether
-                                            you use it for work, school, or play, your tablet is a handy companion that
-                                            is easy to take with you. If this convenience has been interrupted by damage
-                                            or malfunction, we can fix the problem quickly so that you can enjoy your
-                                            tablet again.</p>
+                                        <p><fmt:message key="do.you.need"/></p>
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#">Repair</a></li>
-                                            <li><a href="#">Tablet</a></li>
+                                            <li><a href="#"><fmt:message key="repair"/></a></li>
+                                            <li><a href="#"><fmt:message key="tablet"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -517,23 +405,18 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post">Why You Need a Professional for Appliance
-                                            Repair</a></h6>
+                                        <h6><a href="blog-post"><fmt:message key="why.you.need"/></a></h6>
                                     </div>
                                     <div class="post-meta">
-                                        <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                        <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                     </div>
                                     <div class="post-text">
-                                        <p>When it comes to appliances, you need a professional for repair! Why do you
-                                            need a professional? To save yourself money, time, and a headache. Sure
-                                            there are YouTube videos out there that help some people troubleshoot a
-                                            dishwasher, but they don't always give the right information needed to fix
-                                            appliances correctly.</p>
+                                        <p><fmt:message key="when.it"/></p>
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#">Repair</a></li>
-                                            <li><a href="#">Tools</a></li>
+                                            <li><a href="#"><fmt:message key="repair"/></a></li>
+                                            <li><a href="#"><fmt:message key="tools"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -545,22 +428,18 @@
                                                                 height="247"/></figure>
                                 <div class="post-body">
                                     <div class="post-header">
-                                        <h6><a href="blog-post">How to Solder</a></h6>
+                                        <h6><a href="blog-post"><fmt:message key="how.to.solder"/></a></h6>
                                     </div>
                                     <div class="post-meta">
-                                        <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                        <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                     </div>
                                     <div class="post-text">
-                                        <p>This guide focuses on soldering for the beginner and explains how you can
-                                            solder a variety of components using a few different techniques - from the
-                                            classy to the downright caveman. Although soldering can seem daunting at
-                                            first, once you give it a try you will see that in most applications it's
-                                            quite simple to do.</p>
+                                        <p><fmt:message key="this.guide"/></p>
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#">Repair</a></li>
-                                            <li><a href="#">Soldering</a></li>
+                                            <li><a href="#"><fmt:message key="repair"/></a></li>
+                                            <li><a href="#"><fmt:message key="soldering"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -570,16 +449,10 @@
                 </div>
             </div>
             <div class="shell offset-top-30 offset-sm-top-60">
-                <div class="text-center"><a href="blog-masonry" class="btn btn-primary min-width-230">view all blog
-                    posts</a></div>
+                <div class="text-center"><a href="blog-masonry" class="btn btn-primary min-width-230"><fmt:message key="view.all.blog.posts"/></a></div>
             </div>
         </section>
-        <div class="rd-google-map">
-            <div class="overlay rd-google-map__model" onClick="style.pointerEvents='none'"></div>
-            <iframe class="rd-google-map__model"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8404068987!2d-74.2581973675357!3d40.70583158554698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaw!5e0!3m2!1svi!2s!4v1480613299202"
-                    style="border:0;scrollwheel: false;width:100%" allowfullscreen></iframe>
-        </div>
+
     </main>
     <c:import url="/WEB-INF/templ/footer-part.jsp"/>
 </div>

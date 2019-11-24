@@ -24,7 +24,7 @@
                             <div data-isotope-layout="moduloColumns" class="isotope">
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/home-17-370x247.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post"><fmt:message key="how.to.repair"/></a></h6>
@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/home-18-370x247.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post"><fmt:message key="tools.every"/></a></h6>
@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/home-19-370x247.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post"><fmt:message key="how.to.repair2"/></a></h6>
@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 isotope-item">
                                     <article class="post post-variant-2">
-                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/home-20-370x247.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
                                                 <h6><a href="blog-post"><fmt:message key="how.to.repair3"/></a></h6>

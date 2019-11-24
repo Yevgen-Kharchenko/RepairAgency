@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title>Team</title>
+    <title><fmt:message key="team"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -24,9 +24,9 @@
                             <div class="profile-header text-center text-sm-left text-md-center">
                                 <div class="unit unit-sm-horizontal unit-md-vertical unot-spacing-xl unit-middle">
                                     <div class="unit-left">
-                                        <figure><img src="ui/images/350x350.jpg" alt="" width="350" height="350"/> </figure>
+                                        <figure><img src="ui/images/team-11-370x370.jpg" alt="" width="350" height="350"/> </figure>
                                     </div>
-                                    <div class="unit-body"><a href="order" class="btn btn-primary">make an order</a>
+                                    <div class="unit-body"><a href="order" class="btn btn-primary"><fmt:message key="make.an"/></a>
                                         <ul class="list">
                                             <li>
                                                 <div class="unit unit-horizontal unit-align-center unit-sm-align-left unit-md-align-center unit-middle unit-spacing-xxs">
@@ -54,16 +54,16 @@
                         </div>
                         <div class="cell-md-8 offset-top-60 offset-md-top-0">
                             <div class="profile-body">
-                                <h4>Christopher Holmes</h4>
-                                <p class="caption">Manager</p>
+                                <h4><fmt:message key="christopher.holmes"/></h4>
+                                <p class="caption"><fmt:message key="manager"/></p>
                                 <hr>
-                                <p class="offset-top-30">Christopher is the heart and mind of our company. He works with everything concerning repairs and establishes the positive image of our company. He founded Service Center and started to use his creative skills to the companys success.</p>
-                                <p> Mr. Holmes often represents Service Center in many public presentations and press conferences. However, his main position in our company is closely connected with the management of various departments. He has made a great contribution to our developmental and research strategies. </p>
+                                <p class="offset-top-30"><fmt:message key="team1"/></p>
+                                <p> <fmt:message key="team2"/></p>
                                 <div class="offset-top-30">
                                     <div class="max-width-570">
                                         <ul class="list-progress">
                                             <li>
-                                                <p>Satisfaction Guaranteed</p>
+                                                <p><fmt:message key="satisfaction.guaranteed"/></p>
                                                 <div class="progress-variant-1">
                                                     <div class="progress">
                                                         <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;" class="progress-bar"></div>
@@ -71,7 +71,7 @@
                                                     <span class="caption">100%</span> </div>
                                             </li>
                                             <li>
-                                                <p>Microwave Repair</p>
+                                                <p><fmt:message key="microwave.repair"/></p>
                                                 <div class="progress-variant-1">
                                                     <div class="progress">
                                                         <div role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" style="width: 37%;" class="progress-bar"></div>
@@ -79,7 +79,7 @@
                                                     <span class="caption">37%</span> </div>
                                             </li>
                                             <li>
-                                                <p>Stove Repair</p>
+                                                <p><fmt:message key="stove.repair"/></p>
                                                 <div class="progress-variant-1">
                                                     <div class="progress">
                                                         <div role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%;" class="progress-bar"></div>
@@ -87,7 +87,7 @@
                                                     <span class="caption">91%</span> </div>
                                             </li>
                                             <li>
-                                                <p>Washer Repair</p>
+                                                <p><fmt:message key="washer.repair"/></p>
                                                 <div class="progress-variant-1">
                                                     <div class="progress">
                                                         <div role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%;" class="progress-bar"></div>
@@ -107,40 +107,40 @@
             <div class="shell">
                 <div class="range text-center">
                     <div class="cell-xs-12">
-                        <h2>Christophers Projects</h2>
+                        <h2><fmt:message key="team3"/></h2>
                         <div class="divider divider-md divider-primary"></div>
                     </div>
                 </div>
                 <div class="range range-mod-1">
                     <div class="cell-sm-6 cell-md-4">
                         <div class="thumbnail thumbnail-variant-3">
-                            <figure><img src="ui/images/370x270.jpg" alt="" width="370" height="270"/> </figure>
-                            <a href="ui/images/770x510.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                            <div class="caption"><a href="503" class="thumbnail-link"></a>
+                            <figure><img src="ui/images/home-16-370x247.jpg" alt="" width="370" height="270"/> </figure>
+                            <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                            <div class="caption"><a href="#" class="thumbnail-link"></a>
                                 <div class="caption-text">
-                                    <p>Testing electrical equipment requires some experience of dealing with various electrical tools, and here Christopher pays attention to their correct usage.</p>
+                                    <p><fmt:message key="team4"/></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-30 offset-sm-top-0">
                         <div class="thumbnail thumbnail-variant-3">
-                            <figure><img src="ui/images/370x270.jpg" alt="" width="370" height="270"/> </figure>
-                            <a href="ui/images/770x510.jpg" data-photo-swipe-item="" data-size="1200x900" class="thumbnail-original-link"></a>
-                            <div class="caption"><a href="503" class="thumbnail-link"></a>
+                            <figure><img src="ui/images/home-17-370x247.jpg" alt="" width="370" height="270"/> </figure>
+                            <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x900" class="thumbnail-original-link"></a>
+                            <div class="caption"><a href="#" class="thumbnail-link"></a>
                                 <div class="caption-text">
-                                    <p>Mr. Holmes has a lot of experience in electrical repair, and this project includes representation of useful instruments any home owner may need.</p>
+                                    <p><fmt:message key="team5"/></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="cell-sm-6 cell-md-4 offset-top-30 offset-md-top-0">
                         <div class="thumbnail thumbnail-variant-3">
-                            <figure><img src="ui/images/370x270.jpg" alt="" width="370" height="270"/> </figure>
-                            <a href="ui/images/770x510.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                            <div class="caption"><a href="503" class="thumbnail-link"></a>
+                            <figure><img src="ui/images/home-21-370x247.jpg" alt="" width="370" height="270"/> </figure>
+                            <a href="ui/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
+                            <div class="caption"><a href="#" class="thumbnail-link"></a>
                                 <div class="caption-text">
-                                    <p>Christophers new project introduces a new method of repairing tablets, smartphones and other portable gadgets that are widely used today.</p>
+                                    <p><fmt:message key="team6"/></p>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="shell offset-top-30 offset-sm-top-60">
-                <div class="text-center"><a href="gallery-masonry" class="btn btn-primary min-width-230">view all gallery</a></div>
+                <div class="text-center"><a href="gallery-masonry" class="btn btn-primary min-width-230"><fmt:message key="view.all.gallery"/></a></div>
             </div>
         </section>
     </main>

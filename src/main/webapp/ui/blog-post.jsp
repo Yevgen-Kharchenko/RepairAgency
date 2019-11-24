@@ -22,35 +22,35 @@
                     <div class="cell-md-8">
                         <article class="post-single">
                             <div class="post-header">
-                                <h4>20 Tools Every Homeowner Should Have</h4>
+                                <h4><fmt:message key="tools.every"/></h4>
                             </div>
                             <div class="post-meta">
-                                <time datetime="2016-05-26">May 26, 2016 at 10:34 am</time>
-                                <span>by</span><span>Benjamin Powell</span> </div>
+                                <time datetime="2016-05-26"><fmt:message key="may"/></time>
+                                <span><fmt:message key="by"/></span><span> <fmt:message key="benjamin.powell"/></span> </div>
                             <div class="post-body">
-                                <figure class="post-image"><img src="ui/images/770x510.jpg" alt="" width="770" height="510"/> </figure>
+                                <figure class="post-image"><img src="ui/images/blog-sidebar-2-770x510.jpg" alt="" width="770" height="510"/> </figure>
                                 <div class="post-text">
-                                    <p>You probably have a hammer, but that's just a start. These 20 tools and devices are superstars for household projects and repairs. If you love tools or just need to stock a basic toolbox, here are the top 20 necessary items to get your small project done. How many do you have?</p>
-                                    <p>Philips screwdriver. A Philips or X-shape screwdriver is probably one of the most common tools in any toolbox. If you have a handle that accepts interchangeable tips, you can cover a wide range of screw types and sizes.</p>
-                                    <p>Flathead screwdriver. A flathead or straight screwdriver is invaluable; most light switch plates use straight screws, for example. Having the right size flathead can make a difference, so start with at least a set of three (small, medium and large) to be able to handle most jobs.</p>
-                                    <p> Tape measure. Your tape measure is indispensable for estimating material quantities, figuring out placement of objects, and calculating floor plans and furniture sizes. It's always a good idea to measure more than once to make sure you've got it right. </p>
+                                    <p><fmt:message key="you.probably"/></p>
+                                    <p><fmt:message key="philips.screwdriver"/></p>
+                                    <p><fmt:message key="flathead.screwdriver"/></p>
+                                    <p><fmt:message key="tape.measure"/></p>
                                 </div>
-                                <figure class="post-image"><img src="ui/images/770x510.jpg" alt="" width="770" height="510"/> </figure>
+                                <figure class="post-image"><img src="ui/images/blog-sidebar-1-770x510.jpg" alt="" width="770" height="510"/> </figure>
                                 <div class="post-text">
-                                    <p>Level. Some people are good at eyeballing whether something is level or not, but this tool takes all the guesswork away. It takes only a slight error to make objects look off-kilter.</p>
-                                    <p>Utility knife. From cutting paint around windows that are stuck closed to opening boxes, scoring drywall or even trimming the edges of carpet, the uses are so many that you'll be surprised how you ever got by without one.</p>
-                                    <p>Hammer. Pounding nails, pulling nails, crowbar action, tapping things into place  it almost goes without saying why you need hammer. An expensive hammer is long and lightweight; its leverage can assist you when you take that wall down.</p>
-                                    <p> Putty knife. A putty knife is great for scraping dry glues and paints and for spreading putty, paste and spackle. Having a 1-inch size for scraping and a 5- or 6-inch one for spreading is helpful. </p>
+                                    <p><fmt:message key="level"/></p>
+                                    <p><fmt:message key="utility"/></p>
+                                    <p><fmt:message key="hammer"/></p>
+                                    <p> <fmt:message key="putty"/></p>
                                 </div>
                             </div>
                             <div class="post-footer">
                                 <ul class="list-tags-variant-1">
-                                    <li><a href="#">Repair</a></li>
-                                    <li><a href="#">Tools</a></li>
+                                    <li><a href="#"><fmt:message key="repair"/></a></li>
+                                    <li><a href="#"><fmt:message key="tools"/></a></li>
                                 </ul>
                                 <div class="block-wrap-1">
                                     <div class="group-xs group-middle">
-                                        <p class="text-italic text-silver-chalice">Share:</p>
+                                        <p class="text-italic text-silver-chalice"><fmt:message key="share"/></p>
                                         <ul class="list-inline list-inline-xxs">
                                             <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
                                             <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
@@ -63,40 +63,40 @@
                             </div>
                         </article>
                         <div class="offset-top-60 offset-md-top-88">
-                            <h5>Author</h5>
+                            <h5><fmt:message key="author"/></h5>
                             <hr>
                             <article class="post-info">
                                 <div class="unit unit-spacing-md unit-sm-horizontal">
                                     <div class="unit-left">
-                                        <figure><img src="ui/images/170x170.jpg" alt="" width="170" height="170"/> </figure>
+                                        <figure><img src="ui/images/blog-post-3-170x170.jpg" alt="" width="170" height="170"/> </figure>
                                     </div>
                                     <div class="unit-body">
-                                        <h6><a href="#">Benjamin Powell</a></h6>
-                                        <p class="caption">Blogger</p>
-                                        <p> I am a professional blogger interested in everything taking place in cyberspace. I am running this website and try my best to make it a better place to visit. I post only the articles that are related to the topic and thoroughly analyze all visitors comments to cater to their needs better. </p>
+                                        <h6><a href="#"><fmt:message key="benjamin.powell"/></a></h6>
+                                        <p class="caption"><fmt:message key="blogger"/></p>
+                                        <p> <fmt:message key="professional.blogger"/></p>
                                     </div>
                                 </div>
                             </article>
                         </div>
                         <div class="offset-top-60 offset-md-top-88">
-                            <h5>Comments</h5>
+                            <h5><fmt:message key="comments"/></h5>
                             <hr>
                             <div class="comment-group">
                                 <article class="comment">
                                     <div class="comment-body">
                                         <div class="unit unit-spacing-sm unit-sm-horizontal">
                                             <div class="unit-left">
-                                                <figure><img src="ui/images/70x70.jpg" alt="" width="70" height="70"/> </figure>
+                                                <figure><img src="ui/images/blog-post-4-70x70.jpg" alt="" width="70" height="70"/> </figure>
                                             </div>
                                             <div class="unit-body">
                                                 <div class="comment-header">
-                                                    <h6><a href="#">Stephanie Oliver</a></h6>
-                                                    <time datetime="2016-04-24">April 24, 2016 at 10:46 am</time>
+                                                    <h6><a href="#"><fmt:message key="stephanie.oliver"/></a></h6>
+                                                    <time datetime="2016-04-24"><fmt:message key="april"/></time>
                                                 </div>
                                                 <div class="comment-text">
-                                                    <p>Thanks to the author for such a useful article. Now I know what tools I should buy in the first instance.</p>
+                                                    <p><fmt:message key="thanks.to"/></p>
                                                 </div>
-                                                <div class="comment-footer"><a href="#" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span>Reply</span></a></div>
+                                                <div class="comment-footer"><a href="#" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span><fmt:message key="reply"/></span></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -105,17 +105,17 @@
                                     <div class="comment-body">
                                         <div class="unit unit-spacing-sm unit-sm-horizontal">
                                             <div class="unit-left">
-                                                <figure><img src="ui/images/70x70.jpg" alt="" width="70" height="70"/> </figure>
+                                                <figure><img src="ui/images/blog-post-5-70x70.jpg" alt="" width="70" height="70"/> </figure>
                                             </div>
                                             <div class="unit-body">
                                                 <div class="comment-header">
-                                                    <h6><a href="#">Benjamin Powell</a></h6>
-                                                    <time datetime="2016-04-24">April 24, 2016 at 10:46 am</time>
+                                                    <h6><a href="#"><fmt:message key="benjamin.powell"/></a></h6>
+                                                    <time datetime="2016-04-24"><fmt:message key="april"/></time>
                                                 </div>
                                                 <div class="comment-text">
-                                                    <p>Thank you!</p>
+                                                    <p><fmt:message key="thank.you!"/></p>
                                                 </div>
-                                                <div class="comment-footer"><a href="#" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span>Reply</span></a></div>
+                                                <div class="comment-footer"><a href="#" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span><fmt:message key="reply"/></span></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -123,69 +123,69 @@
                             </div>
                         </div>
                         <div class="offset-top-60 offset-md-top-88">
-                            <h5>Send Comment</h5>
+                            <h5><fmt:message key="send.comment"/></h5>
                             <hr>
                             <div class="offset-top-22">
                                 <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform">
                                     <div class="range">
                                         <div class="cell-sm-6">
                                             <div class="form-group">
-                                                <label for="contact-first-name" class="form-label-outside">First name</label>
+                                                <label for="contact-first-name" class="form-label-outside"><fmt:message key="first.name"/></label>
                                                 <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
                                             </div>
                                         </div>
                                         <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
                                             <div class="form-group">
-                                                <label for="contact-last-name" class="form-label-outside">Last name</label>
+                                                <label for="contact-last-name" class="form-label-outside"><fmt:message key="last.name"/></label>
                                                 <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
                                             </div>
                                         </div>
                                         <div class="cell-sm-6 offset-top-18">
                                             <div class="form-group">
-                                                <label for="contact-email" class="form-label-outside">E-mail</label>
+                                                <label for="contact-email" class="form-label-outside"><fmt:message key="email"/></label>
                                                 <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
                                             </div>
                                         </div>
                                         <div class="cell-sm-6 offset-top-18">
                                             <div class="form-group">
-                                                <label for="contact-phone" class="form-label-outside">Phone</label>
+                                                <label for="contact-phone" class="form-label-outside"><fmt:message key="phone"/></label>
                                                 <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
                                             </div>
                                         </div>
                                         <div class="cell-xs-12 offset-top-18">
                                             <div class="form-group">
-                                                <label for="contact-message" class="form-label-outside">Message</label>
+                                                <label for="contact-message" class="form-label-outside"><fmt:message key="message"/></label>
                                                 <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="cell-xs-12 offset-top-30">
-                                            <button type="submit" class="btn btn-primary">Send Message</button>
+                                            <button type="submit" class="btn btn-primary"><fmt:message key="send.message"/></button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <div class="offset-top-60 offset-md-top-88">
-                            <h5>Recent Posts</h5>
+                            <h5><fmt:message key="recent.posts"/></h5>
                             <hr>
                             <div class="range offset-top-30">
                                 <div class="cell-sm-6">
                                     <article class="post post-variant-2 post-mod-1">
-                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/home-19-370x247.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
-                                                <h6><a href="blog-post">How to Repair Android Tablets</a></h6>
+                                                <h6><a href="blog-post"><fmt:message key="how.to.repair2"/></a></h6>
                                             </div>
                                             <div class="post-meta">
-                                                <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                                <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                             </div>
                                             <div class="post-text">
-                                                <p>Do you need tablet repair service? It's easy to fall in love with your tablet, as it offers the perfect combination of size and function. Whether you use it for work, school, or play, your tablet is a handy companion that is easy to take with you. If this convenience has been interrupted by damage or malfunction, we can fix the problem quickly so that you can enjoy your tablet again.</p>
+                                                <p><fmt:message key="do.you.need"/></p>
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#">Repair</a></li>
-                                                    <li><a href="#">Tablet</a></li>
+                                                   <li><a href="#"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="#"><fmt:message key="tablet"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -193,21 +193,21 @@
                                 </div>
                                 <div class="cell-sm-6 offset-top-60 offset-sm-top-0">
                                     <article class="post post-variant-2 post-mod-1">
-                                        <figure class="post-image"><img src="ui/images/370x245.jpg" alt="" width="370" height="245"/> </figure>
+                                        <figure class="post-image"><img src="ui/images/home-18-370x247.jpg" alt="" width="370" height="245"/> </figure>
                                         <div class="post-body">
                                             <div class="post-header">
-                                                <h6><a href="blog-post">How to Repair Pipes</a></h6>
+                                                <h6><a href="blog-post"><fmt:message key="how.to.repair3"/></a></h6>
                                             </div>
                                             <div class="post-meta">
-                                                <time datetime="2016-03-05">May 26, 2016 at 10:34 am</time>
+                                                <time datetime="2016-03-05"><fmt:message key="may"/></time>
                                             </div>
                                             <div class="post-text">
-                                                <p>Pipes in your plumbing system can leak, drip condensate and freeze, causing a number of problems. The following steps will instruct you on how to repair pipes without calling a plumber.</p>
+                                                <p><fmt:message key="pipes.in"/></p>
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#">Repair</a></li>
-                                                    <li><a href="#">Pipes</a></li>
+                                                    <li><a href="#"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="#"><fmt:message key="pipes"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -220,69 +220,69 @@
                         <div class="range">
                             <div class="cell-sm-6 cell-md-12 aside-list-group">
                                 <div class="list-item">
-                                    <h5>Search</h5>
+                                    <h5><fmt:message key="search"/></h5>
                                     <hr>
                                     <form action="search-results" method="GET" class="rd-search rd-search-style-1">
                                         <div class="form-group">
-                                            <label for="rd-search-form-input-1" class="form-label">Search...</label>
+                                            <label for="rd-search-form-input-1" class="form-label"><fmt:message key="search."/></label>
                                             <input id="rd-search-form-input-1" type="text" name="s" autocomplete="off" class="form-control">
                                         </div>
                                         <button type="submit" class="rd-search-submit rd-submit-primary"></button>
                                     </form>
                                 </div>
                                 <div class="list-item">
-                                    <h5>Archive</h5>
+                                    <h5><fmt:message key="archive"/></h5>
                                     <hr>
                                     <div class="row row-no-gutter offset-top-22">
                                         <div class="col-xs-6">
                                             <ul class="list-marked-variant-2 list-marked-gray">
-                                                <li><a href="#">Aug 2016</a></li>
-                                                <li><a href="#">Oct 2016</a></li>
-                                                <li><a href="#">Dec 2016</a></li>
-                                                <li><a href="#">Feb 2016</a></li>
-                                                <li><a href="#">Apr 2016</a></li>
+                                               <li><a href="#"><fmt:message key="aug"/></a></li>
+                                                <li><a href="#"><fmt:message key="oct"/></a></li>
+                                                <li><a href="#"><fmt:message key="dec"/></a></li>
+                                                <li><a href="#"><fmt:message key="feb"/></a></li>
+                                                <li><a href="#"><fmt:message key="apr"/></a></li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-6 offset-top-0 shift-left-5">
                                             <ul class="list-marked-variant-2 list-marked-gray">
-                                                <li><a href="#">Sep 2016</a></li>
-                                                <li><a href="#">Nov 2016</a></li>
-                                                <li><a href="#">Jan 2016</a></li>
-                                                <li><a href="#">Mar 2016</a></li>
-                                                <li><a href="#">May 2016</a></li>
+                                                <li><a href="#"><fmt:message key="sep"/></a></li>
+                                                <li><a href="#"><fmt:message key="nov"/></a></li>
+                                                <li><a href="#"><fmt:message key="jan"/></a></li>
+                                                <li><a href="#"><fmt:message key="mar"/></a></li>
+                                                <li><a href="#"><fmt:message key="may2"/></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="list-item">
-                                    <h5>Recent Blog Posts</h5>
+                                    <h5><fmt:message key="recent"/></h5>
                                     <hr>
                                     <ul class="post-list offset-top-22">
                                         <li>
                                             <article class="post-recent">
                                                 <div class="post-header">
-                                                    <h6><a href="blog-post">How to Repair a Gas Range or an Electric Range</a></h6>
+                                                    <h6><a href="blog-post"><fmt:message key="how.to.repair4"/></a></h6>
                                                 </div>
                                                 <div class="post-meta"></div>
-                                                <time datetime="2016-05-28">May 28, 2016</time>
+                                                <time datetime="2016-05-28"><fmt:message key="may3"/></time>
                                             </article>
                                         </li>
                                         <li>
                                             <article class="post-recent">
                                                 <div class="post-header">
-                                                    <h6><a href="blog-post">Why You Need a Professional for Appliance Repair</a></h6>
+                                                    <h6><a href="blog-post"><fmt:message key="why.you.need"/></a></h6>
                                                 </div>
                                                 <div class="post-meta"></div>
-                                                <time datetime="2016-05-28">May 28, 2016</time>
+                                                <time datetime="2016-05-28"><fmt:message key="may3"/></time>
                                             </article>
                                         </li>
                                         <li>
                                             <article class="post-recent">
                                                 <div class="post-header">
-                                                    <h6><a href="blog-post">How to Repair Pipes</a></h6>
+                                                    <h6><a href="blog-post"><fmt:message key="how.to.repair5"/></a></h6>
                                                 </div>
                                                 <div class="post-meta"></div>
-                                                <time datetime="2016-05-28">May 28, 2016</time>
+                                                <time datetime="2016-05-28"><fmt:message key="may3"/></time>
                                             </article>
                                         </li>
                                     </ul>
@@ -290,7 +290,7 @@
                             </div>
                             <div class="cell-sm-6 cell-md-12 aside-list-group">
                                 <div class="list-item">
-                                    <h5>Categories</h5>
+                                    <h5><fmt:message key="categories"/></h5>
                                     <hr>
                                     <ul class="list-marked-variant-2 list-marked-gray">
                                         <li><a href="#"><fmt:message key="ice.maker"/></a></li>
@@ -301,14 +301,14 @@
                                     </ul>
                                 </div>
                                 <div class="list-item">
-                                    <h5>Tags</h5>
+                                    <h5><fmt:message key="tags"/></h5>
                                     <hr>
                                     <ul class="list-tags-variant-2">
-                                        <li><a href="#">Repair</a></li>
-                                        <li><a href="#">Home Appliance</a></li>
-                                        <li><a href="#">Ice Maker</a></li>
-                                        <li><a href="#">Microwave</a></li>
-                                        <li><a href="#">Stove Repair</a></li>
+                                        <li><a href="#"><fmt:message key="repair"/></a></li>
+                                        <li><a href="#"><fmt:message key="home.appliance"/></a></li>
+                                        <li><a href="#"><fmt:message key="washer.ice"/></a></li>
+                                        <li><a href="#"><fmt:message key="microwave"/></a></li>
+                                        <li><a href="#"><fmt:message key="stove.repair"/></a></li>
                                     </ul>
                                 </div>
                             </div>

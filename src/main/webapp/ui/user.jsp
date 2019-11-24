@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title>User</title>
+    <title><fmt:message key="user"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -20,20 +20,20 @@
       <div class="shell">
         <div class="range">
           <div class="cell-md-10 cell-lg-8">
-            <h5>Hello, ${user.username}!</h5>
-			<h6>You can view your orders or change your <a href="profile" class="search_link">profile!</a></h6>
+            <h5><fmt:message key="hello"/> ${user.username}!</h5>
+			<h6><fmt:message key="you.can.user"/><a href="profile" class="search_link"><fmt:message key="profile"/></a></h6>
             <hr>
             <div class="offset-top-32">
               <div class="table-mobile">
                 <table class="table table-primary table-striped-variant-1">
                     <thead>
                     <tr>
-                        <th>Order ID</th>
-                        <th>Date</th>
-                        <th>Repair type</th>
-                        <th>Price</th>
-						<th>Status</th>
-                        <th>Edit</th>
+                        <th><fmt:message key="order.id"/></th>
+						<th><fmt:message key="date"/></th>
+						<th><fmt:message key="repair.type"/></th>
+                        <th><fmt:message key="price"/></th>
+						<th><fmt:message key="status"/></th>
+                        <th><fmt:message key="edit"/></th>
                     </tr>
                     </thead>
                     <tbody>

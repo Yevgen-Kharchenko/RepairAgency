@@ -20,7 +20,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h5>Order ID #5</h5>
+                        <h5><fmt:message key="order.id"/>#5</h5>
                         <hr>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="offset-top-60 offset-md-top-88">
 
-                                <h5>Comments</h5>
+                                <h5><fmt:message key="comments"/></h5>
                                 <hr>
                                 <div class="comment-group">
                                     <article class="comment">
@@ -138,7 +138,7 @@
                         <div class="grid-element">
                             <div class="pricing-table pricing-table-style-lighter">
                                 <div class="pricing-table-header">
-                                    <h6 class="pricing-table-heading">PRICE:</h6>
+                                    <h6 class="pricing-table-heading"><fmt:message key="price2"/></h6>
                                     <p class="price">$90.00</p>
                                 </div>
                                 <div class="pricing-table-body">
@@ -149,7 +149,7 @@
                                         <li>123-456-78-90</li>
                                     </ul>
                                 </div>
-                                <div class="pricing-table-footer"><a href="" class="btn btn-sm btn-primary">Cancel order</a></div>
+                                <div class="pricing-table-footer"><a href="" class="btn btn-sm btn-primary"><fmt:message key="cancel.order"/></a></div>
 								
 								<c:choose>
                             <c:when test="${user.role=='ADMIN'}">
@@ -161,7 +161,7 @@
                             <c:when test="${user.role=='MANAGER'}">
 								<div class="pricing-table-footer">
 									<div class="form-group"style="padding-right: 90px;padding-left: 90px">
-											<label for="price" class="form-label-outside">Price</label>
+											<label for="price" class="form-label-outside"><fmt:message key="price"/></label>
 											<input id="price" type="text" name="price" data-constraints="@Required @Numeric" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
 									</div>
 								</div>
@@ -200,7 +200,7 @@
                         <div class="grid-element">
                             <div class="offset-top-60 offset-md-top-88">
 
-                                <h5>Send Comment</h5>
+                                <h5><fmt:message key="send.comment"/></h5>
                                 <hr>
                                 <div class="offset-top-22">
                                     <form data-form-output="form-output-global" data-form-type="contact" method="post"
@@ -210,14 +210,14 @@
                                             <div class="cell-xs-12 offset-top-18">
                                                 <div class="form-group">
                                                     <label for="contact-message"
-                                                           class="form-label-outside">Message</label>
+                                                           class="form-label-outside"><fmt:message key="message"/></label>
                                                     <textarea id="contact-message" name="message"
                                                               data-constraints="@Required"
                                                               class="form-control"></textarea>
                                                 </div>
                                             </div>
                                             <div class="cell-xs-12 offset-top-30">
-                                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                                <button type="submit" class="btn btn-primary"><fmt:message key="send.message"/></button>
                                             </div>
                                         </div>
                                     </form>

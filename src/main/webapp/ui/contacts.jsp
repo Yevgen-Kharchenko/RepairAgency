@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title></title>
+    <title><fmt:message key="contacts"/></title>
     <c:import url="/WEB-INF/templ/head-part.jsp"/>
 </head>
 
@@ -20,45 +20,45 @@
             <div class="shell">
                 <div class="range">
                     <div class="cell-md-8">
-                        <h5>Contacts</h5>
+                        <h5><fmt:message key="contacts"/></h5>
                         <hr>
-                        <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally.</p>
-                        <p>We would be happy to answer your questions.</p>
+                        <p><fmt:message key="you.can.contact"/></p>
+                        <p><fmt:message key="we.would"/></p>
                         <div class="offset-top-50">
                             <form data-form-output="form-output-global" data-form-type="contact" method="post" action="#" class="rd-mailform rd-mailform-mod-1">
                                 <div class="range">
                                     <div class="cell-sm-6">
                                         <div class="form-group">
-                                            <label for="contact-first-name" class="form-label-outside">First name</label>
+                                            <label for="contact-first-name" class="form-label-outside"><fmt:message key="first.name"/></label>
                                             <input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
                                         </div>
                                     </div>
                                     <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
                                         <div class="form-group">
-                                            <label for="contact-last-name" class="form-label-outside">Last name</label>
+                                            <label for="contact-last-name" class="form-label-outside"><fmt:message key="last.name"/></label>
                                             <input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
                                         </div>
                                     </div>
                                     <div class="cell-sm-6 offset-top-18">
                                         <div class="form-group">
-                                            <label for="contact-email" class="form-label-outside">E-mail</label>
+                                            <label for="contact-email" class="form-label-outside"><fmt:message key="email"/></label>
                                             <input id="contact-email" type="email" name="email" data-constraints="@Email @Required" class="form-control">
                                         </div>
                                     </div>
                                     <div class="cell-sm-6 offset-top-18">
                                         <div class="form-group">
-                                            <label for="contact-phone" class="form-label-outside">Phone</label>
+                                            <label for="contact-phone" class="form-label-outside"><fmt:message key="phone"/></label>
                                             <input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
                                         </div>
                                     </div>
                                     <div class="cell-xs-12 offset-top-18">
                                         <div class="form-group">
-                                            <label for="contact-message" class="form-label-outside">Message</label>
+                                            <label for="contact-message" class="form-label-outside"><fmt:message key="message"/></label>
                                             <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="cell-xs-12 offset-top-30">
-                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                        <button type="submit" class="btn btn-primary"><fmt:message key="send.message"/></button>
                                     </div>
                                 </div>
                             </form>
@@ -67,7 +67,7 @@
                     <div class="cell-md-4">
                         <div class="range inset-lg-left-30">
                             <div class="cell-sm-6 cell-md-12">
-                                <h5>Social</h5>
+                                <h5><fmt:message key="social"/></h5>
                                 <hr>
                                 <ul class="list-inline list-inline-xxs">
                                     <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
@@ -77,7 +77,7 @@
                                     <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram"></a></li>
                                 </ul>
                                 <div class="offset-top-30 offset-md-top-55">
-                                    <h5>Phone</h5>
+                                    <h5><fmt:message key="phone"/></h5>
                                     <hr>
                                     <address class="contact-info">
                                         <div class="unit unit-horizontal unit-spacing-xs">
@@ -92,30 +92,30 @@
                                     </address>
                                 </div>
                                 <div class="offset-top-30 offset-md-top-55">
-                                    <h5>Address</h5>
+                                    <h5><fmt:message key="address"/></h5>
                                     <hr>
                                     <address class="contact-info">
                                         <div class="unit unit-horizontal unit-spacing-xs">
                                             <div class="unit-left icon-adjust-vertical"><span class="icon icon-xs icon-primary mdi mdi-map-marker"></span></div>
-                                            <div class="unit-body"><a href="#" class="link-gray nowrap">2130 Fulton Street, San Diego,<br>
-                                                CA 94117-1080 USA</a></div>
+                                            <div class="unit-body"><a href="#" class="link-gray nowrap"><fmt:message key="rosecrans.ave"/><br>
+                                                <fmt:message key="ca.90245"/></a></div>
                                         </div>
                                     </address>
                                 </div>
                             </div>
                             <div class="cell-sm-6 cell-md-12 offset-top-30 offset-sm-top-0 offset-md-top-55">
-                                <h5>Open Hours</h5>
+                                <h5><fmt:message key="open.hours"/></h5>
                                 <hr>
                                 <div class="offset-top-22">
                                     <div class="contact-info">
                                         <div class="unit unit-horizontal unit-spacing-xs">
                                             <div class="unit-left icon-adjust-vertical"><span class="icon icon-xs icon-primary mdi mdi-calendar-clock"></span></div>
-                                            <div class="unit-body"><span class="text-gray">Mon-Fri: 9:00am-6:00pm</span><span class="text-gray">Sat-Sun: 10:00am-5:00pm</span></div>
+                                            <div class="unit-body"><span class="text-gray"><fmt:message key="mon.fri"/></span><span class="text-gray"><fmt:message key="sat.sun"/></span></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="offset-top-30 offset-md-top-55">
-                                    <h5>E-mail</h5>
+                                    <h5><fmt:message key="email"/></h5>
                                     <hr>
                                     <div class="unit unit-horizontal unit-spacing-xs offset-top-22">
                                         <div class="unit-left icon-adjust-vertical"><span class="icon icon-xs icon-primary mdi mdi-email-outline"></span></div>
