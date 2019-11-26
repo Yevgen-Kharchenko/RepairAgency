@@ -6,7 +6,7 @@
 Мастер может выполнить принятую Менеджером заявку.
 Пользователь может оставить Отзыв о выполненных работах.
 
-Course system. ///////Задача Requirements:
+Requirements:
 
 1. DB - MySql/PostgreSql
 2. Java version up 8.
