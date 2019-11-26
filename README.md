@@ -8,17 +8,20 @@
 
 Requirements:
 
-1. DB - MySql/PostgreSql
+1. DB - MySql
 2. Java version up 8.
 3. Maven
+
 How to install:
 
 1. Clone project
-2. Run schema.sql from resources/ folder
-3. Run populate.sql from resources/data/ folder
-4. (Add TOMCAT_FOLDER/conf/server.xml -> resources/context/context.xml) -> UPDATE DB LOGIN PASSWORD
-5. Run in terminal command a. mvn clean tomcat7:run b. ? Add configuration / command
-6. Go to link XXXX
+2. Run create_schema.sql from resources/scripts
+3. Run insert_schema.sql from resources/scripts
+4. UPDATE DB LOGIN PASSWORD- resources/webapp/META-INF/context.xml
+5. Run in terminal command 
+	a. mvn clean tomcat7:run 
+	b. ? Add configuration / command
+6. Go to link http://localhost:8880/RepairAgency
 
 #Business logic: 	
 
