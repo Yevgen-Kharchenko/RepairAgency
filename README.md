@@ -22,6 +22,7 @@ How to install:
 	a. mvn clean tomcat7:run 
 	b. ? Add configuration / command
 6. Go to link http://localhost:8880/RepairAgency
+7. To login as an admin, use a login / password : admin@g.com / admin
 
 #Business logic: 	
 
