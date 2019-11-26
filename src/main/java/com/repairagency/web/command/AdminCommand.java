@@ -4,7 +4,7 @@ import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.constant.PageUrlConstants.ADMIN_PAGE;
+import static com.repairagency.web.PageUrlConstants.ADMIN_PAGE;
 
 public class AdminCommand implements Command {
     @Override

@@ -1,14 +1,14 @@
 package com.repairagency.web.command;
 
-import com.repairagency.dao.EntityDao;
-import com.repairagency.entity.User;
-import com.repairagency.enums.DaoType;
-import com.repairagency.factory.DaoFactory;
+import com.repairagency.repository.EntityDao;
+import com.repairagency.model.User;
+import com.repairagency.model.enums.DaoType;
+import com.repairagency.repository.DaoFactory;
 import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.constant.PageUrlConstants.USER_PAGE;
+import static com.repairagency.web.PageUrlConstants.USER_PAGE;
 
 public class UserCommand implements Command {
     private static final String COUNT_ATTRIBUTE = "count";

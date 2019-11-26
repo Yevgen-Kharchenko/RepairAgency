@@ -1,15 +1,15 @@
 package com.repairagency.web.command;
 
-import com.repairagency.entity.User;
-import com.repairagency.factory.ServiceFactory;
+import com.repairagency.model.User;
+import com.repairagency.service.ServiceFactory;
 import com.repairagency.service.UserService;
 import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import static com.repairagency.constant.PageUrlConstants.HOME_PAGE;
-import static com.repairagency.constant.PageUrlConstants.LOGIN_PAGE;
+import static com.repairagency.web.PageUrlConstants.LOGIN_PAGE;
+import static com.repairagency.web.PageUrlConstants.REDIRECT_HOME_PAGE;
 
 public class LoginCommand extends UniCommand {
     private UserService userService;
@@ -34,11 +34,11 @@ public class LoginCommand extends UniCommand {
         if (userId != 0) {
             User user = userService.getUser(userId);
             session.setAttribute("user", user);
-            return new Page(HOME_PAGE);
+            return new Page(REDIRECT_HOME_PAGE,true);
         }
 
         session.setAttribute("error", "Login or password invalid!");
-        return new Page("/", true);
+        return new Page(REDIRECT_HOME_PAGE, true);
 
     }
 }

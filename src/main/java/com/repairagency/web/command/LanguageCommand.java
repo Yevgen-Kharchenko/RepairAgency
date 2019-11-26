@@ -4,6 +4,8 @@ import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static com.repairagency.web.PageUrlConstants.REDIRECT_HOME_PAGE;
+
 
 public class LanguageCommand implements Command {
 
@@ -15,6 +17,6 @@ public class LanguageCommand implements Command {
 
         request.getSession().setAttribute(LOCALE, locale);
 
-        return new Page("/", true);
+        return new Page(REDIRECT_HOME_PAGE, true);
     }
 }

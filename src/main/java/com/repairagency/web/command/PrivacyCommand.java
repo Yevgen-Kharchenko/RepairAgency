@@ -4,7 +4,7 @@ import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.constant.PageUrlConstants.PRIVACY_PAGE;
+import static com.repairagency.web.PageUrlConstants.PRIVACY_PAGE;
 
 public class PrivacyCommand implements Command {
     @Override

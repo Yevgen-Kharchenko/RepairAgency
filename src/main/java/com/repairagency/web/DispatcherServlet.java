@@ -1,6 +1,5 @@
 package com.repairagency.web;
 
-import com.repairagency.factory.CommandFactory;
 import com.repairagency.web.command.Command;
 import com.repairagency.web.data.Page;
 import org.apache.log4j.Logger;
@@ -38,9 +37,14 @@ public class DispatcherServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + page.getUrl());
             LOG.info("Redirect to: " +(req.getContextPath()+ page.getUrl()));
         } else {
-            req.getRequestDispatcher(page.getUrl()).forward(req, resp);
+            req.getRequestDispatcher(resolvePath(page.getUrl())).forward(req, resp);
         }
     }
+
+    private String resolvePath(String path){
+        return "/WEB-INF/pages/" + path + ".jsp";
+    }
+
 
     private String getPath(HttpServletRequest req) {
         String requestUri = req.getRequestURI();

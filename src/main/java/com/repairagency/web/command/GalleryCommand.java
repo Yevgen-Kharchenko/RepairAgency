@@ -4,7 +4,7 @@ import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.constant.PageUrlConstants.GALLERY_PAGE;
+import static com.repairagency.web.PageUrlConstants.GALLERY_PAGE;
 
 public class GalleryCommand implements Command {
     @Override

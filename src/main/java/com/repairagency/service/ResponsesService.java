@@ -1,12 +1,12 @@
 package com.repairagency.service;
 
-import com.repairagency.dao.EntityDao;
-import com.repairagency.dto.ResponsesDTO;
-import com.repairagency.dto.UserDTO;
-import com.repairagency.entity.Responses;
-import com.repairagency.entity.User;
-import com.repairagency.enums.DaoType;
-import com.repairagency.factory.DaoFactory;
+import com.repairagency.repository.EntityDao;
+import com.repairagency.web.view.ResponsesDTO;
+import com.repairagency.web.view.UserDTO;
+import com.repairagency.model.Responses;
+import com.repairagency.model.User;
+import com.repairagency.model.enums.DaoType;
+import com.repairagency.repository.DaoFactory;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDate;

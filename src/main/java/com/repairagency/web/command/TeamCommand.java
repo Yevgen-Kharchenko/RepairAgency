@@ -4,7 +4,7 @@ import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.constant.PageUrlConstants.TEAM_PAGE;
+import static com.repairagency.web.PageUrlConstants.TEAM_PAGE;
 
 public class TeamCommand implements Command {
     @Override

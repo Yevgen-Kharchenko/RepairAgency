@@ -1,7 +1,7 @@
 package com.repairagency.web.command;
 
-import com.repairagency.entity.User;
-import com.repairagency.factory.ServiceFactory;
+import com.repairagency.model.User;
+import com.repairagency.service.ServiceFactory;
 import com.repairagency.service.ResponsesService;
 import com.repairagency.web.data.Page;
 import org.apache.log4j.Logger;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.time.LocalDate;
 
-import static com.repairagency.constant.PageUrlConstants.RESPONSES_PAGE;
+import static com.repairagency.web.PageUrlConstants.RESPONSES_PAGE;
 
 public class ResponsesCommand extends UniCommand {
     private static final Logger LOG = Logger.getLogger(ResponsesCommand.class);

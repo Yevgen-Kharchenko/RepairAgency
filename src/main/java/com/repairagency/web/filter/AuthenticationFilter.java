@@ -1,17 +1,16 @@
 package com.repairagency.web.filter;
 
-import com.repairagency.entity.User;
-import com.repairagency.web.authorization.SecurityConfig;
+import com.repairagency.model.User;
+import com.repairagency.model.enums.Role;
+import com.repairagency.config.SecurityConfig;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter("/*")
 public class AuthenticationFilter implements Filter {
     private static final Logger LOG = Logger.getLogger(AuthenticationFilter.class);
 
@@ -43,16 +42,22 @@ public class AuthenticationFilter implements Filter {
             return;
         }
 
-        boolean hasPermission = SecurityConfig.hasPermission(path, user.getRole());
-
-        if (!hasPermission) {
-            LOG.info("User has not permission : " + user + " , " + path);
-            httpServletResponse.sendRedirect(contextPath + "/503");
+        if (hasNotPermission(path, user.getRole())) {
+            LOG.debug("User has not permission : " + user + " , " + path);
+            httpServletResponse.sendRedirect(contextPath + "/403-error");
             return;
         }
 
         LOG.info("User has permission. Continue");
         chain.doFilter(request, response);
+    }
+
+    private boolean hasNotPermission(String path, Role role) {
+        return !SecurityConfig.hasPermission(path, role);
+    }
+
+    private boolean isNotSecuredPage(String path) {
+        return !SecurityConfig.isSecurePage(path);
     }
 
     @Override

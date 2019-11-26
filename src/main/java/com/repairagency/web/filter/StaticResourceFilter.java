@@ -9,9 +9,9 @@ import java.io.IOException;
 public class StaticResourceFilter implements Filter {
     private static final Logger LOG = Logger.getLogger(StaticResourceFilter.class);
     private static final String RESOURCES_PATH = "/resources/";
-    private static final String UI_PATH = "/ui/";
+    private static final String PAGES_PATH = "/pages/";
+    private static final String STATIC_RESOURCES_PATH = "/static/";
     private static final String APP_PATH = "/app";
-
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -39,7 +39,8 @@ public class StaticResourceFilter implements Filter {
 
     private boolean shouldBeSkipped(String path) {
         return path.startsWith(RESOURCES_PATH)
-                || path.startsWith(UI_PATH)
+                || path.startsWith(PAGES_PATH)
+                || path.startsWith(STATIC_RESOURCES_PATH)
                 || path.startsWith(APP_PATH);
     }
 

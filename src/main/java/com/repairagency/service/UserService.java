@@ -1,10 +1,10 @@
 package com.repairagency.service;
 
-import com.repairagency.dao.EntityDao;
-import com.repairagency.entity.User;
-import com.repairagency.enums.DaoType;
-import com.repairagency.enums.Role;
-import com.repairagency.factory.DaoFactory;
+import com.repairagency.repository.EntityDao;
+import com.repairagency.model.User;
+import com.repairagency.model.enums.DaoType;
+import com.repairagency.model.enums.Role;
+import com.repairagency.repository.DaoFactory;
 
 import java.util.List;
 

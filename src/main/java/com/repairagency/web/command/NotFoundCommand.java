@@ -4,7 +4,7 @@ import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.constant.PageUrlConstants.NOT_FOUND_PAGE;
+import static com.repairagency.web.PageUrlConstants.NOT_FOUND_PAGE;
 
 public class NotFoundCommand implements Command {
 
