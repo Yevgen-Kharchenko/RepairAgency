@@ -1,25 +1,26 @@
-package com.repairagency.web.command;
+package com.repairagency.web.command.logic;
 
 import com.repairagency.service.ServiceFactory;
 import com.repairagency.service.UserService;
+import com.repairagency.web.command.UniCommand;
 import com.repairagency.web.data.Page;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.repairagency.web.PageUrlConstants.USER_PROFILE_PAGE;
+import static com.repairagency.web.PageUrlConstants.ORDER_COMMENT_PAGE;
 
-public class ProfileCommand extends UniCommand {
-    private static final Logger LOG = Logger.getLogger(ProfileCommand.class);
+public class OrderCommentCommand extends UniCommand {
+    private static final Logger LOG = Logger.getLogger(OrderCommentCommand.class);
     private UserService userService;
 
-    public ProfileCommand() {
+    public OrderCommentCommand() {
         this.userService = ServiceFactory.getUserService();
     }
 
     @Override
     protected Page performGet(HttpServletRequest request) {
-        return new Page(USER_PROFILE_PAGE);
+        return new Page(ORDER_COMMENT_PAGE);
     }
 
     @Override

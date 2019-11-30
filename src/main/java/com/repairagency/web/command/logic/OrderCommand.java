@@ -1,5 +1,6 @@
-package com.repairagency.web.command;
+package com.repairagency.web.command.logic;
 
+import com.repairagency.web.command.Command;
 import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;

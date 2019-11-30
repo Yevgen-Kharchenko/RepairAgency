@@ -1,8 +1,9 @@
-package com.repairagency.web.command;
+package com.repairagency.web.command.logic;
 
 import com.repairagency.model.User;
 import com.repairagency.service.ServiceFactory;
 import com.repairagency.service.ResponsesService;
+import com.repairagency.web.command.UniCommand;
 import com.repairagency.web.data.Page;
 import org.apache.log4j.Logger;
 

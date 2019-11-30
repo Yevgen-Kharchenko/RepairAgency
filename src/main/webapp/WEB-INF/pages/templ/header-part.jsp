@@ -200,7 +200,7 @@
                
             </li>
             <li><a href="language?locale=en" class="text-uppercase">en</a>
-                <a href="language?locale=ua" class="text-uppercase">ua</a>
+                <a href="language?locale=uk_UA" class="text-uppercase">ua</a>
 			</li>
         </ul>
 

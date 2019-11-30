@@ -21,9 +21,10 @@ public class PageUrlConstants {
     public static final String RESPONSES_PAGE = "responses";
     public static final String TEAM_PAGE = "team";
     public static final String TEAM_PROFILE_PAGE = "team-member-profile";
-    public static final String USER_PROFILE_PAGE = "profile";
+    public static final String PROFILE_PAGE = "profile";
     public static final String ORDER_COMMENT_PAGE = "order-comment";
     public static final String FORBIDDEN_PAGE = "errors/403-error";
+    public static final String USER_PROFILE_PAGE = "user-profile";
 
     public static final String REDIRECT_HOME_PAGE = "/";
 }

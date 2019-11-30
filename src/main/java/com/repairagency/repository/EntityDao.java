@@ -6,6 +6,8 @@ public interface EntityDao<T> {
 
     T getById(int id, boolean full);
 
+    T getByLogin(String login, boolean full);
+
     List<T> getAll();
 
     boolean create(T entity);

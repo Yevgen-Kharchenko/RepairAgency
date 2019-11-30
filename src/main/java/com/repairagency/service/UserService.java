@@ -1,46 +1,80 @@
 package com.repairagency.service;
 
-import com.repairagency.repository.EntityDao;
 import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.model.enums.Role;
 import com.repairagency.repository.DaoFactory;
+import com.repairagency.repository.EntityDao;
+import com.repairagency.web.view.UserDTO;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class UserService {
     private EntityDao<User> userDao;
+
 
     public UserService() {
         this.userDao = DaoFactory.getEntityDao(DaoType.USER);
     }
 
-    public int validateUser(String login, String password) {
-        List<User> all = userDao.getAll();
-        User user = all.stream().filter(u -> u.getLogin().equals(login)
-                && u.getPassword().equals(password))
-                .findFirst().orElseGet(() -> new User());
-        return user.getId();
+    public boolean validateUser(String login, String password) {
+        User user = userDao.getByLogin(login, false);
+        if (user != null){
+            if (user.getPassword().equals(password)) return true;
+        }
+            return false;
     }
 
     public boolean validateLogin(String login) {
         List<User> all = userDao.getAll();
-        for (User user:all) {
-            if(user.getLogin().equals(login)) {
-                System.out.println("Not validate login: "+user.getLogin());
+        for (User user : all) {
+            if (user.getLogin().equals(login)) {
+                System.out.println("Not validate login: " + user.getLogin());
                 return false;
             }
         }
         return true;
     }
 
+    public boolean validatePassword(String password, String confirmPassword) {
+        if (password.equals(confirmPassword)) return true;
+        return false;
+    }
+
     public User getUser(int id) {
         return userDao.getById(id, false);
     }
 
-    public User registrationUser(String username, String login, String password) {
-        User newUser = new User(username,login,password, Role.CUSTOMER);
+    public User getUserByLogin(String login) {
+        return userDao.getByLogin(login, false);
+    }
+
+    public User registrationUser(String firstName, String lastName, String phone, String login, String password) {
+        User newUser = new User(firstName, lastName, phone, login, password, Role.CUSTOMER);
         userDao.create(newUser);
         return newUser;
+    }
+
+    public User updateUser(int id, String firstName, String lastName, String phone, String login, String password, Role role) {
+        User updatedUser = new User(id, firstName, lastName, phone, login, password, role);
+        userDao.update(updatedUser);
+        return updatedUser;
+    }
+
+    public List<UserDTO>getAll() {
+        List<User> all = userDao.getAll();
+        return all.stream().map(users -> {
+            User userProfile = userDao.getById(users.getId(), false);
+            UserDTO userDTO = new UserDTO();
+
+            userDTO.setId(userProfile.getId());
+            userDTO.setFirstName(userProfile.getFirstName());
+            userDTO.setLastName(userProfile.getLastName());
+            userDTO.setPhone(userProfile.getPhone());
+            userDTO.setLogin(userProfile.getLogin());
+            userDTO.setRole(userProfile.getRole());
+            return userDTO;
+        }).collect(Collectors.toList());
     }
 }

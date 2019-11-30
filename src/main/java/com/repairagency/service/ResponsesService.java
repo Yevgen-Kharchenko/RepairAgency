@@ -37,7 +37,7 @@ public class ResponsesService {
 
             UserDTO userDTO = new UserDTO();
             userDTO.setId(customer.getId());
-            userDTO.setName(customer.getUsername());
+            userDTO.setName(customer.getFirstName()+" "+customer.getLastName());
             responsesDTO.setCustomer(userDTO);
             return responsesDTO;
         }).collect(Collectors.toList());

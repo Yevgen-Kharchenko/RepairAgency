@@ -20,7 +20,7 @@
         <div class="shell">
         <div class="range">
             <div class="cell-md-10 cell-lg-12">
-                <h5><fmt:message key="hello"/> ${user.username}!</h5>
+                <h5><fmt:message key="hello"/> ${user.firstName} ${user.lastName}!</h5>
                 <h6><fmt:message key="you.can.admin"/><a href="profile" class="search_link"><fmt:message key="profile"/></a>
                 </h6>
                 <hr>
@@ -490,54 +490,21 @@
                                                             </tr>
 															</thead>
                                                             <tbody>
+                                                            <c:forEach items="${users}" var="users">
                                                             <tr>
-                                                                <td>1</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>CUSTOMER</td>
+                                                                <td>${users.id}</td>
+                                                                <td>${users.firstName}</td>
+                                                                <td>${users.lastName}</td>
+                                                                <td>${users.login}</td>
+                                                                <td>${users.phone}</td>
+                                                                <td>${users.role}</td>
                                                                 <td>
-                                                                    <a href="profile" class="search_link"><span
+                                                                    <a href="user-profile?id=${users.id}" class="search_link"><span
                                                                             class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>CUSTOMER</td>
-                                                                <td>
-                                                                    <a href="profile" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>CUSTOMER</td>
-                                                                <td>
-                                                                    <a href="profile" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>CUSTOMER</td>
-                                                                <td>
-                                                                    <a href="profile" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
+                                                            </c:forEach>
+
                                                             </tbody>
                                                         </table>
                                                     </div>

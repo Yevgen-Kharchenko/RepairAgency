@@ -1,13 +1,13 @@
 ﻿use repair_agency;
 
-insert into `user` (`username`, `login`, `password`, `role`) values
-('Адміненко Сергій', 'admin@g.com', 'admin', 'ADMIN'),
-('Менеджерский Іван', 'manager@g.com', 'manager', 'MANAGER'),
-('Мастеровий Петро', 'master@g.com', 'master', 'MASTER'),
-('Папа Карло', 'user1@g.com', 'password', 'CUSTOMER'),
-('Буратіно', 'user2@g.com', 'password', 'CUSTOMER'),
-('Дядя Федір', 'user3@g.com', 'password', 'CUSTOMER'),
-('Дженіфер Лопес', 'user4@g.com', 'password', 'CUSTOMER');
+insert into `user` (`first_name`, `last_name`,`phone`,`login`, `password`, `role`) values
+('Сергій', 'Адміненко','11234567','admin@g.com', 'admin', 'ADMIN'),
+('Іван', 'Менеджерский', '11234568','manager@g.com', 'manager', 'MANAGER'),
+('Петро', 'Мастеровий', '11234569','master@g.com', 'master', 'MASTER'),
+('Папа', 'Карло', '11234560','user1@g.com', 'password', 'CUSTOMER'),
+('Буратіно','Карло', '11234571','user2@g.com', 'password', 'CUSTOMER'),
+('Федір', 'Дядя', '11234572','user3@g.com', 'password', 'CUSTOMER'),
+('Дженіфер', 'Лопес', '11234573','user4@g.com', 'password', 'CUSTOMER');
 
 insert into repairs_types (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'), ('VACUUM_CLEANER'),
 							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'), ('OTHER'), ('STOVE'), ('WASHER'), ('RANGE_HOOD'), ('ICE_MAKER');

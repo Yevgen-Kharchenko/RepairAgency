@@ -1,6 +1,12 @@
 package com.repairagency.web;
 
-import com.repairagency.web.command.*;
+import com.repairagency.web.command.Command;
+import com.repairagency.web.command.admin.*;
+import com.repairagency.web.command.error.ForbiddenCommand;
+import com.repairagency.web.command.error.NotFoundCommand;
+import com.repairagency.web.command.error.UnderConstructionCommand;
+import com.repairagency.web.command.info.*;
+import com.repairagency.web.command.logic.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +41,7 @@ public class CommandFactory {
         getCommandMap.put("/profile", new ProfileCommand());
         getCommandMap.put("/order-comment", new OrderCommentCommand());
         getCommandMap.put("/403-error", new ForbiddenCommand());
+        getCommandMap.put("/user-profile", new UserProfileCommand());
 
         postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("/login", new LoginCommand());
@@ -42,6 +49,7 @@ public class CommandFactory {
         postCommandMap.put("/responses", new ResponsesCommand());
         postCommandMap.put("/profile", new ProfileCommand());
         postCommandMap.put("/order-comment", new OrderCommentCommand());
+        postCommandMap.put("/user-profile", new UserProfileCommand());
     }
 
     private CommandFactory() {

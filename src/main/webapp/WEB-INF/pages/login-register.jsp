@@ -17,7 +17,7 @@
     <main class="page-content">
 <div class="range range-sm-center"><h5>
     <c:if test="${not empty error}">
-        <c:out value ="${error}"/>
+        <c:out value ="${error}" />
     </c:if>
 </h5></div>
         <section class="section-10 section-sm-top-10">
@@ -67,20 +67,16 @@
                                         <form class="text-left" action="register" method="post">
 											<div class="form-group">
 												<label for="contact-first-name" class="form-label-outside"><fmt:message key="first.name"/></label>
-												<input id="contact-first-name" type="text" name="first-name" data-constraints="@Required" class="form-control">
+												<input id="contact-first-name" type="text" name="firstName" data-constraints="@Required" class="form-control">
 											</div>
 											<div class="form-group">
 												<label for="contact-last-name" class="form-label-outside"><fmt:message key="last.name"/></label>
-												<input id="contact-last-name" type="text" name="last-name" data-constraints="@Required" class="form-control">
+												<input id="contact-last-name" type="text" name="lastName" data-constraints="@Required" class="form-control">
 											</div>
 											<div class="form-group">
 												<label for="contact-phone" class="form-label-outside"><fmt:message key="phone"/></label>
 												<input id="contact-phone" type="text" name="phone" data-constraints="@Required @Numeric" class="form-control">
 											</div>
-                                            <div class="form-group">
-                                                <label for="register-username" class="form-label-outside">Username</label>
-                                                <input id="register-username" type="text" name="username" data-constraints="@Required" class="form-control">
-                                            </div>
                                             <div class="form-group offset-top-18">
                                                 <label for="register-email" class="form-label-outside"><fmt:message key="email"/></label>
                                                 <input id="register-email" type="text" name="login" data-constraints="@Email @Required" class="form-control">
@@ -91,7 +87,7 @@
                                             </div>
 											<div class="form-group offset-top-18">
 												<label for="register-confirm-password" class="form-label-outside"><fmt:message key="confirm.password"/></label>
-												<input id="register-confirm-password" type="password" name="password" data-constraints="@Required" class="form-control">
+												<input id="register-confirm-password" type="password" name="confirmPassword" data-constraints="@Required" class="form-control">
 											</div>
                                             <div class="offset-top-18 text-center">
                                                 <button type="submit" class="btn btn-primary"><fmt:message key="register"/></button>

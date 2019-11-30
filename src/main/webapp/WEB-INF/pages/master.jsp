@@ -19,7 +19,7 @@
       <div class="shell">
         <div class="range">
           <div class="cell-md-10 cell-lg-8">
-            <h5><fmt:message key="hello"/> ${user.username}!</h5>
+            <h5><fmt:message key="hello"/>  ${user.firstName} ${user.lastName}!</h5>
 			<h6><fmt:message key="you.can.master"/><a href="profile" class="search_link"><fmt:message key="profile"/></a></h6>
             <hr>
             <div class="offset-top-32">

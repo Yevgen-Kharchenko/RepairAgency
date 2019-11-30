@@ -1,12 +1,13 @@
-package com.repairagency.web.command;
+package com.repairagency.web.command.admin;
 
+        import com.repairagency.web.command.Command;
         import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
 
 import static com.repairagency.web.PageUrlConstants.REDIRECT_HOME_PAGE;
 
-public class LogoutCommand implements Command{
+public class LogoutCommand implements Command {
     @Override
     public Page perform(HttpServletRequest request) {
         request.getSession().invalidate();

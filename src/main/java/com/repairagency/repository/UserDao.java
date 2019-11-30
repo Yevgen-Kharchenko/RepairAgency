@@ -9,20 +9,26 @@ import java.util.List;
 public class UserDao extends AbstractDao<User> {
     private static final Logger LOG = Logger.getLogger(UserDao.class);
 
-    private static final String COLUMN_USERNAME = "username";
+    private static final String COLUMN_FIRST_NAME = "first_name";
+    private static final String COLUMN_LAST_NAME = "last_name";
+    private static final String COLUMN_PHONE = "phone";
     private static final String COLUMN_LOGIN = "login";
     private static final String COLUMN_PASSWORD = "password";
     private static final String COLUMN_ROLE = "role";
     private static final String SELECT_ALL_USERS = "SELECT * FROM `user`";
 
     private static final String INSERT_INTO_USER = "INSERT INTO `user` ("
-            + COLUMN_USERNAME + ", "
+            + COLUMN_FIRST_NAME + ", "
+            + COLUMN_LAST_NAME + ", "
+            + COLUMN_PHONE + ", "
             + COLUMN_LOGIN + ", "
             + COLUMN_PASSWORD + ", "
-            + COLUMN_ROLE + ") VALUE (?, ?, ?, ?)";
+            + COLUMN_ROLE + ") VALUE (?, ?, ?, ?, ?, ?)";
 
     private static final String UPDATE_USER = "UPDATE `user` SET "
-            + COLUMN_USERNAME + "= ?, "
+            + COLUMN_FIRST_NAME + "= ?, "
+            + COLUMN_LAST_NAME + "= ?, "
+            + COLUMN_PHONE + "= ?, "
             + COLUMN_LOGIN + "= ?, "
             + COLUMN_PASSWORD + "= ?, "
             + COLUMN_ROLE + "= ? WHERE "
@@ -37,6 +43,11 @@ public class UserDao extends AbstractDao<User> {
                 ps -> ps.setInt(1, id),
                 getMapper());
     }
+    public User getByLogin(String login, boolean full) {
+        return getByLogin("SELECT * FROM `user` WHERE login = ?",
+                ps -> ps.setString(1, login),
+                getMapper());
+    }
 
     @Override
     public List<User> getAll() {
@@ -45,7 +56,9 @@ public class UserDao extends AbstractDao<User> {
 
     private EntityMapper<User> getMapper() {
         return resultSet -> new User(resultSet.getInt(COLUMN_ID),
-                resultSet.getString(COLUMN_USERNAME),
+                resultSet.getString(COLUMN_FIRST_NAME),
+                resultSet.getString(COLUMN_LAST_NAME),
+                resultSet.getString(COLUMN_PHONE),
                 resultSet.getString(COLUMN_LOGIN),
                 resultSet.getString(COLUMN_PASSWORD),
                 Role.valueOf(resultSet.getString(COLUMN_ROLE)));
@@ -55,10 +68,12 @@ public class UserDao extends AbstractDao<User> {
     public boolean create(User entity) {
         LOG.debug("Create user: + " + entity);
         return createUpdate(INSERT_INTO_USER, ps -> {
-            ps.setString(1, entity.getUsername());
-            ps.setString(2, entity.getLogin());
-            ps.setString(3, entity.getPassword());
-            ps.setString(4, entity.getRole().toString());
+            ps.setString(1, entity.getFirstName());
+            ps.setString(2, entity.getLastName());
+            ps.setString(3, entity.getPhone());
+            ps.setString(4, entity.getLogin());
+            ps.setString(5, entity.getPassword());
+            ps.setString(6, entity.getRole().toString());
         });
     }
 
@@ -66,11 +81,13 @@ public class UserDao extends AbstractDao<User> {
     public boolean update(User entity) {
         LOG.debug("Update user: " + entity);
         return createUpdate(UPDATE_USER, ps -> {
-            ps.setString(1, entity.getUsername());
-            ps.setString(2, entity.getLogin());
-            ps.setString(3, entity.getPassword());
-            ps.setString(4, entity.getRole().toString());
-            ps.setInt(5, entity.getId());
+            ps.setString(1, entity.getFirstName());
+            ps.setString(2, entity.getLastName());
+            ps.setString(3, entity.getPhone());
+            ps.setString(4, entity.getLogin());
+            ps.setString(5, entity.getPassword());
+            ps.setString(6, entity.getRole().toString());
+            ps.setInt(7, entity.getId());
         });
     }
 

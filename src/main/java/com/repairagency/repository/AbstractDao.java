@@ -19,12 +19,33 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return null;
     }
 
+    public T getByLogin(String login, boolean full) {
+        return null;
+    }
+
     @Override
     public List<T> getAll(boolean full) {
         return null;
     }
 
     public T getById(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
+        T result = null;
+
+        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query);) {
+            statementMapper.map(preparedStatement);
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                while (resultSet.next()) {
+                    result = mapper.map(resultSet);
+                }
+            }
+        } catch (SQLException e) {
+            LOG.error("Exception while getting all entities", e);
+        }
+
+        return result;
+    }
+
+    public T getByLogin(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         T result = null;
 
         try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query);) {

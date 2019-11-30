@@ -1,9 +1,10 @@
-package com.repairagency.web.command;
+package com.repairagency.web.command.logic;
 
 import com.repairagency.repository.EntityDao;
 import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.repository.DaoFactory;
+import com.repairagency.web.command.Command;
 import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;

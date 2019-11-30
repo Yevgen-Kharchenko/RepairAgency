@@ -4,7 +4,9 @@ import com.repairagency.model.enums.Role;
 
 public class User {
     private int id;
-    private String username;
+    private String firstName;
+    private String lastName;
+    private String phone;
     private String login;
     private String password;
     private Role role;
@@ -12,27 +14,47 @@ public class User {
     public User() {
     }
 
-    public User(int id, String username, String login, String password, Role role) {
+    public User(int id, String firstName, String lastName, String phone, String login, String password, Role role) {
         this.id = id;
-        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
         this.login = login;
         this.password = password;
         this.role = role;
     }
 
-    public User(String username, String login, String password, Role role) {
-        this.username = username;
+    public User(String firstName, String lastName, String phone, String login, String password, Role role) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
         this.login = login;
         this.password = password;
         this.role = role;
     }
 
-    public String getUsername() {
-        return username;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public int getId() {
@@ -71,7 +93,9 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phone='" + phone + '\'' +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
                 ", role=" + role +

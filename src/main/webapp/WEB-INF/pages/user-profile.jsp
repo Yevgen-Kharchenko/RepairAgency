@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title><fmt:message key="profile2"/></title>
+    <title><fmt:message key="profile3"/></title>
     <c:import url="templ/head-part.jsp"/>
 </head>
 
@@ -22,51 +22,65 @@
       <div class="shell">
         <div class="range">
           <div class="cell-md-10 cell-lg-8">
-            <h5><fmt:message key="edit.profile"/></h5>
+            <h5><fmt:message key="edit.user.profile"/></h5>
             <hr>
-            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="profile">
+            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="user-profile">
               <div class="range">
                 <div class="cell-sm-6">
                   <div class="form-group">
                     <label for="contact-first-name" class="form-label-outside"><fmt:message key="first.name"/></label>
-                    <input id="contact-first-name" value="${user.firstName}" type="text" name="firstName" data-constraints="@Reqstaticred" class="form-control">
+                    <input id="contact-first-name" value="${userProfile.firstName}" type="text" name="firstName" data-constraints="@Reqstaticred" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18 offset-sm-top-0">
                   <div class="form-group">
                     <label for="contact-last-name" class="form-label-outside"><fmt:message key="last.name"/></label>
-                    <input id="contact-last-name" value="${user.lastName}" type="text" name="lastName" data-constraints="@Reqstaticred" class="form-control">
+                    <input id="contact-last-name" value="${userProfile.lastName}" type="text" name="lastName" data-constraints="@Reqstaticred" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
                     <label for="contact-email" class="form-label-outside"><fmt:message key="email"/></label>
-                    <input id="contact-email" value="${user.login}" type="email" name="login" data-constraints="@Email @Reqstaticred" class="form-control">
+                    <input id="contact-email" value="${userProfile.login}" type="email" name="login" data-constraints="@Email @Reqstaticred" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
                     <label for="contact-phone" class="form-label-outside"><fmt:message key="phone"/></label>
-                    <input id="contact-phone" value="${user.phone}" type="text" name="phone" data-constraints="@Reqstaticred @Numeric" class="form-control">
+                    <input id="contact-phone" value="${userProfile.phone}" type="text" name="phone" data-constraints="@Reqstaticred @Numeric" class="form-control">
                   </div>
                 </div>
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
                     <label for="register-password" class="form-label-outside"><fmt:message key="password"/></label>
-                        <input id="register-password" value="${user.password}" type="password" name="password" data-constraints="@Reqstaticred" class="form-control">
+                        <input id="register-password" value="${userProfile.password}" type="password" name="password" data-constraints="@Reqstaticred" class="form-control">
                   </div>
                 </div>
+
+
                 <div class="cell-sm-6 offset-top-18">
                   <div class="form-group">
-                    <label for="register-confirm-password" class="form-label-outside"><fmt:message key="confirm.password"/></label>
-                        <input id="register-confirm-password" value="${user.password}" type="password" name="confirmPassword" data-constraints="@Reqstaticred" class="form-control">
+                    <label for="role" class="form-label-outside"><fmt:message key="role"/></label>
+                      <select id="role"  name="role"  class="form-control">
+                          <option value="CUSTOMER">CUSTOMER</option>
+                          <option value="MANAGER">MANAGER</option>
+                          <option value="MASTER">MASTER</option>
+                          <option value="ADMIN">ADMIN</option>
+                      </select>
+
                   </div>
                 </div>
-				</div>
+
+
                 <div class="cell-xs-12 offset-top-30">
-                  <button type="submit" class="btn btn-primary"><fmt:message key="edit.profile"/></button>
+                    <div class="offset-top-35 offset-sm-top-50">
+                        <div class="group-xl"><a href="admin" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.account"/></a>
+                            <button type="submit" class="btn btn-primary"><fmt:message key="edit.user.profile"/></button>
+                        </div>
+                    </div>
                 </div>
-              </form>
+				</div>
+             </form>
 			</div>
           </div>
         </div>

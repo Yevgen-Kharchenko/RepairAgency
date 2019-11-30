@@ -1,8 +1,9 @@
-package com.repairagency.web.command;
+package com.repairagency.web.command.admin;
 
 import com.repairagency.model.User;
 import com.repairagency.service.ServiceFactory;
 import com.repairagency.service.UserService;
+import com.repairagency.web.command.UniCommand;
 import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
@@ -30,15 +31,14 @@ public class LoginCommand extends UniCommand {
         System.out.println("login: " + login + ", password: " + password);
 
         HttpSession session = request.getSession();
-        int userId = userService.validateUser(login, password);
-        if (userId != 0) {
-            User user = userService.getUser(userId);
+
+        if (userService.validateUser(login,password)){
+            User user = userService.getUserByLogin(login);
             session.setAttribute("user", user);
             return new Page(REDIRECT_HOME_PAGE,true);
         }
-
         session.setAttribute("error", "Login or password invalid!");
-        return new Page(REDIRECT_HOME_PAGE, true);
+        return new Page(LOGIN_PAGE, false);
 
     }
 }
