@@ -85,6 +85,11 @@ public class CommentsDao extends AbstractDao<Comments> {
         return null;
     }
 
+    @Override
+    public List<Comments> getAllByField(String field, boolean full) {
+        return null;
+    }
+
 
 //    private static final String SELECT_ALL_FULL =
 //            "SELECT * FROM `feedback` join `order` on responses.orderId = order.id ";

@@ -43,47 +43,14 @@
                         <td>${orders.date}</td>
                         <td>${orders.repairsTypes}</td>
 						<td>${orders.price}</td>
-                        <td>new</td>
+                        <td>${orders.status}</td>
                         <td>
-                            <a href="order-comment" class="search_link"><span
+                            <a href="order-comment?id=${orders.id}" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>
                     </c:forEach>
-                    <tr>
-                        <td>2</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-						<td>OFFER</td>
-                        <td>500,00</td>
-                        <td>
-                            <a href="order-comment" class="search_link"><span
-                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-						<td>IN_PROGRESS</td>
-                        <td>500,00</td>
-                        <td>
-                            <a href="order-comment" class="search_link"><span
-                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-						<td>CLOSED</td>
-                        <td>500,00</td>
-                        <td>
-                            <a href="order-comment" class="search_link"><span
-                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                        </td>
-                    </tr>
-                    </tbody>
+                   </tbody>
                 </table>
               </div>
             </div>

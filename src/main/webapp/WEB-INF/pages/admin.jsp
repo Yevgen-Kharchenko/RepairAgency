@@ -52,67 +52,25 @@
                                                                 <th><fmt:message key="last.name"/></th>
                                                                 <th><fmt:message key="email"/></th>
                                                                 <th><fmt:message key="phone"/></th>
-                                                                <th><fmt:message key="price"/></th>
                                                                 <th><fmt:message key="edit"/></th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
+                                                            <c:forEach items="${ordersNew}" var="ordersNew">
                                                             <tr>
-                                                                <td>1</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
+                                                                <td>${ordersNew.id}</td>
+                                                                <td>${ordersNew.date}</td>
+                                                                <td>${ordersNew.repairsTypes}</td>
+                                                                <td>${ordersNew.customer.firstName}</td>
+                                                                <td>${ordersNew.customer.lastName}</td>
+                                                                <td>${ordersNew.customer.login}</td>
+                                                                <td>${ordersNew.customer.phone}</td>
                                                                 <td>
-                                                                    <a href="order-comment" class="search_link"><span
+                                                                    <a href="order-comment?id=${ordersNew.id}" class="search_link"><span
                                                                             class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
+                                                            </c:forEach>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -144,62 +102,22 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
+                                                            <c:forEach items="${ordersOffer}" var="ordersOffer">
+                                                                <tr>
+                                                                    <td>${ordersOffer.id}</td>
+                                                                    <td>${ordersOffer.date}</td>
+                                                                    <td>${ordersOffer.repairsTypes}</td>
+                                                                    <td>${ordersOffer.customer.firstName}</td>
+                                                                    <td>${ordersOffer.customer.lastName}</td>
+                                                                    <td>${ordersOffer.customer.login}</td>
+                                                                    <td>${ordersOffer.customer.phone}</td>
+                                                                    <td>${ordersOffer.price}</td>
+                                                                    <td>
+                                                                        <a href="order-comment?id=${ordersOffer.id}" class="search_link"><span
+                                                                                class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </c:forEach>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -231,62 +149,22 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
+                                                            <c:forEach items="${ordersInProgress}" var="ordersInProgress">
+                                                                <tr>
+                                                                    <td>${ordersInProgress.id}</td>
+                                                                    <td>${ordersInProgress.date}</td>
+                                                                    <td>${ordersInProgress.repairsTypes}</td>
+                                                                    <td>${ordersInProgress.customer.firstName}</td>
+                                                                    <td>${ordersInProgress.customer.lastName}</td>
+                                                                    <td>${ordersInProgress.customer.login}</td>
+                                                                    <td>${ordersInProgress.customer.phone}</td>
+                                                                    <td>${ordersInProgress.price}</td>
+                                                                    <td>
+                                                                        <a href="order-comment?id=${ordersInProgress.id}" class="search_link"><span
+                                                                                class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </c:forEach>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -318,62 +196,22 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
+                                                            <c:forEach items="${ordersCompleted}" var="ordersCompleted">
+                                                                <tr>
+                                                                    <td>${ordersCompleted.id}</td>
+                                                                    <td>${ordersCompleted.date}</td>
+                                                                    <td>${ordersCompleted.repairsTypes}</td>
+                                                                    <td>${ordersCompleted.customer.firstName}</td>
+                                                                    <td>${ordersCompleted.customer.lastName}</td>
+                                                                    <td>${ordersCompleted.customer.login}</td>
+                                                                    <td>${ordersCompleted.customer.phone}</td>
+                                                                    <td>${ordersCompleted.price}</td>
+                                                                    <td>
+                                                                        <a href="order-comment?id=${ordersCompleted.id}" class="search_link"><span
+                                                                                class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </c:forEach>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -405,62 +243,22 @@
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4</td>
-                                                                <td>2019-09-15</td>
-                                                                <td>REFRIGERATOR</td>
-                                                                <td>Timothy</td>
-                                                                <td>Richards</td>
-                                                                <td>@timothyrichards</td>
-                                                                <td>123-456-78-90</td>
-                                                                <td>500,00</td>
-                                                                <td>
-                                                                    <a href="order-comment" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
+                                                            <c:forEach items="${ordersCanceled}" var="ordersCanceled">
+                                                                <tr>
+                                                                    <td>${ordersCanceled.id}</td>
+                                                                    <td>${ordersCanceled.date}</td>
+                                                                    <td>${ordersCanceled.repairsTypes}</td>
+                                                                    <td>${ordersCanceled.customer.firstName}</td>
+                                                                    <td>${ordersCanceled.customer.lastName}</td>
+                                                                    <td>${ordersCanceled.customer.login}</td>
+                                                                    <td>${ordersCanceled.customer.phone}</td>
+                                                                    <td>${ordersCanceled.price}</td>
+                                                                    <td>
+                                                                        <a href="order-comment?id=${ordersCanceled.id}" class="search_link"><span
+                                                                                class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </c:forEach>
                                                             </tbody>
                                                         </table>
                                                     </div>

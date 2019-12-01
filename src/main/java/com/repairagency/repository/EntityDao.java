@@ -23,4 +23,6 @@ public interface EntityDao<T> {
 
     List<T> getAllById(int id, boolean full);
 
+    List<T> getAllByField(String field, boolean full);
+
 }

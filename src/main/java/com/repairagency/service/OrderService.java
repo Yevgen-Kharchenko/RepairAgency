@@ -36,6 +36,7 @@ public class OrderService {
             orderDTO.setDate(orders.getDate());
             orderDTO.setRepairsTypes(repairsTypes.getTitle(), false);
             orderDTO.setPrice(orders.getPrice());
+            orderDTO.setStatus(orders.getStatus());
 
             return orderDTO;
         }).collect(Collectors.toList());
@@ -51,6 +52,22 @@ public class OrderService {
 
         LOG.info("order create : " + order.toString());
         LOG.info("comment create : " + comments.toString());
+    }
+
+    public List<OrderDTO> getAllByStatus(Status status) {
+        List<Order> all = orderDao.getAllByField(status.toString(), true);
+        return all.stream().map(orders -> {
+            RepairsTypes repairsTypes = repairTypesDao.getById(orders.getRepairsTypesId(), false);
+            OrderDTO orderDTO = new OrderDTO();
+            orderDTO.setId(orders.getId());
+            orderDTO.setDate(orders.getDate());
+            orderDTO.setRepairsTypes(repairsTypes.getTitle(), false);
+            orderDTO.setPrice(orders.getPrice());
+            orderDTO.setCustomer(userDao.getById(orders.getUserId(),false));
+            orderDTO.setStatus(orders.getStatus());
+
+            return orderDTO;
+        }).collect(Collectors.toList());
     }
 }
 

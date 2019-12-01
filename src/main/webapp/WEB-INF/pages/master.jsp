@@ -34,43 +34,18 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <c:forEach items="${ordersByMaster}" var="ordersByMaster">
                     <tr>
-                        <td>1</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
+                        <td>${ordersByMaster.id}</td>
+                        <td>${ordersByMaster.date}</td>
+                        <td>${ordersByMaster.repairsTypes}</td>
                         <td>
-                            <a href="order-comment" class="search_link"><span
+                            <a href="order-comment?id=${ordersByMaster.id}" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-                        <td>
-                            <a href="order-comment" class="search_link"><span
-                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-                       <td>
-                            <a href="order-comment" class="search_link"><span
-                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-                       <td>
-                            <a href="order-comment" class="search_link"><span
-                                    class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                        </td>
-                    </tr>
-                    </tbody>
+                    </c:forEach>
+                   </tbody>
                 </table>
               </div>
             </div>

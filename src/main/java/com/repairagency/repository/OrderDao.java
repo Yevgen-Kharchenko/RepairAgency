@@ -40,15 +40,22 @@ public class OrderDao extends AbstractDao<Order> {
 
     @Override
     public Order getByDate(LocalDateTime date, boolean full) {
-        LOG.info("Date-2 hours" + date);
+
         return getByDate("SELECT * FROM `order` WHERE `date` = ?",
                 ps -> ps.setTimestamp(1, Timestamp.valueOf(date)),
                 getMapper());
 
     }
 
+    @Override
+    public List<Order> getAllByField(String field, boolean full) {
+        return getAllByField(SELECT_ALL_ORDER + "WHERE " + COLUMN_STATUS + "= ?",
+                ps -> ps.setString(1, field),
+                getMapper());
+    }
+
     public Order getByLogin(String login, boolean full) {
-        return getByLogin("SELECT * FROM `order` WHERE date = ?",
+        return getByLogin("SELECT * FROM `order` WHERE status = ?",
                 ps -> ps.setString(1, login),
                 getMapper());
     }
