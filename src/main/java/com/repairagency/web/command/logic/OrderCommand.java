@@ -18,7 +18,9 @@ public class OrderCommand extends UniCommand {
     private static final int LENGTH_MESSAGE = 10;
     private OrderService orderService;
 
-    public OrderCommand(){this.orderService= ServiceFactory.getOrderService(); }
+    public OrderCommand() {
+        this.orderService = ServiceFactory.getOrderService();
+    }
 
     @Override
     protected Page performGet(HttpServletRequest request) {
@@ -33,13 +35,13 @@ public class OrderCommand extends UniCommand {
         String message = request.getParameter("message");
         User user = (User) session.getAttribute("user");
 
-        if (message.length()>LENGTH_MESSAGE){
-            orderService.createOrder(date,repairTypeId,message,user.getId());
+        if (message.length() > LENGTH_MESSAGE) {
+            orderService.createOrder(date, repairTypeId, message, user.getId());
             session.setAttribute("error", "Thank you for your order!");
             LOG.info("order : " + message);
-            return new Page("/"+ORDER_PAGE);
+            return new Page("/" + ORDER_PAGE);
         }
         session.setAttribute("error", "Message must be longer than 10 characters");
-        return new Page("/"+ORDER_PAGE,true);
+        return new Page("/" + ORDER_PAGE, false);
     }
 }

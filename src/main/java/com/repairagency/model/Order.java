@@ -1,5 +1,7 @@
 package com.repairagency.model;
 
+import com.repairagency.model.enums.Status;
+
 import java.time.LocalDateTime;
 
 public class Order {
@@ -8,21 +10,24 @@ public class Order {
     private double price;
     private int repairsTypesId;
     private int userId;
+    private Status status;
 
     public Order(int id, LocalDateTime date,
                  double price, int repairsTypesId,
-                 int userId) {
+                 int userId, Status status) {
         this.id = id;
         this.date = date;
         this.price = price;
         this.repairsTypesId = repairsTypesId;
         this.userId = userId;
+        this.status = status;
     }
 
-    public Order(LocalDateTime date, int repairsTypesId, int userId) {
+    public Order(LocalDateTime date, int repairsTypesId, int userId, Status status) {
         this.date = date;
         this.repairsTypesId = repairsTypesId;
         this.userId = userId;
+        this.status = status;
     }
 
     public int getId() {
@@ -65,10 +70,23 @@ public class Order {
         this.repairsTypesId = repairsTypesId;
     }
 
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
-        return "Order{" + "id=" + id + ", date='" + date + '\'' +
+        return "Order{" +
+                "id=" + id +
+                ", date=" + date +
+                ", price=" + price +
                 ", repairsTypesId=" + repairsTypesId +
-                ", price=" + price + '}' + "\n";
+                ", userId=" + userId +
+                ", status=" + status +
+                '}';
     }
 }

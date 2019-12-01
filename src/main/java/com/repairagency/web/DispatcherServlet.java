@@ -27,6 +27,7 @@ public class DispatcherServlet extends HttpServlet {
 
 
     private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         String path = getPath(req);
 
         Command command = CommandFactory.getCommand(path, req.getMethod());

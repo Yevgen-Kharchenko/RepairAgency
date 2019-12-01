@@ -15,7 +15,7 @@ public class DaoFactory {
         daoMap.put(DaoType.COMMENTS, new CommentsDao());
         daoMap.put(DaoType.REPAIR, new RepairsTypesDao());
         daoMap.put(DaoType.ORDER, new OrderDao());
-        daoMap.put(DaoType.STATUS, new OrderStatusDao());
+
     }
 
     private DaoFactory() {

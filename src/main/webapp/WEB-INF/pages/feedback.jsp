@@ -15,6 +15,11 @@
 <div class="page">
     <c:import url="templ/header-part.jsp"/>
     <main class="page-content">
+        <div class="range range-sm-center"><h5>
+            <c:if test="${not empty error}">
+                <c:out value ="${error}" />
+            </c:if>
+        </h5></div>
 
         <section class="section-top-60 section-sm-top-90">
             <div class="shell">

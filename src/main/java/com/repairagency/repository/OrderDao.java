@@ -1,6 +1,7 @@
 package com.repairagency.repository;
 
 import com.repairagency.model.Order;
+import com.repairagency.model.enums.Status;
 import org.apache.log4j.Logger;
 
 import java.sql.Timestamp;
@@ -15,6 +16,7 @@ public class OrderDao extends AbstractDao<Order> {
     private static final String COLUMN_PRICE = "price";
     private static final String COLUMN_REPAIRS_TYPES_ID = "repairsTypesId";
     private static final String COLUMN_USER_ID = "userId";
+    private static final String COLUMN_STATUS = "status";
     private static final String SELECT_ALL_ORDER = "SELECT * FROM `order`";
     private static final String SELECT_ALL_ORDER_BY_USER_ID = "SELECT * FROM `order` WHERE userId = ?";
 
@@ -22,13 +24,15 @@ public class OrderDao extends AbstractDao<Order> {
             + COLUMN_DATE + ", "
             + COLUMN_PRICE + ", "
             + COLUMN_REPAIRS_TYPES_ID + ", "
-            + COLUMN_USER_ID + ") VALUE (?, ?, ?, ?)";
+            + COLUMN_USER_ID + ", "
+            + COLUMN_STATUS + ") VALUE (?, ?, ?, ?, ?)";
 
     private static final String UPDATE_ORDER = "UPDATE `order` SET "
             + COLUMN_DATE + "= ?, "
             + COLUMN_PRICE + "= ?, "
-            + COLUMN_REPAIRS_TYPES_ID + ", "
-            + COLUMN_USER_ID + "= ? WHERE "
+            + COLUMN_REPAIRS_TYPES_ID + "= ?, "
+            + COLUMN_USER_ID + "= ?, "
+            + COLUMN_STATUS + "= ? WHERE "
             + COLUMN_ID + " = ?";
 
     private static final String DELETE_ORDER = "DELETE FROM `order` "
@@ -36,7 +40,7 @@ public class OrderDao extends AbstractDao<Order> {
 
     @Override
     public Order getByDate(LocalDateTime date, boolean full) {
-        LOG.info("Date-2 hours"+date);
+        LOG.info("Date-2 hours" + date);
         return getByDate("SELECT * FROM `order` WHERE `date` = ?",
                 ps -> ps.setTimestamp(1, Timestamp.valueOf(date)),
                 getMapper());
@@ -62,6 +66,7 @@ public class OrderDao extends AbstractDao<Order> {
             ps.setDouble(2, entity.getPrice());
             ps.setInt(3, entity.getRepairsTypesId());
             ps.setInt(4, entity.getUserId());
+            ps.setString(5, entity.getStatus().toString());
         });
     }
 
@@ -73,7 +78,8 @@ public class OrderDao extends AbstractDao<Order> {
             ps.setDouble(2, entity.getPrice());
             ps.setInt(3, entity.getRepairsTypesId());
             ps.setInt(4, entity.getUserId());
-            ps.setInt(5, entity.getId());
+            ps.setString(5, entity.getStatus().toString());
+            ps.setInt(6, entity.getId());
         });
     }
 
@@ -96,7 +102,8 @@ public class OrderDao extends AbstractDao<Order> {
                 resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
                 resultSet.getDouble(COLUMN_PRICE),
                 resultSet.getInt(COLUMN_REPAIRS_TYPES_ID),
-                resultSet.getInt(COLUMN_USER_ID));
+                resultSet.getInt(COLUMN_USER_ID),
+                Status.valueOf(resultSet.getString(COLUMN_STATUS)));
     }
 
 }

@@ -23,21 +23,12 @@ id int auto_increment,
 price double default 0,
 repairsTypesId int,
 userId int,
-primary key(id),
-foreign key (repairsTypesId) references repairs_types(id),
-foreign key (userId) references user(id));
-
-create table order_status (
-id int auto_increment,
-`date` datetime,
 status enum("NEW", "OFFER", "APPROVED",
 	"CANCELED", "IN_PROGRESS",
     "COMPLETED", "CLOSED"),
-userId int,
-orderId int,
-primary key (id),
-foreign key (userId) references user(id),
-foreign key (orderId) references `order`(id));
+primary key(id),
+foreign key (repairsTypesId) references repairs_types(id),
+foreign key (userId) references user(id));
 
 create table comments(
 id int auto_increment,
