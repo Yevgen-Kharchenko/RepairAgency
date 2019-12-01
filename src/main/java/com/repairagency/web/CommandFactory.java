@@ -32,7 +32,7 @@ public class CommandFactory {
         getCommandMap.put("/master", new MasterCommand());
         getCommandMap.put("/order", new OrderCommand());
         getCommandMap.put("/privacy", new PrivacyCommand());
-        getCommandMap.put("/responses", new ResponsesCommand());
+        getCommandMap.put("/feedback", new FeedbackCommand());
         getCommandMap.put("/services", new ServicesCommand());
         getCommandMap.put("/team", new TeamCommand());
         getCommandMap.put("/team-member-profile", new TeamProfileCommand());
@@ -48,7 +48,7 @@ public class CommandFactory {
         postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("/login", new LoginCommand());
         postCommandMap.put("/register", new RegisterCommand());
-        postCommandMap.put("/responses", new ResponsesCommand());
+        postCommandMap.put("/feedback", new FeedbackCommand());
         postCommandMap.put("/profile", new ProfileCommand());
         postCommandMap.put("/order-comment", new OrderCommentCommand());
         postCommandMap.put("/user-profile", new UserProfileCommand());

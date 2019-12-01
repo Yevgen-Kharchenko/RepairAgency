@@ -49,12 +49,11 @@ primary key (id),
 foreign key (userId) references user(id),
 foreign key (orderId) references `order`(id));
 
-create table responses(
+create table feedback(
 id int auto_increment,
 `date` datetime,
-response varchar(2000) not null,
+feedback varchar(2000) not null,
 userId int,
-orderId int,
 primary key (id),
-foreign key (userId) references user(id),
-foreign key (orderId) references `order`(id));
+foreign key (userId) references user(id)
+);

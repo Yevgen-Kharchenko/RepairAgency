@@ -34141,3 +34141,61 @@ java.sql.SQLException: Incorrect DATETIME value: ''2019-12-01 15:27:36''
 [http-bio-8880-exec-6] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
 [http-bio-8880-exec-6] INFO  com.repairagency.repository.OrderDao  - Date-2 hours2019-12-01T17:08:37
 [http-bio-8880-exec-6] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[localhost-startStop-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set init defaultLocale=en
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set locale to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.LocalizationFilter  - Set bundle to session
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /order
+[http-bio-8880-exec-1] INFO  com.repairagency.web.filter.AuthenticationFilter  - User not logged
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login-register. New Path: /app/login-register
+[http-bio-8880-exec-2] INFO  com.repairagency.web.DispatcherServlet  - Path: /login-register
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /login. New Path: /app/login
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Path: /login
+[http-bio-8880-exec-3] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-3] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-3] INFO  com.repairagency.web.DispatcherServlet  - Redirect to: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.AuthenticationFilter  - Page is not secured: /
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /. New Path: /app/
+[http-bio-8880-exec-4] INFO  com.repairagency.web.DispatcherServlet  - Path: /
+[http-bio-8880-exec-4] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-4] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-4] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-4] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-4] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-4] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /order
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/order
+[http-bio-8880-exec-5] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /order. New Path: /app/order
+[http-bio-8880-exec-5] INFO  com.repairagency.web.DispatcherServlet  - Path: /order
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - Path: /order
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.AuthenticationFilter  - User has permission. Continue
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Do service, URI: /RepairAgency/order
+[http-bio-8880-exec-6] INFO  com.repairagency.web.filter.StaticResourceFilter  - Non static resource: /order. New Path: /app/order
+[http-bio-8880-exec-6] INFO  com.repairagency.web.DispatcherServlet  - Path: /order
+[http-bio-8880-exec-6] INFO  com.repairagency.service.OrderService  - Date =2019-12-01T19:11:23
+[http-bio-8880-exec-6] DEBUG com.repairagency.repository.OrderDao  - Create order: + Order{id=0, date='2019-12-01T19:11:23', repairsTypesId=6, price=0.0}
+
+[http-bio-8880-exec-6] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-6] INFO  com.repairagency.repository.OrderDao  - Date-2 hours2019-12-01T19:11:23
+[http-bio-8880-exec-6] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-6] DEBUG com.repairagency.repository.CommentsDao  - Create comments: + Comment{id=0, comment='poiuytr ;lkj hgfds ,mnbvcx, date='2019-12-01T19:11:23', orderId='36', userId='1'}
+
+[http-bio-8880-exec-6] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-6] DEBUG com.repairagency.repository.OrderStatusDao  - Create order_status: + StatusHistory{id=0, date='2019-12-01T19:11:23', statuses='NEW', userId=1, orderId=36}
+
+[http-bio-8880-exec-6] DEBUG com.repairagency.config.DataSourceConnectionPool  - Connection received jdbc:mysql://localhost:3306/repair_agency?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8, UserName=root@localhost, MySQL Connector/J
+[http-bio-8880-exec-6] INFO  com.repairagency.service.OrderService  - order create : Order{id=0, date='2019-12-01T19:11:23', repairsTypesId=6, price=0.0}
+
+[http-bio-8880-exec-6] INFO  com.repairagency.service.OrderService  - comment create : Comment{id=0, comment='poiuytr ;lkj hgfds ,mnbvcx, date='2019-12-01T19:11:23', orderId='36', userId='1'}
+
+[http-bio-8880-exec-6] INFO  com.repairagency.service.OrderService  - orderStatus create : StatusHistory{id=0, date='2019-12-01T19:11:23', statuses='NEW', userId=1, orderId=36}
+
+[http-bio-8880-exec-6] INFO  com.repairagency.web.command.logic.ResponsesCommand  - order : poiuytr ;lkj hgfds ,mnbvcx

@@ -1,7 +1,7 @@
 package com.repairagency.web.command.logic;
 
 import com.repairagency.model.User;
-import com.repairagency.service.ResponsesService;
+import com.repairagency.service.FeedbackService;
 import com.repairagency.service.ServiceFactory;
 import com.repairagency.web.command.UniCommand;
 import com.repairagency.web.data.Page;
@@ -11,21 +11,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
 
-import static com.repairagency.web.PageUrlConstants.RESPONSES_PAGE;
+import static com.repairagency.web.PageUrlConstants.FEEDBACK_PAGE;
 
-public class ResponsesCommand extends UniCommand {
-    private static final Logger LOG = Logger.getLogger(ResponsesCommand.class);
+public class FeedbackCommand extends UniCommand {
+    private static final Logger LOG = Logger.getLogger(FeedbackCommand.class);
     private static final int LENGTH_MESSAGE = 10;
-    private ResponsesService responsesService;
+    private FeedbackService feedbackService;
 
-    public ResponsesCommand() {
-        this.responsesService = ServiceFactory.getResponsesService();
+    public FeedbackCommand() {
+        this.feedbackService = ServiceFactory.getFeedbackService();
     }
 
     @Override
     protected Page performGet(HttpServletRequest request) {
-        request.setAttribute("responses", responsesService.getAll());
-        return new Page(RESPONSES_PAGE);
+        request.setAttribute("feedback", feedbackService.getAll());
+        return new Page(FEEDBACK_PAGE);
     }
 
     @Override
@@ -36,9 +36,9 @@ public class ResponsesCommand extends UniCommand {
         User user = (User) session.getAttribute("user");
 
         if (message.length() > LENGTH_MESSAGE) {
-            responsesService.setResponse(date, message, user.getId());
+            feedbackService.setFeedback(date, message, user.getId());
             session.setAttribute("error", "Thank you for your feedback!");
-            LOG.info("response : " + message);
+            LOG.info("feedback : " + message);
             return new Page("/", true);
         }
         session.setAttribute("error", "Message must be longer than 10 characters");

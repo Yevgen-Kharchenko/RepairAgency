@@ -2,15 +2,14 @@ package com.repairagency.web.view;
 
 import java.time.LocalDateTime;
 
-public class ResponsesDTO {
+public class FeedbackDTO {
     private int id;
     private LocalDateTime date;
-    private int orderId;
-    private String response;
+    private String feedback;
     private UserDTO customer;
     private RepairDTO repair;
 
-    public ResponsesDTO() {
+    public FeedbackDTO() {
     }
 
     public RepairDTO getRepair() {
@@ -19,14 +18,6 @@ public class ResponsesDTO {
 
     public void setRepair(RepairDTO repair) {
         this.repair = repair;
-    }
-
-    public int getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
     }
 
     public LocalDateTime getDate() {
@@ -45,12 +36,12 @@ public class ResponsesDTO {
         this.id = id;
     }
 
-    public String getResponse() {
-        return response;
+    public String getFeedback() {
+        return feedback;
     }
 
-    public void setResponse(String response) {
-        this.response = response;
+    public void setFeedback(String feedback) {
+        this.feedback = feedback;
     }
 
     public UserDTO getCustomer() {

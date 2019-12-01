@@ -85,4 +85,42 @@ public class CommentsDao extends AbstractDao<Comments> {
         return null;
     }
 
+
+//    private static final String SELECT_ALL_FULL =
+//            "SELECT * FROM `feedback` join `order` on responses.orderId = order.id ";
+//
+//    private static final String GET_BY_ID_FULL = SELECT_ALL_FULL + "WHERE responses.id = ?";
+//    private static final String GET_BY_ID = "SELECT * FROM `feedback` WHERE id = ?";
+//
+//    @Override
+//    public Feedback getById(int id, boolean full) {
+//        return full ? getById(GET_BY_ID_FULL, ps -> ps.setInt(1, id), getFullMapper()) :
+//                getById(GET_BY_ID, ps -> ps.setInt(1, id), getMapper());
+//    }
+//
+//    @Override
+//    public Feedback getByDate(LocalDateTime date, boolean full) {
+//        return null;
+//    }
+//
+//    @Override
+//    public List<Feedback> getAll(boolean full) {
+//        return full ? getAll(SELECT_ALL_FULL, getFullMapper()) : getAll(SELECT_ALL_FEEDBACK, getMapper());
+//    }
+//
+//private EntityMapper<Feedback> getFullMapper() {
+//    return resultSet -> new Feedback(resultSet.getInt(COLUMN_ID),
+//            resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
+//            resultSet.getString(COLUMN_FEEDBACK),
+//            resultSet.getInt(COLUMN_USER_ID));
+//}
+//
+//    private EntityMapper<Feedback> getMapper() {
+//        return resultSet -> new Feedback(resultSet.getInt(COLUMN_ID),
+//                resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
+//                resultSet.getString(COLUMN_FEEDBACK),
+//                resultSet.getInt(COLUMN_USER_ID));
+//    }
+
+
 }

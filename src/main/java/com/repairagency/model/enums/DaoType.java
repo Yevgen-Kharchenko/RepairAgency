@@ -1,5 +1,5 @@
 package com.repairagency.model.enums;
 
 public enum DaoType {
-    USER, RESPONSES, COMMENTS, ORDER, REPAIR, STATUS
+    USER, FEEDBACK, COMMENTS, ORDER, REPAIR, STATUS
 }

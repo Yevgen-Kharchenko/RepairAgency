@@ -108,8 +108,8 @@
                             <li><a href="team">
                                 <fmt:message key="our.team"/>
                             </a></li>
-                            <li><a href="responses">
-                                <fmt:message key="responses"/>
+                            <li><a href="feedback">
+                                <fmt:message key="feedback"/>
                             </a></li>
                             <li><a href="privacy">
                                 <fmt:message key="privacy.policy"/>

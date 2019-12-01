@@ -39,7 +39,6 @@ public class OrderService {
             orderDTO.setRepairsTypes(repairsTypes.getTitle(), false);
             orderDTO.setPrice(orders.getPrice());
 
-
             return orderDTO;
         }).collect(Collectors.toList());
     }

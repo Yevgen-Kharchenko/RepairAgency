@@ -4,13 +4,13 @@ public class ServiceFactory {
     private ServiceFactory() {
     }
 
-    private static ResponsesService responsesService = new ResponsesService();
+    private static FeedbackService feedbackService = new FeedbackService();
     private static UserService userService = new UserService();
     private static OrderService orderService = new OrderService();
 //    private static CommentsService commentsService = new CommentsService();
 
-    public static ResponsesService getResponsesService() {
-        return responsesService;
+    public static FeedbackService getFeedbackService() {
+        return feedbackService;
     }
 
     public static UserService getUserService() {

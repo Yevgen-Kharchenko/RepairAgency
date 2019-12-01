@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 import static com.repairagency.web.PageUrlConstants.ORDER_PAGE;
 
 public class OrderCommand extends UniCommand {
-    private static final Logger LOG = Logger.getLogger(ResponsesCommand.class);
+    private static final Logger LOG = Logger.getLogger(FeedbackCommand.class);
     private static final int LENGTH_MESSAGE = 10;
     private OrderService orderService;
 

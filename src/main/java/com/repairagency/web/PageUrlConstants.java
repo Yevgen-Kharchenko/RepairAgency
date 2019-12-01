@@ -18,7 +18,7 @@ public class PageUrlConstants {
     public static final String GALLERY_PAGE = "gallery-masonry";
     public static final String ABOUT_US_PAGE = "about";
     public static final String PRIVACY_PAGE = "privacy";
-    public static final String RESPONSES_PAGE = "responses";
+    public static final String FEEDBACK_PAGE = "feedback";
     public static final String TEAM_PAGE = "team";
     public static final String TEAM_PROFILE_PAGE = "team-member-profile";
     public static final String PROFILE_PAGE = "profile";
