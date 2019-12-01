@@ -10,7 +10,8 @@ insert into `user` (`first_name`, `last_name`,`phone`,`login`, `password`, `role
 ('Дженіфер', 'Лопес', '11234573','user4@g.com', 'password', 'CUSTOMER');
 
 insert into repairs_types (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'), ('VACUUM_CLEANER'),
-							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'), ('OTHER'), ('STOVE'), ('WASHER'), ('RANGE_HOOD'), ('ICE_MAKER');
+							('TABLET'), ('REFRIGERATOR'), ('MICROWAVE'), ('MONITOR'),
+							('OTHER'), ('STOVE'), ('WASHER'), ('RANGE_HOOD'), ('ICE_MAKER');
 
 insert into `order` (`date`, `price`, `repairsTypesId`, `userId`) 
 		values ('2019-08-20 10:00:00',100.0,1,4), ('2019-08-23 10:00:00',150.0,2,5), ('2019-08-25 10:00:00',200.0,3,6),

@@ -75,7 +75,9 @@
                 <div class="cell-xs-12 offset-top-30">
                     <div class="offset-top-35 offset-sm-top-50">
                         <div class="group-xl"><a href="admin" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.account"/></a>
-                            <button type="submit" class="btn btn-primary"><fmt:message key="edit.user.profile"/></button>
+                            <a href="user-delete?id=${userProfile.id}" class="btn btn-primary-variant-1 btn-mod-2"><fmt:message key="delete.user"/></a>
+                            <button type="submit" class="btn btn-primary "><fmt:message key="edit.user.profile"/></button>
+
                         </div>
                     </div>
                 </div>

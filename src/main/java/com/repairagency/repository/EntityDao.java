@@ -1,5 +1,6 @@
 package com.repairagency.repository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface EntityDao<T> {
@@ -7,6 +8,8 @@ public interface EntityDao<T> {
     T getById(int id, boolean full);
 
     T getByLogin(String login, boolean full);
+
+    T getByDate(LocalDateTime date, boolean full);
 
     List<T> getAll();
 
@@ -17,4 +20,7 @@ public interface EntityDao<T> {
     boolean remove(T entity);
 
     List<T> getAll(boolean full);
+
+    List<T> getAllById(int id, boolean full);
+
 }

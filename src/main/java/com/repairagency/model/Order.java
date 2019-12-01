@@ -1,20 +1,26 @@
 package com.repairagency.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Order {
     private int id;
-    private LocalDate date;
+    private LocalDateTime date;
     private double price;
     private int repairsTypesId;
     private int userId;
 
-    public Order(int id, LocalDate date,
+    public Order(int id, LocalDateTime date,
                  double price, int repairsTypesId,
                  int userId) {
         this.id = id;
         this.date = date;
         this.price = price;
+        this.repairsTypesId = repairsTypesId;
+        this.userId = userId;
+    }
+
+    public Order(LocalDateTime date, int repairsTypesId, int userId) {
+        this.date = date;
         this.repairsTypesId = repairsTypesId;
         this.userId = userId;
     }
@@ -27,11 +33,11 @@ public class Order {
         this.id = id;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

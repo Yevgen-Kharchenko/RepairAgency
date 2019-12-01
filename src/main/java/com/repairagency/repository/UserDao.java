@@ -4,6 +4,7 @@ import com.repairagency.model.User;
 import com.repairagency.model.enums.Role;
 import org.apache.log4j.Logger;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class UserDao extends AbstractDao<User> {
@@ -43,10 +44,16 @@ public class UserDao extends AbstractDao<User> {
                 ps -> ps.setInt(1, id),
                 getMapper());
     }
+
     public User getByLogin(String login, boolean full) {
         return getByLogin("SELECT * FROM `user` WHERE login = ?",
                 ps -> ps.setString(1, login),
                 getMapper());
+    }
+
+    @Override
+    public User getByDate(LocalDateTime date, boolean full) {
+        return null;
     }
 
     @Override
@@ -96,4 +103,10 @@ public class UserDao extends AbstractDao<User> {
         LOG.debug("Delete user: " + entity);
         return createUpdate(DELETE_USER, ps -> ps.setInt(1, entity.getId()));
     }
+
+    @Override
+    public List<User> getAllById(int id, boolean full) {
+        return null;
+    }
+
 }

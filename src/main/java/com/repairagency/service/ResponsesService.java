@@ -1,15 +1,15 @@
 package com.repairagency.service;
 
-import com.repairagency.repository.EntityDao;
-import com.repairagency.web.view.ResponsesDTO;
-import com.repairagency.web.view.UserDTO;
 import com.repairagency.model.Responses;
 import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.repository.DaoFactory;
+import com.repairagency.repository.EntityDao;
+import com.repairagency.web.view.ResponsesDTO;
+import com.repairagency.web.view.UserDTO;
 import org.apache.log4j.Logger;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -43,7 +43,7 @@ public class ResponsesService {
         }).collect(Collectors.toList());
     }
 
-    public void setResponse (LocalDate date, String message, int userId) {
+    public void setResponse (LocalDateTime date, String message, int userId) {
         Responses responses = new Responses(date,message,userId,1);
         responsesDao.create(responses);
         LOG.info("response create : "+ responses.toString());

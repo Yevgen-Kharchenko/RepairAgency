@@ -3,7 +3,8 @@ package com.repairagency.repository;
 import com.repairagency.model.Responses;
 import org.apache.log4j.Logger;
 
-import java.sql.Date;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class ResponsesDao extends AbstractDao<Responses> {
@@ -32,11 +33,11 @@ public class ResponsesDao extends AbstractDao<Responses> {
     private static final String DELETE_RESPONSES = "DELETE FROM `responses` "
             + "WHERE " + COLUMN_ID + " = ?";
 
-    public static final String SELECT_ALL_FULL =
+    private static final String SELECT_ALL_FULL =
             "SELECT * FROM `responses` join `order` on responses.orderId = order.id ";
 
-    public static final String GET_BY_ID_FULL = SELECT_ALL_FULL + "WHERE responses.id = ?";
-    static final String GET_BY_ID = "SELECT * FROM `responses` WHERE id = ?";
+    private static final String GET_BY_ID_FULL = SELECT_ALL_FULL + "WHERE responses.id = ?";
+    private static final String GET_BY_ID = "SELECT * FROM `responses` WHERE id = ?";
 
     @Override
     public Responses getById(int id, boolean full) {
@@ -45,9 +46,20 @@ public class ResponsesDao extends AbstractDao<Responses> {
     }
 
     @Override
+    public Responses getByDate(LocalDateTime date, boolean full) {
+        return null;
+    }
+
+    @Override
     public List<Responses> getAll(boolean full) {
         return full ? getAll(SELECT_ALL_FULL, getFullMapper()) : getAll(SELECT_ALL_RESPONSES, getMapper());
     }
+
+    @Override
+    public List<Responses> getAllById(int id, boolean full) {
+        return null;
+    }
+
 
     @Override
     public List<Responses> getAll() {
@@ -59,7 +71,7 @@ public class ResponsesDao extends AbstractDao<Responses> {
     public boolean create(Responses entity) {
         LOG.info("Create Responses: + " + entity);
         return createUpdate(INSERT_INTO_RESPONSES, ps -> {
-            ps.setDate(1, Date.valueOf(entity.getDate()));
+            ps.setTimestamp(1, Timestamp.valueOf(entity.getDate()));
             ps.setString(2, entity.getResponse());
             ps.setInt(3, entity.getUserId());
             ps.setInt(4, entity.getOrderId());
@@ -70,7 +82,7 @@ public class ResponsesDao extends AbstractDao<Responses> {
     public boolean update(Responses entity) {
         LOG.debug("Update Responses: " + entity);
         return createUpdate(UPDATE_RESPONSES, ps -> {
-            ps.setDate(1, Date.valueOf(entity.getDate()));
+            ps.setTimestamp(1, Timestamp.valueOf(entity.getDate()));
             ps.setString(2, entity.getResponse());
             ps.setInt(3, entity.getUserId());
             ps.setInt(4, entity.getOrderId());
@@ -87,7 +99,7 @@ public class ResponsesDao extends AbstractDao<Responses> {
 
     private EntityMapper<Responses> getFullMapper() {
         return resultSet -> new Responses(resultSet.getInt(COLUMN_ID),
-                resultSet.getDate(COLUMN_DATE).toLocalDate(),
+                resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
                 resultSet.getString(COLUMN_RESPONSE),
                 resultSet.getInt(COLUMN_USER_ID),
                 resultSet.getInt(COLUMN_ORDER_ID));
@@ -95,7 +107,7 @@ public class ResponsesDao extends AbstractDao<Responses> {
 
     private EntityMapper<Responses> getMapper() {
         return resultSet -> new Responses(resultSet.getInt(COLUMN_ID),
-                resultSet.getDate(COLUMN_DATE).toLocalDate(),
+                resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
                 resultSet.getString(COLUMN_RESPONSE),
                 resultSet.getInt(COLUMN_USER_ID),
                 resultSet.getInt(COLUMN_ORDER_ID));

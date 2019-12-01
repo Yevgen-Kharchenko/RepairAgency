@@ -3,7 +3,8 @@ package com.repairagency.repository;
 import com.repairagency.model.Comments;
 import org.apache.log4j.Logger;
 
-import java.sql.Date;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class CommentsDao extends AbstractDao<Comments> {
@@ -34,10 +35,15 @@ public class CommentsDao extends AbstractDao<Comments> {
             + "WHERE " + COLUMN_ID + " = ?";
 
     @Override
+    public Comments getByDate(LocalDateTime date, boolean full) {
+        return null;
+    }
+
+    @Override
     public List<Comments> getAll() {
         return getAll(SELECT_ALL_COMMENTS,
                 resultSet -> new Comments(resultSet.getInt(COLUMN_ID),
-                        resultSet.getDate(COLUMN_DATE).toLocalDate(),
+                        resultSet.getTimestamp(COLUMN_DATE).toLocalDateTime(),
                         resultSet.getString(COLUMN_COMMENTS),
                         resultSet.getInt(COLUMN_USER_ID),
                         resultSet.getInt(COLUMN_ORDER_ID)));
@@ -47,7 +53,7 @@ public class CommentsDao extends AbstractDao<Comments> {
     public boolean create(Comments entity) {
         LOG.debug("Create comments: + " + entity);
         return createUpdate(INSERT_INTO_COMMENTS, ps -> {
-            ps.setDate(1, Date.valueOf(entity.getDate()));
+            ps.setTimestamp(1, Timestamp.valueOf(entity.getDate()));
             ps.setString(2, entity.getComment());
             ps.setInt(3, entity.getUserId());
             ps.setInt(4, entity.getOrderId());
@@ -58,7 +64,7 @@ public class CommentsDao extends AbstractDao<Comments> {
     public boolean update(Comments entity) {
         LOG.debug("Update Comments: " + entity);
         return createUpdate(UPDATE_COMMENTS, ps -> {
-            ps.setDate(1, Date.valueOf(entity.getDate()));
+            ps.setTimestamp(1, Timestamp.valueOf(entity.getDate()));
             ps.setString(2, entity.getComment());
             ps.setInt(3, entity.getUserId());
             ps.setInt(4, entity.getOrderId());
@@ -73,4 +79,10 @@ public class CommentsDao extends AbstractDao<Comments> {
         return createUpdate(DELETE_COMMENTS, ps ->
                 ps.setInt(1, entity.getId()));
     }
+
+    @Override
+    public List<Comments> getAllById(int id, boolean full) {
+        return null;
+    }
+
 }

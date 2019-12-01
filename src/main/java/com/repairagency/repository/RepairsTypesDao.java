@@ -3,6 +3,7 @@ package com.repairagency.repository;
 import com.repairagency.model.RepairsTypes;
 import org.apache.log4j.Logger;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
@@ -22,6 +23,7 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
 
     private static final String DELETE_REPAIRS_TYPES = "DELETE FROM `repairs_types` "
             + "WHERE " + COLUMN_ID + " = ?";
+
 
     @Override
     public List<RepairsTypes> getAll() {
@@ -50,4 +52,25 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
         LOG.debug("Delete RepairsTypes: " + entity);
         return createUpdate(DELETE_REPAIRS_TYPES, ps -> ps.setInt(1, entity.getId()));
     }
+
+    @Override
+    public List<RepairsTypes> getAllById(int id, boolean full) {
+        return null;
+    }
+    public RepairsTypes getById(int id, boolean full) {
+        return getById("SELECT * FROM `repairs_types` WHERE id = ?",
+                ps -> ps.setInt(1, id),
+                getMapper());
+    }
+
+    @Override
+    public RepairsTypes getByDate(LocalDateTime date, boolean full) {
+        return null;
+    }
+
+    private EntityMapper<RepairsTypes> getMapper() {
+        return resultSet -> new RepairsTypes(resultSet.getInt(COLUMN_ID),
+                resultSet.getString(COLUMN_TITLE));
+    }
+
 }

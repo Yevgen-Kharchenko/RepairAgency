@@ -42,6 +42,8 @@ public class CommandFactory {
         getCommandMap.put("/order-comment", new OrderCommentCommand());
         getCommandMap.put("/403-error", new ForbiddenCommand());
         getCommandMap.put("/user-profile", new UserProfileCommand());
+        getCommandMap.put("/user-delete", new UserDeleteCommand());
+
 
         postCommandMap.put("/", new HomeCommand());
         postCommandMap.put("/login", new LoginCommand());
@@ -50,6 +52,7 @@ public class CommandFactory {
         postCommandMap.put("/profile", new ProfileCommand());
         postCommandMap.put("/order-comment", new OrderCommentCommand());
         postCommandMap.put("/user-profile", new UserProfileCommand());
+        postCommandMap.put("/order", new OrderCommand());
     }
 
     private CommandFactory() {

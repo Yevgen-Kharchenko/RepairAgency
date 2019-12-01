@@ -1,10 +1,10 @@
 package com.repairagency.web.view;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class ResponsesDTO {
     private int id;
-    private LocalDate date;
+    private LocalDateTime date;
     private int orderId;
     private String response;
     private UserDTO customer;
@@ -29,11 +29,11 @@ public class ResponsesDTO {
         this.orderId = orderId;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

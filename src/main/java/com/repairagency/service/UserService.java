@@ -77,4 +77,9 @@ public class UserService {
             return userDTO;
         }).collect(Collectors.toList());
     }
+
+    public void deleteUser(int id){
+        User deleteUser = getUser(id);
+        userDao.remove(deleteUser);
+    }
 }

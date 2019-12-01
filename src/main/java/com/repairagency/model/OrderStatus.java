@@ -2,19 +2,29 @@ package com.repairagency.model;
 
 import com.repairagency.model.enums.Status;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class OrderStatus {
     private int id;
-    private LocalDate date;
+    private LocalDateTime date;
     private Status status;
     private int userId;
     private int orderId;
 
+    public OrderStatus() {
+    }
+
     public OrderStatus(int id,
-                       LocalDate date, Status status,
+                       LocalDateTime date, Status status,
                        int userId, int orderId) {
         this.id = id;
+        this.date = date;
+        this.status = status;
+        this.userId = userId;
+        this.orderId = orderId;
+    }
+
+    public OrderStatus(LocalDateTime date, Status status, int userId, int orderId) {
         this.date = date;
         this.status = status;
         this.userId = userId;
@@ -29,11 +39,11 @@ public class OrderStatus {
         this.id = id;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

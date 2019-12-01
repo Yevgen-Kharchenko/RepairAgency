@@ -1,15 +1,15 @@
 package com.repairagency.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Responses {
     private int id;
-    private LocalDate date;
+    private LocalDateTime date;
     private String response;
     private int userId;
     private int orderId;
 
-    public Responses(int id, LocalDate date, String response, int userId, int orderId) {
+    public Responses(int id, LocalDateTime date, String response, int userId, int orderId) {
         this.id = id;
         this.date = date;
         this.response = response;
@@ -17,18 +17,18 @@ public class Responses {
         this.orderId = orderId;
     }
 
-    public Responses(LocalDate date, String response, int userId, int orderId) {
+    public Responses(LocalDateTime date, String response, int userId, int orderId) {
         this.date = date;
         this.response = response;
         this.userId = userId;
         this.orderId = orderId;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 

@@ -37,17 +37,19 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <c:forEach items="${orders}" var="orders">
                     <tr>
-                        <td>1</td>
-                        <td>2019-09-15</td>
-                        <td>REFRIGERATOR</td>
-						<td>NEW</td>
-                        <td>500,00</td>
+                        <td>${orders.id}</td>
+                        <td>${orders.date}</td>
+                        <td>${orders.repairsTypes}</td>
+						<td>${orders.price}</td>
+                        <td>new</td>
                         <td>
                             <a href="order-comment" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>
+                    </c:forEach>
                     <tr>
                         <td>2</td>
                         <td>2019-09-15</td>
