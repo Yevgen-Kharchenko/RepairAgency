@@ -30,6 +30,7 @@ public class AdminCommand implements Command {
         session.removeAttribute("ordersInProgress");
         session.removeAttribute("ordersCompleted");
         session.removeAttribute("ordersCanceled");
+        session.removeAttribute("ordersClosed");
         session.removeAttribute("users");
 
         session.setAttribute("ordersNew", orderService.getAllByStatus(Status.NEW));
@@ -37,6 +38,7 @@ public class AdminCommand implements Command {
         session.setAttribute("ordersInProgress", orderService.getAllByStatus(Status.IN_PROGRESS));
         session.setAttribute("ordersCompleted", orderService.getAllByStatus(Status.COMPLETED));
         session.setAttribute("ordersCanceled", orderService.getAllByStatus(Status.CANCELED));
+        session.setAttribute("ordersClosed", orderService.getAllByStatus(Status.CLOSED));
         session.setAttribute("users",userService.getAll());
         return new Page(ADMIN_PAGE);
     }

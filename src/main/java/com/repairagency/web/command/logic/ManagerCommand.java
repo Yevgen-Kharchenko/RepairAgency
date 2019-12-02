@@ -26,6 +26,7 @@ public class ManagerCommand implements Command {
         session.removeAttribute("ordersInProgress");
         session.removeAttribute("ordersCompleted");
         session.removeAttribute("ordersCanceled");
+        session.removeAttribute("ordersClosed");
         session.removeAttribute("users");
 
         session.setAttribute("ordersNew", orderService.getAllByStatus(Status.NEW));
@@ -33,6 +34,7 @@ public class ManagerCommand implements Command {
         session.setAttribute("ordersInProgress", orderService.getAllByStatus(Status.IN_PROGRESS));
         session.setAttribute("ordersCompleted", orderService.getAllByStatus(Status.COMPLETED));
         session.setAttribute("ordersCanceled", orderService.getAllByStatus(Status.CANCELED));
+        session.setAttribute("ordersClosed", orderService.getAllByStatus(Status.CLOSED));
         return new Page(MANAGER_PAGE);
     }
 }

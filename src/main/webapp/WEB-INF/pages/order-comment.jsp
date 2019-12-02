@@ -282,39 +282,48 @@
                     </div>
 
                 </div>
-                <c:if test="${order.status!'COMPLETED' or order.status!'CLOSED'}">
-                <div class="row grid-system-row offset-top-32">
-                    <div class="col-xs-12">
-                        <div class="grid-element">
-                            <div class="offset-top-60 offset-md-top-88">
+                <c:choose>
 
-                                <h5><fmt:message key="send.comment"/></h5>
-                                <hr>
-                                <div class="offset-top-22">
-                                    <form data-form-output="form-output-global" data-form-type="contact" method="post"
-                                          action="order-comment" >
-                                        <div class="range">
+                    <c:when test="${order.status=='CLOSED'}">
+                        <a href=""></a>
+                    </c:when>
+                    <c:when test="${order.status=='CANCELED'}">
+                        <a href=""></a>
+                    </c:when>
+                    <c:otherwise>
+                        <div class="row grid-system-row offset-top-32">
+                            <div class="col-xs-12">
+                                <div class="grid-element">
+                                    <div class="offset-top-60 offset-md-top-88">
 
-                                            <div class="cell-xs-12 offset-top-18">
-                                                <div class="form-group">
-                                                    <label for="contact-message"
-                                                           class="form-label-outside"><fmt:message key="message"/></label>
-                                                    <textarea id="contact-message" name="newComment"
-                                                              data-constraints="@Reqstaticred"
-                                                              class="form-control"></textarea>
+                                        <h5><fmt:message key="send.comment"/></h5>
+                                        <hr>
+                                        <div class="offset-top-22">
+                                            <form data-form-output="form-output-global" data-form-type="contact" method="post"
+                                                  action="order-comment" >
+                                                <div class="range">
+
+                                                    <div class="cell-xs-12 offset-top-18">
+                                                        <div class="form-group">
+                                                            <label for="contact-message"
+                                                                   class="form-label-outside"><fmt:message key="message"/></label>
+                                                            <textarea id="contact-message" name="newComment"
+                                                                      data-constraints="@Reqstaticred"
+                                                                      class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell-xs-12 offset-top-30">
+                                                        <button type="submit" class="btn btn-primary"><fmt:message key="send.message"/></button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="cell-xs-12 offset-top-30">
-                                                <button type="submit" class="btn btn-primary"><fmt:message key="send.message"/></button>
-                                            </div>
+                                            </form>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                </c:if>
+                    </c:otherwise>
+                </c:choose>
             </div>
         </section>
 

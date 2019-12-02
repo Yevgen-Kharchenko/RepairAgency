@@ -32,6 +32,7 @@
                             <li><fmt:message key="in.progress"/></li>
                             <li><fmt:message key="complete"/></li>
                             <li><fmt:message key="canceled"/></li>
+                            <li><fmt:message key="closed"/></li>
                             <li><fmt:message key="user.list"/></li>
                         </ul>
                         <div class="resp-tabs-container">
@@ -255,6 +256,51 @@
                                                                     <td>${ordersCanceled.price}</td>
                                                                     <td>
                                                                         <a href="order-comment?orderId=${ordersCanceled.id}" class="search_link"><span
+                                                                                class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </c:forEach>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="animated fadeIn">
+                                <section class="section-top-20 section-sm-top-20">
+                                    <div class="shell">
+                                        <div class="range">
+                                            <div class="cell-md-10 cell-lg-12">
+                                                <div class="offset-top-32">
+                                                    <div class="table-mobile">
+                                                        <table class="table table-primary table-striped-variant-1">
+                                                            <thead>
+                                                            <tr>
+                                                                <th><fmt:message key="order.id"/></th>
+                                                                <th><fmt:message key="date"/></th>
+                                                                <th><fmt:message key="repair.type"/></th>
+                                                                <th><fmt:message key="first.name"/></th>
+                                                                <th><fmt:message key="last.name"/></th>
+                                                                <th><fmt:message key="email"/></th>
+                                                                <th><fmt:message key="phone"/></th>
+                                                                <th><fmt:message key="edit"/></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <c:forEach items="${orderClosed}" var="orderClosed">
+                                                                <tr>
+                                                                    <td>${orderClosed.id}</td>
+                                                                    <td>${orderClosed.date}</td>
+                                                                    <td>${orderClosed.repairsTypes}</td>
+                                                                    <td>${orderClosed.customer.firstName}</td>
+                                                                    <td>${orderClosed.customer.lastName}</td>
+                                                                    <td>${orderClosed.customer.login}</td>
+                                                                    <td>${orderClosed.customer.phone}</td>
+                                                                    <td>
+                                                                        <a href="order-comment?orderId=${ordersNew.id}" class="search_link"><span
                                                                                 class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                     </td>
                                                                 </tr>
