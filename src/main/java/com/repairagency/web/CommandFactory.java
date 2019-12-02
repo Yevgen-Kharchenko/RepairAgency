@@ -53,12 +53,14 @@ public class CommandFactory {
         postCommandMap.put("/order-comment", new OrderCommentCommand());
         postCommandMap.put("/user-profile", new UserProfileCommand());
         postCommandMap.put("/order", new OrderCommand());
+        postCommandMap.put("/status", new StatusCommand());
     }
 
     private CommandFactory() {
     }
 
     public static Command getCommand(String path, String type) {
+
         return "GET".equals(type)
                 ? getCommand(path)
                 : postCommand(path);

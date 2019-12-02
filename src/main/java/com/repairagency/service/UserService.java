@@ -6,12 +6,14 @@ import com.repairagency.model.enums.Role;
 import com.repairagency.repository.DaoFactory;
 import com.repairagency.repository.EntityDao;
 import com.repairagency.web.view.UserDTO;
+import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class UserService {
     private EntityDao<User> userDao;
+    private static final Logger LOG = Logger.getLogger(UserService.class);
 
 
     public UserService() {
@@ -20,8 +22,12 @@ public class UserService {
 
     public boolean validateUser(String login, String password) {
         User user = userDao.getByLogin(login, false);
+        LOG.info("Get user by login:"+user);
         if (user != null){
-            if (user.getPassword().equals(password)) return true;
+            if (user.getPassword().equals(password)) {
+                LOG.info("user validate");
+                return true;
+            }
         }
             return false;
     }

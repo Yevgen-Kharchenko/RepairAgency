@@ -31,6 +31,8 @@ public class FeedbackCommand extends UniCommand {
     @Override
     protected Page performPost(HttpServletRequest request) {
         HttpSession session = request.getSession();
+        session.removeAttribute("error");
+
         String message = request.getParameter("message");
         LocalDateTime date = LocalDateTime.now().withNano(0);
         User user = (User) session.getAttribute("user");

@@ -24,12 +24,16 @@ public class OrderCommand extends UniCommand {
 
     @Override
     protected Page performGet(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.removeAttribute("error");
         return new Page(ORDER_PAGE);
     }
 
     @Override
     protected Page performPost(HttpServletRequest request) {
         HttpSession session = request.getSession();
+        session.removeAttribute("error");
+
         LocalDateTime date = LocalDateTime.now().withNano(0);
         int repairTypeId = Integer.parseInt(request.getParameter("repairType"));
         String message = request.getParameter("message");

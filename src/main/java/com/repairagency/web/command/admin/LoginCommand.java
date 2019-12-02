@@ -5,6 +5,7 @@ import com.repairagency.service.ServiceFactory;
 import com.repairagency.service.UserService;
 import com.repairagency.web.command.UniCommand;
 import com.repairagency.web.data.Page;
+import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -14,7 +15,7 @@ import static com.repairagency.web.PageUrlConstants.REDIRECT_HOME_PAGE;
 
 public class LoginCommand extends UniCommand {
     private UserService userService;
-
+    private static final Logger LOG = Logger.getLogger(LoginCommand.class);
     public LoginCommand() {
         this.userService = ServiceFactory.getUserService();
     }
@@ -34,6 +35,7 @@ public class LoginCommand extends UniCommand {
 
         if (userService.validateUser(login,password)){
             User user = userService.getUserByLogin(login);
+            LOG.info("get user by login"+user);
             session.setAttribute("user", user);
             return new Page(REDIRECT_HOME_PAGE,true);
         }

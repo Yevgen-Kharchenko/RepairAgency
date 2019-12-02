@@ -40,7 +40,7 @@
                         <td>${ordersByMaster.date}</td>
                         <td>${ordersByMaster.repairsTypes}</td>
                         <td>
-                            <a href="order-comment?id=${ordersByMaster.id}" class="search_link"><span
+                            <a href="order-comment?orderId=${ordersByMaster.id}" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>

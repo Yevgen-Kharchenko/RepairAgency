@@ -7,7 +7,7 @@ public class ServiceFactory {
     private static FeedbackService feedbackService = new FeedbackService();
     private static UserService userService = new UserService();
     private static OrderService orderService = new OrderService();
-//    private static CommentsService commentsService = new CommentsService();
+    private static CommentsService commentsService = new CommentsService();
 
     public static FeedbackService getFeedbackService() {
         return feedbackService;
@@ -17,7 +17,9 @@ public class ServiceFactory {
         return userService;
     }
 
-    public static OrderService getOrderService(){return orderService;}
+    public static OrderService getOrderService() {
+        return orderService;
+    }
 
-//    public static CommentsService getCommentsService(){return commentsService;}
+  public static CommentsService getCommentsService(){return commentsService;}
 }

@@ -45,7 +45,7 @@
 						<td>${orders.price}</td>
                         <td>${orders.status}</td>
                         <td>
-                            <a href="order-comment?id=${orders.id}" class="search_link"><span
+                            <a href="order-comment?orderId=${orders.id}" class="search_link"><span
                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                         </td>
                     </tr>

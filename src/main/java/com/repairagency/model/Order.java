@@ -23,6 +23,9 @@ public class Order {
         this.status = status;
     }
 
+    public Order() {
+    }
+
     public Order(LocalDateTime date, int repairsTypesId, int userId, Status status) {
         this.date = date;
         this.repairsTypesId = repairsTypesId;

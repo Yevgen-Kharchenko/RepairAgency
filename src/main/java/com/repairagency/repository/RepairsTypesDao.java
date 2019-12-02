@@ -73,4 +73,9 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
                 resultSet.getString(COLUMN_TITLE));
     }
 
+    public RepairsTypes getByLogin(String login, boolean full) {
+        return getByLogin("SELECT * FROM `repairs_types` WHERE title = ?",
+                ps -> ps.setString(1, login),
+                getMapper());
+    }
 }

@@ -1,6 +1,9 @@
 package com.repairagency.service;
 
-import com.repairagency.model.*;
+import com.repairagency.model.Comments;
+import com.repairagency.model.Order;
+import com.repairagency.model.RepairsTypes;
+import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.model.enums.Status;
 import com.repairagency.repository.DaoFactory;
@@ -44,7 +47,7 @@ public class OrderService {
 
     public void createOrder(LocalDateTime date, int repairTypesId, String message, int userId) {
         Order order = new Order(date, repairTypesId, userId, Status.NEW);
-        LOG.info("Date ="+date);
+        LOG.info("Date =" + date);
         orderDao.create(order);
         Order newOrder = orderDao.getByDate(date, true);
         Comments comments = new Comments(date, message, userId, newOrder.getId());
@@ -63,11 +66,41 @@ public class OrderService {
             orderDTO.setDate(orders.getDate());
             orderDTO.setRepairsTypes(repairsTypes.getTitle(), false);
             orderDTO.setPrice(orders.getPrice());
-            orderDTO.setCustomer(userDao.getById(orders.getUserId(),false));
+            orderDTO.setCustomer(userDao.getById(orders.getUserId(), false));
             orderDTO.setStatus(orders.getStatus());
 
             return orderDTO;
         }).collect(Collectors.toList());
+    }
+
+    public OrderDTO getById(int id) {
+        Order order = orderDao.getById(id, true);
+        RepairsTypes repairsTypes = repairTypesDao.getById(order.getRepairsTypesId(), false);
+        OrderDTO orderDTO = new OrderDTO();
+        orderDTO.setId(order.getId());
+        orderDTO.setDate(order.getDate());
+        orderDTO.setRepairsTypes(repairsTypes.getTitle(), false);
+        orderDTO.setPrice(order.getPrice());
+        orderDTO.setCustomer(userDao.getById(order.getUserId(), false));
+        orderDTO.setStatus(order.getStatus());
+        return orderDTO;
+    }
+
+    public void changeStatus(String status, OrderDTO orderDTO, String price) {
+        Order order = new Order();
+        order.setId(orderDTO.getId());
+        order.setDate(orderDTO.getDate());
+        if (price != null) {
+            double doublePrice = Double.parseDouble(price);
+            order.setPrice(doublePrice);
+        } else {
+            order.setPrice(orderDTO.getPrice());
+        }
+        order.setRepairsTypesId((repairTypesDao.getByLogin(orderDTO.getRepairsTypes(), false).getId()));
+        order.setUserId(orderDTO.getCustomer().getId());
+        order.setStatus(Status.valueOf(status));
+        LOG.info("new order: " + order);
+        orderDao.update(order);
     }
 }
 

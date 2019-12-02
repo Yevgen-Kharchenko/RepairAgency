@@ -63,4 +63,17 @@ public class OrderDTO {
     public void setStatus(Status status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "OrderDTO{" +
+                "id=" + id +
+                ", date=" + date +
+                ", repairsTypes='" + repairsTypes + '\'' +
+                ", price=" + price +
+                ", customer=" + customer +
+                ", status=" + status +
+                '}';
+    }
 }
+

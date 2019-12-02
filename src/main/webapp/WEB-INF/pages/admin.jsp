@@ -66,7 +66,7 @@
                                                                 <td>${ordersNew.customer.login}</td>
                                                                 <td>${ordersNew.customer.phone}</td>
                                                                 <td>
-                                                                    <a href="order-comment?id=${ordersNew.id}" class="search_link"><span
+                                                                    <a href="order-comment?orderId=${ordersNew.id}" class="search_link"><span
                                                                             class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                 </td>
                                                             </tr>
@@ -113,7 +113,7 @@
                                                                     <td>${ordersOffer.customer.phone}</td>
                                                                     <td>${ordersOffer.price}</td>
                                                                     <td>
-                                                                        <a href="order-comment?id=${ordersOffer.id}" class="search_link"><span
+                                                                        <a href="order-comment?orderId=${ordersOffer.id}" class="search_link"><span
                                                                                 class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                     </td>
                                                                 </tr>
@@ -160,7 +160,7 @@
                                                                     <td>${ordersInProgress.customer.phone}</td>
                                                                     <td>${ordersInProgress.price}</td>
                                                                     <td>
-                                                                        <a href="order-comment?id=${ordersInProgress.id}" class="search_link"><span
+                                                                        <a href="order-comment?orderId=${ordersInProgress.id}" class="search_link"><span
                                                                                 class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                     </td>
                                                                 </tr>
@@ -207,7 +207,7 @@
                                                                     <td>${ordersCompleted.customer.phone}</td>
                                                                     <td>${ordersCompleted.price}</td>
                                                                     <td>
-                                                                        <a href="order-comment?id=${ordersCompleted.id}" class="search_link"><span
+                                                                        <a href="order-comment?orderId=${ordersCompleted.id}" class="search_link"><span
                                                                                 class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                     </td>
                                                                 </tr>
@@ -254,7 +254,7 @@
                                                                     <td>${ordersCanceled.customer.phone}</td>
                                                                     <td>${ordersCanceled.price}</td>
                                                                     <td>
-                                                                        <a href="order-comment?id=${ordersCanceled.id}" class="search_link"><span
+                                                                        <a href="order-comment?orderId=${ordersCanceled.id}" class="search_link"><span
                                                                                 class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                     </td>
                                                                 </tr>

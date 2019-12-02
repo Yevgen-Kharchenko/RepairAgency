@@ -113,4 +113,10 @@ public class OrderDao extends AbstractDao<Order> {
                 Status.valueOf(resultSet.getString(COLUMN_STATUS)));
     }
 
+    @Override
+    public Order getById(int id, boolean full) {
+        return getById("SELECT * FROM `order` WHERE id = ?",
+                ps -> ps.setInt(1, id),
+                getMapper());
+    }
 }

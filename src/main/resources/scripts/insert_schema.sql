@@ -15,7 +15,7 @@ insert into repairs_types (`title`) values ('MOBILE_PHONE'), ('TV'), ('COMPUTER'
 
 insert into `order` (`date`, `price`, `repairsTypesId`, `userId`, `status`)
 		values ('2019-08-20 10:00:00',100.0,1,4,'CLOSED'), ('2019-08-23 10:00:00',150.0,2,5,'COMPLETED'), ('2019-08-25 10:00:00',200.0,3,6,'IN_PROGRESS'),
-		('2019-09-02 10:00:00',250.0,4,7,'CANCELED'), ('2019-09-12 10:00:01',300.0,5,4,'APPROVED'), ('2019-09-22 10:00:02',350.0,6,5,'OFFER'),
+		('2019-09-02 10:00:00',250.0,4,7,'CANCELED'), ('2019-09-12 10:00:01',300.0,5,4,'IN_PROGRESS'), ('2019-09-22 10:00:02',350.0,6,5,'OFFER'),
 		('2019-09-30 10:00:03',400.0,7,6,'CLOSED'), ('2019-10-02 10:00:04',0,8,7,'NEW'), ('2019-10-02 11:00:05',0,9,4,'NEW');
 		
 insert into `feedback` (`date`, `feedback`, `userId`)

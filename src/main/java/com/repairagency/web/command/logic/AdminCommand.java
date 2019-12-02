@@ -8,6 +8,7 @@ import com.repairagency.web.command.Command;
 import com.repairagency.web.data.Page;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import static com.repairagency.web.PageUrlConstants.ADMIN_PAGE;
 
@@ -23,12 +24,20 @@ public class AdminCommand implements Command {
 
     @Override
     public Page perform(HttpServletRequest request) {
-        request.setAttribute("ordersNew", orderService.getAllByStatus(Status.NEW));
-        request.setAttribute("ordersOffer", orderService.getAllByStatus(Status.OFFER));
-        request.setAttribute("ordersInProgress", orderService.getAllByStatus(Status.IN_PROGRESS));
-        request.setAttribute("ordersCompleted", orderService.getAllByStatus(Status.COMPLETED));
-        request.setAttribute("ordersCanceled", orderService.getAllByStatus(Status.CANCELED));
-        request.setAttribute("users",userService.getAll());
+        HttpSession session = request.getSession();
+        session.removeAttribute("ordersNew");
+        session.removeAttribute("ordersOffer");
+        session.removeAttribute("ordersInProgress");
+        session.removeAttribute("ordersCompleted");
+        session.removeAttribute("ordersCanceled");
+        session.removeAttribute("users");
+
+        session.setAttribute("ordersNew", orderService.getAllByStatus(Status.NEW));
+        session.setAttribute("ordersOffer", orderService.getAllByStatus(Status.OFFER));
+        session.setAttribute("ordersInProgress", orderService.getAllByStatus(Status.IN_PROGRESS));
+        session.setAttribute("ordersCompleted", orderService.getAllByStatus(Status.COMPLETED));
+        session.setAttribute("ordersCanceled", orderService.getAllByStatus(Status.CANCELED));
+        session.setAttribute("users",userService.getAll());
         return new Page(ADMIN_PAGE);
     }
 }
