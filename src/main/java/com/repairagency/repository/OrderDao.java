@@ -1,5 +1,6 @@
 package com.repairagency.repository;
 
+import com.repairagency.config.ConnectionFactory;
 import com.repairagency.model.Order;
 import com.repairagency.model.enums.Status;
 import org.apache.log4j.Logger;
@@ -9,7 +10,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class OrderDao extends AbstractDao<Order> {
-
+    public OrderDao(ConnectionFactory connectionFactory) {
+        super(connectionFactory);
+    }
     private static final Logger LOG = Logger.getLogger(OrderDao.class);
 
     private static final String COLUMN_DATE = "date";

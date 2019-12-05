@@ -1,5 +1,6 @@
 package com.repairagency.repository;
 
+import com.repairagency.config.ConnectionFactory;
 import com.repairagency.model.User;
 import com.repairagency.model.enums.Role;
 import org.apache.log4j.Logger;
@@ -9,7 +10,9 @@ import java.util.List;
 
 public class UserDao extends AbstractDao<User> {
     private static final Logger LOG = Logger.getLogger(UserDao.class);
-
+    public UserDao(ConnectionFactory connectionFactory) {
+        super(connectionFactory);
+    }
     private static final String COLUMN_FIRST_NAME = "first_name";
     private static final String COLUMN_LAST_NAME = "last_name";
     private static final String COLUMN_PHONE = "phone";

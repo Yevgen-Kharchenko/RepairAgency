@@ -289,17 +289,17 @@
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                <c:forEach items="${orderClosed}" var="orderClosed">
+                                                                <c:forEach items="${ordersCl}" var="ordersCl">
                                                                     <tr>
-                                                                        <td>${orderClosed.id}</td>
-                                                                        <td>${orderClosed.date}</td>
-                                                                        <td>${orderClosed.repairsTypes}</td>
-                                                                        <td>${orderClosed.customer.firstName}</td>
-                                                                        <td>${orderClosed.customer.lastName}</td>
-                                                                        <td>${orderClosed.customer.login}</td>
-                                                                        <td>${orderClosed.customer.phone}</td>
+                                                                        <td>${ordersCl.id}</td>
+                                                                        <td>${ordersCl.date}</td>
+                                                                        <td>${ordersCl.repairsTypes}</td>
+                                                                        <td>${ordersCl.customer.firstName}</td>
+                                                                        <td>${ordersCl.customer.lastName}</td>
+                                                                        <td>${ordersCl.customer.login}</td>
+                                                                        <td>${ordersCl.customer.phone}</td>
                                                                         <td>
-                                                                            <a href="order-comment?orderId=${ordersNew.id}" class="search_link"><span
+                                                                            <a href="order-comment?orderId=${ordersCl.id}" class="search_link"><span
                                                                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
                                                                         </td>
                                                                     </tr>

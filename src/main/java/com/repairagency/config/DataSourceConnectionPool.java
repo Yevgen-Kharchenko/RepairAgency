@@ -1,17 +1,17 @@
 package com.repairagency.config;
 
-import org.apache.log4j.Logger;
+        import org.apache.log4j.Logger;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+        import javax.naming.Context;
+        import javax.naming.InitialContext;
+        import javax.naming.NamingException;
+        import javax.sql.DataSource;
+        import java.sql.Connection;
+        import java.sql.SQLException;
 
-public class DataSourceConnectionPool {
+public class DataSourceConnectionPool implements ConnectionFactory {
     private static Logger LOG = Logger.getLogger(DataSourceConnectionPool.class);
+    private static final DataSourceConnectionPool INSTANCE = new DataSourceConnectionPool();
     private static DataSource dataSource;
 
     static {
@@ -26,21 +26,19 @@ public class DataSourceConnectionPool {
     private DataSourceConnectionPool() {
     }
 
-    public static Connection getConnection() {
-
+    public Connection getConnection() {
         Connection connection = null;
         try {
             connection = dataSource.getConnection();
-            LOG.debug("Connection received " + connection);
+            LOG.debug("Connection received " + connection + " "+ connection.hashCode());
         } catch (SQLException e) {
             LOG.error("Some problem was occurred while getting connection to BD", e);
         }
         return connection;
     }
 
-
-    public static PreparedStatement getPreparedStatement(String query) throws SQLException {
-        return getConnection().prepareStatement(query);
+    public static DataSourceConnectionPool getInstance() {
+        return INSTANCE;
     }
 
 }

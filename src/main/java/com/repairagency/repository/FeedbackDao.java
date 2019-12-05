@@ -1,5 +1,6 @@
 package com.repairagency.repository;
 
+import com.repairagency.config.ConnectionFactory;
 import com.repairagency.model.Feedback;
 import org.apache.log4j.Logger;
 
@@ -9,6 +10,9 @@ import java.util.List;
 
 public class FeedbackDao extends AbstractDao<Feedback> {
     private static final Logger LOG = Logger.getLogger(FeedbackDao.class);
+    public FeedbackDao(ConnectionFactory connectionFactory) {
+        super(connectionFactory);
+    }
 
     private static final String COLUMN_DATE = "date";
     private static final String COLUMN_FEEDBACK = "feedback";

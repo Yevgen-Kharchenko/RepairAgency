@@ -1,5 +1,6 @@
 package com.repairagency.repository;
 
+import com.repairagency.config.ConnectionFactory;
 import com.repairagency.model.RepairsTypes;
 import org.apache.log4j.Logger;
 
@@ -7,7 +8,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
-
+    public RepairsTypesDao(ConnectionFactory connectionFactory) {
+        super(connectionFactory);
+    }
     private static final Logger LOG = Logger.getLogger(RepairsTypesDao.class);
 
     private static final String COLUMN_TITLE = "title";

@@ -1,17 +1,24 @@
 package com.repairagency.repository;
 
-import com.repairagency.config.DataSourceConnectionPool;
+import com.repairagency.config.ConnectionFactory;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
+@AllArgsConstructor
 public abstract class AbstractDao<T> implements EntityDao<T> {
     private static final Logger LOG = Logger.getLogger(AbstractDao.class);
+    private ConnectionFactory connectionFactory;
+
+    protected Connection getConnection() {
+        return connectionFactory.getConnection();
+    }
 
     protected static final String COLUMN_ID = "id";
 
@@ -24,15 +31,16 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     public List<T> getAll(String query, EntityMapper<T> mapper) {
         List<T> result = new ArrayList<>();
 
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query);
-             ResultSet resultSet = preparedStatement.executeQuery()) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)){
 
+        try (ResultSet resultSet = preparedStatement.executeQuery()) {
             while (resultSet.next()) {
                 T entity = mapper.map(resultSet);
 
                 result.add(entity);
             }
-
+        }
         } catch (SQLException e) {
             LOG.error("Exception while getting all entities", e);
         }
@@ -49,7 +57,8 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     public T getById(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         T result = null;
 
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query)) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
@@ -71,7 +80,8 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     public T getByLogin(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         T result = null;
 
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query)) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
@@ -93,7 +103,8 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     public T getByDate(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         T result = null;
 
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query)) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 while (resultSet.next()) {
@@ -111,7 +122,8 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     public List<T> getAllById(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         List<T> result = new ArrayList<>();
 
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query)) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)){
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
 
@@ -129,7 +141,8 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     }
 
     public boolean createUpdate(String query, StatementMapper<T> statementMapper) {
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query)) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
 
             int result = preparedStatement.executeUpdate();
@@ -149,7 +162,8 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     public List<T> getAllByField(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         List<T> result = new ArrayList<>();
 
-        try (PreparedStatement preparedStatement = DataSourceConnectionPool.getPreparedStatement(query)) {
+        try (Connection conn = connectionFactory.getConnection();
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
 
