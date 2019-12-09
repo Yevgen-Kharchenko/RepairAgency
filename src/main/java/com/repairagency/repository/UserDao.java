@@ -45,6 +45,7 @@ public class UserDao extends AbstractDao<User> {
     private static final String DELETE_USER = "DELETE FROM `user` "
             + "WHERE " + COLUMN_ID + " = ?";
 
+
     public User getById(int id, boolean full) {
         return getById("SELECT * FROM `user` WHERE id = ?",
                 ps -> ps.setInt(1, id),

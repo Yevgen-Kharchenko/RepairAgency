@@ -13,6 +13,7 @@ public interface EntityDao<T> {
 
     List<T> getAll();
 
+
     List<T> getAllPaginated(int page, int size);
 
     boolean create(T entity);

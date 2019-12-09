@@ -43,6 +43,8 @@ public class UsersCommand extends UniCommand {
             size = tryParse(sizeStr);
         }
         request.setAttribute("users", userService.getAllPaginated(page, size));
+        request.setAttribute("currentPage", page);
+        request.setAttribute("usersPages", (userService.getAll().size()/size));
         return new Page(USERS_PAGE);
     }
 

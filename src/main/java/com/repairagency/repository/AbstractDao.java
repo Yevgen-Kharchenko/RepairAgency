@@ -35,15 +35,15 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         List<T> result = new ArrayList<>();
 
         try (Connection conn = getConnection();
-             PreparedStatement preparedStatement = conn.prepareStatement(query)){
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
 
-        try (ResultSet resultSet = preparedStatement.executeQuery()) {
-            while (resultSet.next()) {
-                T entity = mapper.map(resultSet);
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                while (resultSet.next()) {
+                    T entity = mapper.map(resultSet);
 
-                result.add(entity);
+                    result.add(entity);
+                }
             }
-        }
         } catch (SQLException e) {
             LOG.error("Exception while getting all entities", e);
         }
@@ -55,15 +55,15 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         List<T> result = new ArrayList<>();
 
         try (Connection conn = getConnection();
-             PreparedStatement preparedStatement = conn.prepareStatement(query)){
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
-        try (ResultSet resultSet = preparedStatement.executeQuery()) {
-            while (resultSet.next()) {
-                T entity = mapper.map(resultSet);
+            try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                while (resultSet.next()) {
+                    T entity = mapper.map(resultSet);
 
-                result.add(entity);
+                    result.add(entity);
+                }
             }
-        }
         } catch (SQLException e) {
             LOG.error("Exception while getting all entities", e);
         }
@@ -145,7 +145,7 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         List<T> result = new ArrayList<>();
 
         try (Connection conn = getConnection();
-             PreparedStatement preparedStatement = conn.prepareStatement(query)){
+             PreparedStatement preparedStatement = conn.prepareStatement(query)) {
             statementMapper.map(preparedStatement);
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
 

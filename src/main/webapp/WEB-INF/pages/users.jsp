@@ -7,7 +7,7 @@
 
 <html lang="en" class="wide wow-animation">
 <head>
-    <title></title>
+    <title><fmt:message key="user.list"/></title>
     <c:import url="templ/head-part.jsp"/>
 </head>
 
@@ -63,16 +63,38 @@
             </div>
         </section>
 
-        <div class="cell-xs-12 offset-top-35 offset-sm-top-60">
-            <ul class="pagination-custom">
-                <li><a href="#"><span class="sr-only">Prev</span></a></li>
-                <li><a href="users?page=1">1</a></li>
-                <li><a href="users?page=2">2</a></li>
-                <li><a href="users?page=3">3</a></li>
-                <li><a href="users?page=4">4</a></li>
-                <li><a href="#"><span class="sr-only">Next</span></a></li>
-            </ul>
-        </div>
+            <div class="cell-xs-12 offset-top-35 offset-sm-top-60">
+                <c:if test="${usersPages > 1}">
+                    <ul class="pagination-custom">
+                        <c:choose>
+                            <c:when test="${currentPage  > 1 }">
+                                <li><a href="users?page=${currentPage-1}&size=3"><span class="sr-only">Prev</span></a></li>
+                            </c:when>
+                            <c:otherwise>
+                                <li><span class="sr-only">Prev</span></li>
+                            </c:otherwise>
+                        </c:choose>
+                        <c:forEach var = "numberPage" begin = "1" end = "${usersPages}">
+                            <c:choose>
+                                <c:when test="${currentPage == numberPage }">
+                                    <li class="active"><a href="users?page=${numberPage}&size=3" class="nav-item">${numberPage}</a></li>
+                                </c:when>
+                                <c:otherwise>
+                                    <li><a href="users?page=${numberPage}&size=3" class="nav-item">${numberPage}</a></li>
+                                </c:otherwise>
+                            </c:choose>
+                        </c:forEach>
+                        <c:choose>
+                            <c:when test="${currentPage < usersPages }">
+                                <li><a href="users?page=${currentPage+1}&size=3"><span class="sr-only">Next</span></a></li>
+                            </c:when>
+                            <c:otherwise>
+                                <li><span class="sr-only">Next</span></li>
+                            </c:otherwise>
+                        </c:choose>
+                    </ul>
+                </c:if>
+            </div>
         </div>
         </div>
         </div>
