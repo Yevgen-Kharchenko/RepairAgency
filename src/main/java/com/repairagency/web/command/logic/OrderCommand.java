@@ -24,15 +24,13 @@ public class OrderCommand extends UniCommand {
 
     @Override
     protected Page performGet(HttpServletRequest request) {
-        HttpSession session = request.getSession();
-        session.removeAttribute("error");
+
         return new Page(ORDER_PAGE);
     }
 
     @Override
     protected Page performPost(HttpServletRequest request) {
         HttpSession session = request.getSession();
-        session.removeAttribute("error");
 
         LocalDateTime date = LocalDateTime.now().withNano(0);
         int repairTypeId = Integer.parseInt(request.getParameter("repairType"));
@@ -41,11 +39,11 @@ public class OrderCommand extends UniCommand {
 
         if (message.length() > LENGTH_MESSAGE) {
             orderService.createOrder(date, repairTypeId, message, user.getId());
-            session.setAttribute("error", "Thank you for your order!");
+            request.setAttribute("notification", "Thank you for your order!");
             LOG.info("order : " + message);
             return new Page("/" + ORDER_PAGE);
         }
-        session.setAttribute("error", "Message must be longer than 10 characters");
+        request.setAttribute("notification", "Message must be longer than 10 characters");
         return new Page("/" + ORDER_PAGE, false);
     }
 }

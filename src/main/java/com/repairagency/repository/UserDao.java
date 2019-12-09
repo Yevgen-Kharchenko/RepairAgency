@@ -10,9 +10,11 @@ import java.util.List;
 
 public class UserDao extends AbstractDao<User> {
     private static final Logger LOG = Logger.getLogger(UserDao.class);
+
     public UserDao(ConnectionFactory connectionFactory) {
         super(connectionFactory);
     }
+
     private static final String COLUMN_FIRST_NAME = "first_name";
     private static final String COLUMN_LAST_NAME = "last_name";
     private static final String COLUMN_PHONE = "phone";
@@ -20,6 +22,7 @@ public class UserDao extends AbstractDao<User> {
     private static final String COLUMN_PASSWORD = "password";
     private static final String COLUMN_ROLE = "role";
     private static final String SELECT_ALL_USERS = "SELECT * FROM `user`";
+    private static final String SELECT_ALL_USERS_PAGINATED = "SELECT * FROM `user` LIMIT ?,?";
 
     private static final String INSERT_INTO_USER = "INSERT INTO `user` ("
             + COLUMN_FIRST_NAME + ", "
@@ -48,7 +51,7 @@ public class UserDao extends AbstractDao<User> {
                 getMapper());
     }
 
-    public User getByLogin(String login, boolean full) {
+    public User getByField(String login, boolean full) {
         return getByLogin("SELECT * FROM `user` WHERE login = ?",
                 ps -> ps.setString(1, login),
                 getMapper());
@@ -63,6 +66,18 @@ public class UserDao extends AbstractDao<User> {
     public List<User> getAll() {
         return getAll(SELECT_ALL_USERS, getMapper());
     }
+
+    @Override
+    public List<User> getAllPaginated(int page, int size) {
+        int limit = (page - 1) * size;
+        return getAll(SELECT_ALL_USERS_PAGINATED,
+                ps -> {
+                    ps.setInt(1, limit);
+                    ps.setInt(2, size);
+                },
+                getMapper());
+    }
+
 
     private EntityMapper<User> getMapper() {
         return resultSet -> new User(resultSet.getInt(COLUMN_ID),

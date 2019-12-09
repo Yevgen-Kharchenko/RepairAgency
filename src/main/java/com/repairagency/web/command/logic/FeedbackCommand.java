@@ -31,7 +31,6 @@ public class FeedbackCommand extends UniCommand {
     @Override
     protected Page performPost(HttpServletRequest request) {
         HttpSession session = request.getSession();
-        session.removeAttribute("error");
 
         String message = request.getParameter("message");
         LocalDateTime date = LocalDateTime.now().withNano(0);
@@ -39,11 +38,11 @@ public class FeedbackCommand extends UniCommand {
 
         if (message.length() > LENGTH_MESSAGE) {
             feedbackService.setFeedback(date, message, user.getId());
-            session.setAttribute("error", "Thank you for your feedback!");
+            request.setAttribute("notification", "Thank you for your feedback!");
             LOG.info("feedback : " + message);
             return new Page("/"+FEEDBACK_PAGE);
         }
-        session.setAttribute("error", "Message must be longer than 10 characters");
+        request.setAttribute("notification", "Message must be longer than 10 characters");
         return new Page("/"+FEEDBACK_PAGE, false);
     }
 }

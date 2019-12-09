@@ -7,11 +7,13 @@ public interface EntityDao<T> {
 
     T getById(int id, boolean full);
 
-    T getByLogin(String login, boolean full);
+    T getByField(String login, boolean full);
 
     T getByDate(LocalDateTime date, boolean full);
 
     List<T> getAll();
+
+    List<T> getAllPaginated(int page, int size);
 
     boolean create(T entity);
 

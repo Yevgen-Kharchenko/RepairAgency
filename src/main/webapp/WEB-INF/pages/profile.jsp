@@ -15,8 +15,8 @@
 <div class="page">
     <c:import url="templ/header-part.jsp"/>
     <main class="page-content">
-      <c:if test="${not empty error}">
-        <c:out value ="${error}" />
+      <c:if test="${not empty notification}">
+        <c:out value ="${notification}" />
       </c:if>
 <section class="section-top-20 section-sm-top-40 section-sm-bottom-110">
       <div class="shell">

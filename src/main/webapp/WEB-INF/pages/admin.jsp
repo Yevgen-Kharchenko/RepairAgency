@@ -20,9 +20,12 @@
         <div class="shell">
         <div class="range">
             <div class="cell-md-10 cell-lg-12">
+
                 <h5><fmt:message key="hello"/> ${user.firstName} ${user.lastName}!</h5>
-                <h6><fmt:message key="you.can.admin"/><a href="profile" class="search_link"><fmt:message key="profile"/></a>
+                <h6><fmt:message key="you.can.admin"/><a href="users" class="search_link"><fmt:message key="you.can.admin2"/>
+                </a><fmt:message key="you.can.admin3"/><a href="profile" class="search_link"><fmt:message key="profile"/></a>
                 </h6>
+
                 <hr>
                 <div class="offset-top-32">
                     <div data-type="accordion" class="responsive-tabs responsive-tabs-horizontal">
@@ -33,7 +36,7 @@
                             <li><fmt:message key="complete"/></li>
                             <li><fmt:message key="canceled"/></li>
                             <li><fmt:message key="closed"/></li>
-                            <li><fmt:message key="user.list"/></li>
+
                         </ul>
                         <div class="resp-tabs-container">
                             <div class="animated fadeIn">
@@ -316,54 +319,12 @@
                                     </div>
                                 </section>
                             </div>
-                            <div class="animated fadeIn">
-                                <section class="section-top-20 section-sm-top-20">
-                                    <div class="shell">
-                                        <div class="range">
-                                            <div class="cell-md-10 cell-lg-12">
-                                                <div class="offset-top-32">
-                                                    <div class="table-mobile">
-                                                        <table class="table table-primary table-striped-variant-1">
-                                                            <thead>
-                                                            <tr>
-                                                                <th><fmt:message key="user.id"/></th>
-                                                                <th><fmt:message key="first.name"/></th>
-                                                                <th><fmt:message key="last.name"/></th>
-                                                                <th><fmt:message key="email"/></th>
-                                                                <th><fmt:message key="phone"/></th>
-                                                                <th><fmt:message key="role"/></th>
-                                                                <th><fmt:message key="edit"/></th>
-                                                            </tr>
-															</thead>
-                                                            <tbody>
-                                                            <c:forEach items="${users}" var="users">
-                                                            <tr>
-                                                                <td>${users.id}</td>
-                                                                <td>${users.firstName}</td>
-                                                                <td>${users.lastName}</td>
-                                                                <td>${users.login}</td>
-                                                                <td>${users.phone}</td>
-                                                                <td>${users.role}</td>
-                                                                <td>
-                                                                    <a href="user-profile?id=${users.id}" class="search_link"><span
-                                                                            class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
-                                                                </td>
-                                                            </tr>
-                                                            </c:forEach>
 
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

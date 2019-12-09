@@ -4,11 +4,9 @@ import com.repairagency.service.OrderService;
 import com.repairagency.service.ServiceFactory;
 import com.repairagency.web.command.UniCommand;
 import com.repairagency.web.data.Page;
-import com.repairagency.web.view.OrderDTO;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 import static com.repairagency.web.PageUrlConstants.ORDER_COMMENT_PAGE;
 
@@ -27,18 +25,20 @@ public class StatusCommand extends UniCommand {
 
     @Override
     protected Page performPost(HttpServletRequest request) {
-        HttpSession session = request.getSession();
+
         String price= request.getParameter("price");
         String status = request.getParameter("status");
-        OrderDTO orderDto = (OrderDTO) session.getAttribute("order");
+        String orderId = request.getParameter("orderId");
+
+
         LOG.info("Post status: "+status);
-        LOG.info("Old order: "+orderDto);
-            orderService.changeStatus(status, orderDto, price);
-            session.setAttribute("error", "Order status changed!");
+
+            orderService.changeStatus(status, orderId, price);
+        request.setAttribute("notification", "Order status changed!");
             LOG.info("status : " + status);
 
 
 
-        return new Page("/" + ORDER_COMMENT_PAGE+"?orderId="+orderDto.getId(),true);
+        return new Page("/" + ORDER_COMMENT_PAGE+"?orderId="+orderId,true);
     }
 }

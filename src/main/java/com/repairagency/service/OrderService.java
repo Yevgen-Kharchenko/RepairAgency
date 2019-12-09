@@ -1,5 +1,6 @@
 package com.repairagency.service;
 
+import com.google.common.base.Strings;
 import com.repairagency.model.Comments;
 import com.repairagency.model.Order;
 import com.repairagency.model.RepairsTypes;
@@ -14,6 +15,8 @@ import org.apache.log4j.Logger;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.google.common.primitives.Ints.tryParse;
 
 public class OrderService {
     private static final Logger LOG = Logger.getLogger(OrderService.class);
@@ -86,18 +89,21 @@ public class OrderService {
         return orderDTO;
     }
 
-    public void changeStatus(String status, OrderDTO orderDTO, String price) {
-        Order order = new Order();
-        order.setId(orderDTO.getId());
-        order.setDate(orderDTO.getDate());
-        if (price != null) {
-            double doublePrice = Double.parseDouble(price);
+    public void changeStatus(String status, String orderId, String price) {
+        int id = tryParse(orderId);
+
+        Order order = orderDao.getById(id, true);
+
+        if (!Strings.isNullOrEmpty(price)) {
+            double doublePrice = 0;
+            try {
+                doublePrice = Double.parseDouble(price);
+            } catch (NumberFormatException e) {
+                LOG.error(e.getMessage());
+            }
             order.setPrice(doublePrice);
-        } else {
-            order.setPrice(orderDTO.getPrice());
         }
-        order.setRepairsTypesId((repairTypesDao.getByLogin(orderDTO.getRepairsTypes(), false).getId()));
-        order.setUserId(orderDTO.getCustomer().getId());
+
         order.setStatus(Status.valueOf(status));
         LOG.info("new order: " + order);
         orderDao.update(order);

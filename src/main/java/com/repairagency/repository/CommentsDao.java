@@ -55,6 +55,11 @@ public class CommentsDao extends AbstractDao<Comments> {
     }
 
     @Override
+    public List<Comments> getAllPaginated(int page, int size) {
+        return null;
+    }
+
+    @Override
     public boolean create(Comments entity) {
         LOG.debug("Create comments: + " + entity);
         return createUpdate(INSERT_INTO_COMMENTS, ps -> {

@@ -39,7 +39,7 @@ public class LoginCommand extends UniCommand {
             session.setAttribute("user", user);
             return new Page(REDIRECT_HOME_PAGE,true);
         }
-        session.setAttribute("error", "Login or password invalid!");
+        request.setAttribute("notification", "Login or password invalid!");
         return new Page(LOGIN_PAGE, false);
 
     }

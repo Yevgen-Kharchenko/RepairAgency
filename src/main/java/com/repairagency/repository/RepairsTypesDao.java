@@ -35,6 +35,11 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
     }
 
     @Override
+    public List<RepairsTypes> getAllPaginated(int page, int size) {
+        return null;
+    }
+
+    @Override
     public boolean create(RepairsTypes entity) {
         LOG.debug("Create repairs_types: + " + entity);
         return createUpdate(INSERT_INTO_REPAIRS_TYPES, ps ->
@@ -76,7 +81,7 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
                 resultSet.getString(COLUMN_TITLE));
     }
 
-    public RepairsTypes getByLogin(String login, boolean full) {
+    public RepairsTypes getByField(String login, boolean full) {
         return getByLogin("SELECT * FROM `repairs_types` WHERE title = ?",
                 ps -> ps.setString(1, login),
                 getMapper());

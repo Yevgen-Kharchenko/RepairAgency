@@ -16,8 +16,8 @@
     <c:import url="templ/header-part.jsp"/>
     <main class="page-content">
         <div class="range range-sm-center"><h5>
-            <c:if test="${not empty error}">
-                <c:out value ="${error}" />
+            <c:if test="${not empty notification}">
+                <c:out value ="${notification}" />
             </c:if>
         </h5></div>
 
@@ -150,6 +150,7 @@
                                                 <fmt:message key="make.offer"/></button>
                                             <div class="pricing-table-footer">
                                                 <input type="hidden" name="status" value="CANCELED" />
+                                                <input type="hidden" name="orderId" value="${order.id}" />
                                                 <button type="submit" class="btn btn-sm btn-primary">
                                                     <fmt:message key="cancel.order"/></button>
                                             </div>
@@ -160,11 +161,13 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="IN_PROGRESS" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="approved"/></button>
                                         </div>
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="CANCELED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="cancel.order"/></button>
                                         </div>
@@ -174,6 +177,7 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="COMPLETED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="complete"/></button>
                                         </div>
@@ -183,6 +187,7 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="CLOSED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="closed"/></button>
                                         </div>
@@ -200,10 +205,12 @@
                                                 <input id="price" type="text" name="price" data-constraints="@Reqstaticred @Numeric" class="form-control form-control-has-validation form-control-last-child"><span class="form-validation"></span>
                                             </div>
                                             <input type="hidden" name="status" value="OFFER" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="make.offer"/></button>
                                             <div class="pricing-table-footer">
                                                 <input type="hidden" name="status" value="CANCELED" />
+                                                <input type="hidden" name="orderId" value="${order.id}" />
                                                 <button type="submit" class="btn btn-sm btn-primary">
                                                     <fmt:message key="cancel.order"/></button>
                                             </div>
@@ -214,6 +221,7 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="CANCELED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="cancel.order"/></button>
                                         </div>
@@ -223,6 +231,7 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="CLOSED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="closed"/></button>
                                         </div>
@@ -235,6 +244,7 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="COMPLETED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="complete"/></button>
                                         </div>
@@ -246,6 +256,7 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="CANCELED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="cancel.order"/></button>
                                         </div>
@@ -255,11 +266,13 @@
                                     <form method="post" action="status">
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="IN_PROGRESS" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="approved"/></button>
                                         </div>
                                         <div class="pricing-table-footer">
                                             <input type="hidden" name="status" value="CANCELED" />
+                                            <input type="hidden" name="orderId" value="${order.id}" />
                                             <button type="submit" class="btn btn-sm btn-primary">
                                                 <fmt:message key="cancel.order"/></button>
                                         </div>
@@ -310,6 +323,7 @@
                                                             <textarea id="contact-message" name="newComment"
                                                                       data-constraints="@Reqstaticred"
                                                                       class="form-control"></textarea>
+                                                            <input type="hidden" name="orderId" value="${order.id}" />
                                                         </div>
                                                     </div>
                                                     <div class="cell-xs-12 offset-top-30">

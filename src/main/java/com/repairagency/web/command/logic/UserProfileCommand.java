@@ -9,8 +9,8 @@ import com.repairagency.web.data.Page;
 import org.apache.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
+import static com.google.common.primitives.Ints.tryParse;
 import static com.repairagency.web.PageUrlConstants.ADMIN_PAGE;
 import static com.repairagency.web.PageUrlConstants.USER_PROFILE_PAGE;
 
@@ -26,15 +26,16 @@ public class UserProfileCommand extends UniCommand {
 
     @Override
     protected Page performGet(HttpServletRequest request) {
-        int id = Integer.parseInt(request.getParameter(ID));
+        int id = tryParse(request.getParameter(ID));
         User userProfile = userService.getUser(id);
-        request.getSession().setAttribute("userProfile", userProfile);
+        request.setAttribute("userProfile", userProfile);
         return new Page(USER_PROFILE_PAGE);
     }
 
     @Override
     protected Page performPost(HttpServletRequest request) {
-
+        String userId = request.getParameter("userId");
+        int id = tryParse(userId);
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String phone = request.getParameter("phone");
@@ -45,19 +46,10 @@ public class UserProfileCommand extends UniCommand {
         System.out.println("Edit user profile firstName: " + firstName + ", lastName" + lastName +
                 ", phone" + phone + ", login: " + login + ", password: " + password + "Role" + role);
 
-        HttpSession session = request.getSession();
-        session.removeAttribute("error");
-        User user = (User) session.getAttribute("userProfile");
-        int id = user.getId();
+        User editUser = userService.updateUser(id, firstName, lastName, phone, login, password, role);
+        LOG.debug("Edit user profile: + " + editUser);
 
+        return new Page("/" + ADMIN_PAGE, true);
 
-//        if (userService.validatePassword(password, confirmPassword)) {
-            User editUser = userService.updateUser(id, firstName, lastName, phone, login, password, role);
-            LOG.debug("Edit user profile: + " + editUser);
-
-            return new Page("/"+ADMIN_PAGE, true);
-//        }
-//        session.setAttribute("error", "Not validate login or password");
-//        return new Page(USER_PROFILE_PAGE);
     }
 }

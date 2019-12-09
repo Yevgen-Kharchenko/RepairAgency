@@ -99,5 +99,9 @@ public class FeedbackDao extends AbstractDao<Feedback> {
                 resultSet.getInt(COLUMN_USER_ID));
     }
 
+    @Override
+    public List<Feedback> getAllPaginated(int page, int size) {
+        return null;
+    }
 
 }

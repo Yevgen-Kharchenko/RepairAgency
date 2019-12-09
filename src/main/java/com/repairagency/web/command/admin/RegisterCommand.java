@@ -48,7 +48,7 @@ public class RegisterCommand extends UniCommand {
             LOG.info("registration user setAttribute: + " + user);
                 return new Page(REDIRECT_HOME_PAGE, true);
         }
-        session.setAttribute("error", "Not validate login or password");
+        request.setAttribute("notification", "Not valid login or password");
         return new Page(LOGIN_PAGE, false);
     }
 }

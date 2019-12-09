@@ -39,7 +39,7 @@ public class ProfileCommand extends UniCommand {
                 ", phone" + phone + ", login: " + login + ", password: " + password);
 
         HttpSession session = request.getSession();
-        session.removeAttribute("error");
+
         User user = (User) session.getAttribute("user");
         int id = user.getId();
         Role role = user.getRole();
@@ -53,7 +53,7 @@ public class ProfileCommand extends UniCommand {
             LOG.info("edit user setAttribute: + " + user);
             return new Page(REDIRECT_HOME_PAGE, true);
         }
-        session.setAttribute("error", "Not validate login or password");
+        request.setAttribute("notification", "Not validate login or password");
         return new Page(PROFILE_PAGE);
     }
 }

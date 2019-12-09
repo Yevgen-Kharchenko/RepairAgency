@@ -15,8 +15,8 @@
 <div class="page">
     <c:import url="templ/header-part.jsp"/>
     <main class="page-content">
-      <c:if test="${not empty error}">
-        <c:out value ="${error}" />
+      <c:if test="${not empty notification}">
+        <c:out value ="${notification}" />
       </c:if>
 <section class="section-top-20 section-sm-top-40 section-sm-bottom-110">
       <div class="shell">
@@ -76,6 +76,7 @@
                     <div class="offset-top-35 offset-sm-top-50">
                         <div class="group-xl"><a href="admin" class="btn btn-primary-variant-1 btn-mod-1"><fmt:message key="back.account"/></a>
                             <a href="user-delete?id=${userProfile.id}" class="btn btn-primary-variant-1 btn-mod-2"><fmt:message key="delete.user"/></a>
+                            <input type="hidden" name="userId" value="${userProfile.id}" />
                             <button type="submit" class="btn btn-primary "><fmt:message key="edit.user.profile"/></button>
 
                         </div>

@@ -21,7 +21,7 @@ public class UserService {
     }
 
     public boolean validateUser(String login, String password) {
-        User user = userDao.getByLogin(login, false);
+        User user = userDao.getByField(login, false);
         LOG.info("Get user by login:"+user);
         if (user != null){
             if (user.getPassword().equals(password)) {
@@ -53,7 +53,7 @@ public class UserService {
     }
 
     public User getUserByLogin(String login) {
-        return userDao.getByLogin(login, false);
+        return userDao.getByField(login, false);
     }
 
     public User registrationUser(String firstName, String lastName, String phone, String login, String password) {
@@ -70,6 +70,15 @@ public class UserService {
 
     public List<UserDTO>getAll() {
         List<User> all = userDao.getAll();
+        return mapToUserDTO(all);
+    }
+
+    public List<UserDTO>getAllPaginated(int page, int size) {
+        List<User> all = userDao.getAllPaginated(page, size);
+        return mapToUserDTO(all);
+    }
+
+    private List<UserDTO> mapToUserDTO(List<User> all) {
         return all.stream().map(users -> {
             User userProfile = userDao.getById(users.getId(), false);
             UserDTO userDTO = new UserDTO();

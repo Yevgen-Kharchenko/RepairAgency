@@ -25,6 +25,7 @@ public class PageUrlConstants {
     public static final String ORDER_COMMENT_PAGE = "order-comment";
     public static final String FORBIDDEN_PAGE = "errors/403-error";
     public static final String USER_PROFILE_PAGE = "user-profile";
+    public static final String USERS_PAGE = "users";
 
     public static final String REDIRECT_HOME_PAGE = "/";
 }

@@ -57,7 +57,7 @@ public class OrderDao extends AbstractDao<Order> {
                 getMapper());
     }
 
-    public Order getByLogin(String login, boolean full) {
+    public Order getByField(String login, boolean full) {
         return getByLogin("SELECT * FROM `order` WHERE status = ?",
                 ps -> ps.setString(1, login),
                 getMapper());
@@ -66,6 +66,11 @@ public class OrderDao extends AbstractDao<Order> {
     @Override
     public List<Order> getAll() {
         return getAll(SELECT_ALL_ORDER, getMapper());
+    }
+
+    @Override
+    public List<Order> getAllPaginated(int page, int size) {
+        return null;
     }
 
     @Override
