@@ -116,7 +116,7 @@
                         <div class="thumbnail thumbnail-variant-3">
                             <figure><img src="static/images/home-16-370x247.jpg" alt="" width="370" height="270"/> </figure>
                             <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                            <div class="caption"><a href="#" class="thumbnail-link"></a>
+                            <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                 <div class="caption-text">
                                     <p><fmt:message key="team4"/></p>
                                 </div>
@@ -127,7 +127,7 @@
                         <div class="thumbnail thumbnail-variant-3">
                             <figure><img src="static/images/home-17-370x247.jpg" alt="" width="370" height="270"/> </figure>
                             <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x900" class="thumbnail-original-link"></a>
-                            <div class="caption"><a href="#" class="thumbnail-link"></a>
+                            <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                 <div class="caption-text">
                                     <p><fmt:message key="team5"/></p>
                                 </div>
@@ -138,7 +138,7 @@
                         <div class="thumbnail thumbnail-variant-3">
                             <figure><img src="static/images/home-21-370x247.jpg" alt="" width="370" height="270"/> </figure>
                             <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                            <div class="caption"><a href="#" class="thumbnail-link"></a>
+                            <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                 <div class="caption-text">
                                     <p><fmt:message key="team6"/></p>
                                 </div>

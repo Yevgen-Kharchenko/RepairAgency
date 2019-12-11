@@ -37,8 +37,8 @@
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#"><fmt:message key="repair"/></a></li>
-                                                    <li><a href="#"><fmt:message key="range2"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="range2"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -59,8 +59,8 @@
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#"><fmt:message key="repair"/></a></li>
-                                                    <li><a href="#"><fmt:message key="tools"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="tools"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -81,8 +81,8 @@
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#"><fmt:message key="repair"/></a></li>
-                                                    <li><a href="#"><fmt:message key="tablet"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="tablet"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -103,8 +103,8 @@
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#"><fmt:message key="repair"/></a></li>
-                                                    <li><a href="#"><fmt:message key="pipes"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="pipes"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -113,12 +113,12 @@
                             </div>
                             <div class="cell-xs-12 offset-top-35 offset-sm-top-60">
                                 <ul class="pagination-custom">
-                                    <li class="disabled"><a href="#"><span class="sr-only"><fmt:message key="prev"/></span></a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#"><span class="sr-only"><fmt:message key="next"/></span></a></li>
+                                    <li class="disabled"><a href="under-construction"><span class="sr-only"><fmt:message key="prev"/></span></a></li>
+                                    <li class="active"><a href="under-construction">1</a></li>
+                                    <li><a href="under-construction">2</a></li>
+                                    <li><a href="under-construction">3</a></li>
+                                    <li><a href="under-construction">4</a></li>
+                                    <li><a href="under-construction"><span class="sr-only"><fmt:message key="next"/></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -143,20 +143,20 @@
                                     <div class="row row-no-gutter offset-top-22">
                                         <div class="col-xs-6">
                                             <ul class="list-marked-variant-2 list-marked-gray">
-                                                <li><a href="#"><fmt:message key="aug"/></a></li>
-                                                <li><a href="#"><fmt:message key="oct"/></a></li>
-                                                <li><a href="#"><fmt:message key="dec"/></a></li>
-                                                <li><a href="#"><fmt:message key="feb"/></a></li>
-                                                <li><a href="#"><fmt:message key="apr"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="aug"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="oct"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="dec"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="feb"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="apr"/></a></li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-6 offset-top-0 shift-left-5">
                                             <ul class="list-marked-variant-2 list-marked-gray">
-                                                <li><a href="#"><fmt:message key="sep"/></a></li>
-                                                <li><a href="#"><fmt:message key="nov"/></a></li>
-                                                <li><a href="#"><fmt:message key="jan"/></a></li>
-                                                <li><a href="#"><fmt:message key="mar"/></a></li>
-                                                <li><a href="#"><fmt:message key="may2"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="sep"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="nov"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="jan"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="mar"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="may2"/></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -200,8 +200,8 @@
                                     <h5><fmt:message key="categories"/></h5>
                                     <hr>
                                     <ul class="list-marked-variant-2 list-marked-gray">
-                                        <li><a href="#"><fmt:message key="ice.maker"/></a></li>
-                                        <li><a href="#"><fmt:message key="stove.repair"/></a></li>
+                                        <li><a href="under-construction"><fmt:message key="ice.maker"/></a></li>
+                                        <li><a href="under-construction"><fmt:message key="stove.repair"/></a></li>
                                         <li><a href="#"><fmt:message key="appliance.parts"/></a></li>
                                         <li><a href="#"><fmt:message key="microwave.repair"/></a></li>
                                         <li><a href="#"><fmt:message key="washer.repair"/></a></li>

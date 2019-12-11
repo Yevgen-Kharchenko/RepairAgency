@@ -45,18 +45,18 @@
                             </div>
                             <div class="post-footer">
                                 <ul class="list-tags-variant-1">
-                                    <li><a href="#"><fmt:message key="repair"/></a></li>
-                                    <li><a href="#"><fmt:message key="tools"/></a></li>
+                                    <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                    <li><a href="under-construction"><fmt:message key="tools"/></a></li>
                                 </ul>
                                 <div class="block-wrap-1">
                                     <div class="group-xs group-middle">
                                         <p class="text-italic text-silver-chalice"><fmt:message key="share"/></p>
                                         <ul class="list-inline list-inline-xxs">
-                                            <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
-                                            <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
-                                            <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
-                                            <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin"></a></li>
-                                            <li><a href="#" class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram"></a></li>
+                                            <li><a href="under-construction" class="icon icon-xs icon-circle icon-white icon-filled-facebook fa-facebook"></a></li>
+                                            <li><a href="under-construction" class="icon icon-xs icon-circle icon-white icon-filled-twitter fa-twitter"></a></li>
+                                            <li><a href="under-construction" class="icon icon-xs icon-circle icon-white icon-filled-google fa-google"></a></li>
+                                            <li><a href="under-construction" class="icon icon-xs icon-circle icon-white icon-filled-linkedin fa-linkedin"></a></li>
+                                            <li><a href="under-construction" class="icon icon-xs icon-circle icon-white icon-filled-instagram fa-instagram"></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                         <figure><img src="static/images/blog-post-3-170x170.jpg" alt="" width="170" height="170"/> </figure>
                                     </div>
                                     <div class="unit-body">
-                                        <h6><a href="#"><fmt:message key="benjamin.powell"/></a></h6>
+                                        <h6><a href="under-construction"><fmt:message key="benjamin.powell"/></a></h6>
                                         <p class="caption"><fmt:message key="blogger"/></p>
                                         <p> <fmt:message key="professional.blogger"/></p>
                                     </div>
@@ -90,13 +90,13 @@
                                             </div>
                                             <div class="unit-body">
                                                 <div class="comment-header">
-                                                    <h6><a href="#"><fmt:message key="stephanie.oliver"/></a></h6>
+                                                    <h6><a href="under-construction"><fmt:message key="stephanie.oliver"/></a></h6>
                                                     <time datetime="2016-04-24"><fmt:message key="april"/></time>
                                                 </div>
                                                 <div class="comment-text">
                                                     <p><fmt:message key="thanks.to"/></p>
                                                 </div>
-                                                <div class="comment-footer"><a href="#" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span><fmt:message key="reply"/></span></a></div>
+                                                <div class="comment-footer"><a href="under-construction" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span><fmt:message key="reply"/></span></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -109,13 +109,13 @@
                                             </div>
                                             <div class="unit-body">
                                                 <div class="comment-header">
-                                                    <h6><a href="#"><fmt:message key="benjamin.powell"/></a></h6>
+                                                    <h6><a href="under-construction"><fmt:message key="benjamin.powell"/></a></h6>
                                                     <time datetime="2016-04-24"><fmt:message key="april"/></time>
                                                 </div>
                                                 <div class="comment-text">
                                                     <p><fmt:message key="thank.you!"/></p>
                                                 </div>
-                                                <div class="comment-footer"><a href="#" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span><fmt:message key="reply"/></span></a></div>
+                                                <div class="comment-footer"><a href="under-construction" class="link link-icon link-primary"><span class="icon icon-xs fa-mail-reply"></span><span><fmt:message key="reply"/></span></a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -184,8 +184,8 @@
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                   <li><a href="#"><fmt:message key="repair"/></a></li>
-                                                    <li><a href="#"><fmt:message key="tablet"/></a></li>
+                                                   <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="tablet"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -206,8 +206,8 @@
                                             </div>
                                             <div class="post-footer">
                                                 <ul class="list-tags-variant-1">
-                                                    <li><a href="#"><fmt:message key="repair"/></a></li>
-                                                    <li><a href="#"><fmt:message key="pipes"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                                    <li><a href="under-construction"><fmt:message key="pipes"/></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -236,8 +236,8 @@
                                     <div class="row row-no-gutter offset-top-22">
                                         <div class="col-xs-6">
                                             <ul class="list-marked-variant-2 list-marked-gray">
-                                               <li><a href="#"><fmt:message key="aug"/></a></li>
-                                                <li><a href="#"><fmt:message key="oct"/></a></li>
+                                               <li><a href="under-construction"><fmt:message key="aug"/></a></li>
+                                                <li><a href="under-construction"><fmt:message key="oct"/></a></li>
                                                 <li><a href="#"><fmt:message key="dec"/></a></li>
                                                 <li><a href="#"><fmt:message key="feb"/></a></li>
                                                 <li><a href="#"><fmt:message key="apr"/></a></li>

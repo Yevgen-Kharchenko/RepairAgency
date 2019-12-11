@@ -28,10 +28,10 @@
                     <div class="col-xs-12">
                         <div class="isotope-filters isotope-filters-horizontal">
                             <ul class="list-inline">
-                                <li><a data-isotope-filter="*" data-isotope-group="gallery" href="#" class="active"><fmt:message key="all"/></a></li>
-                                <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#"><fmt:message key="tab"/> 1</a></li>
-                                <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#"><fmt:message key="tab"/> 2</a></li>
-                                <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="#"><fmt:message key="tab"/> 3</a></li>
+                                <li><a data-isotope-filter="*" data-isotope-group="gallery" href="under-construction" class="active"><fmt:message key="all"/></a></li>
+                                <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="under-construction"><fmt:message key="tab"/> 1</a></li>
+                                <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="under-construction"><fmt:message key="tab"/> 2</a></li>
+                                <li><a data-isotope-filter="Category 3" data-isotope-group="gallery" href="under-construction"><fmt:message key="tab"/> 3</a></li>
                             </ul>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                                 <div class="thumbnail thumbnail-variant-4">
                                     <figure><img src="static/images/home-16-370x247.jpg" alt="" width="370" height="240"/> </figure>
                                     <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                                    <div class="caption"><a href="#" class="thumbnail-link"></a>
+                                    <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6><fmt:message key="professional.consultations"/></h6>
                                             <p><fmt:message key="looking.for"/></p>
@@ -53,7 +53,7 @@
                                 <div class="thumbnail thumbnail-variant-4">
                                     <figure><img src="static/images/gallery-masonry-4-370x510.jpg" alt="" width="370" height="510"/> </figure>
                                     <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                                    <div class="caption"><a href="#" class="thumbnail-link"></a>
+                                    <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6><fmt:message key="gas.stoves"/></h6>
                                             <p><fmt:message key="if.you.have"/></p>
@@ -65,7 +65,7 @@
                                 <div class="thumbnail thumbnail-variant-4">
                                     <figure><img src="static/images/home-17-370x247.jpg" alt="" width="370" height="240"/> </figure>
                                     <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                                    <div class="caption"><a href="#" class="thumbnail-link"></a>
+                                    <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6><fmt:message key="parts.department"/></h6>
                                             <p><fmt:message key="we.have"/></p>
@@ -77,7 +77,7 @@
                                 <div class="thumbnail thumbnail-variant-4">
                                     <figure><img src="static/images/gallery-masonry-2-370x510.jpg" alt="" width="370" height="510"/> </figure>
                                     <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                                    <div class="caption"><a href="#" class="thumbnail-link"></a>
+                                    <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6><fmt:message key="kitchen.equipment"/></h6>
                                             <p><fmt:message key="this.type"/></p>
@@ -89,7 +89,7 @@
                                 <div class="thumbnail thumbnail-variant-4">
                                     <figure><img src="static/images/gallery-masonry-6-370x510.jpg" alt="" width="370" height="510"/> </figure>
                                     <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                                    <div class="caption"><a href="#" class="thumbnail-link"></a>
+                                    <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6><fmt:message key="small.repair"/></h6>
                                             <p><fmt:message key="sometimes"/></p>
@@ -101,7 +101,7 @@
                                 <div class="thumbnail thumbnail-variant-4">
                                     <figure><img src="static/images/home-18-370x247.jpg" alt="" width="370" height="240"/> </figure>
                                     <a href="static/images/gallery-1-original-1200x800.jpg" data-photo-swipe-item="" data-size="1200x800" class="thumbnail-original-link"></a>
-                                    <div class="caption"><a href="#" class="thumbnail-link"></a>
+                                    <div class="caption"><a href="under-construction" class="thumbnail-link"></a>
                                         <div class="caption-text">
                                             <h6><fmt:message key="domestic.equipment"/></h6>
                                             <p><fmt:message key="have.a.problem"/></p>

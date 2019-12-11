@@ -323,8 +323,8 @@
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#"><fmt:message key="repair"/></a></li>
-                                            <li><a href="#"><fmt:message key="range2"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="range2"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -346,8 +346,8 @@
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#"><fmt:message key="repair"/></a></li>
-                                            <li><a href="#"><fmt:message key="tools"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="tools"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -369,8 +369,8 @@
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#"><fmt:message key="repair"/></a></li>
-                                            <li><a href="#"><fmt:message key="pipes"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="pipes"/></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -392,8 +392,8 @@
                                     </div>
                                     <div class="post-footer">
                                         <ul class="list-tags-variant-1">
-                                            <li><a href="#"><fmt:message key="repair"/></a></li>
-                                            <li><a href="#"><fmt:message key="tablet"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="repair"/></a></li>
+                                            <li><a href="under-construction"><fmt:message key="tablet"/></a></li>
                                         </ul>
                                     </div>
                                 </div>

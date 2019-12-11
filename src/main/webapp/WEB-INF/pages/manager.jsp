@@ -28,11 +28,12 @@
                         <div data-type="accordion" class="responsive-tabs responsive-tabs-horizontal">
                             <ul class="resp-tabs-list">
                                 <li><fmt:message key="new"/></li>
-								<li><fmt:message key="offer"/></li>
-								<li><fmt:message key="in.progress"/></li>
-								<li><fmt:message key="complete"/></li>
-								<li><fmt:message key="canceled"/></li>
+                                <li><fmt:message key="offer"/></li>
+                                <li><fmt:message key="in.progress"/></li>
+                                <li><fmt:message key="complete"/></li>
+                                <li><fmt:message key="canceled"/></li>
                                 <li><fmt:message key="closed"/></li>
+
                             </ul>
                             <div class="resp-tabs-container">
                                 <div class="animated fadeIn">
@@ -285,6 +286,7 @@
                                                                     <th><fmt:message key="last.name"/></th>
                                                                     <th><fmt:message key="email"/></th>
                                                                     <th><fmt:message key="phone"/></th>
+                                                                    <th><fmt:message key="price"/></th>
                                                                     <th><fmt:message key="edit"/></th>
                                                                 </tr>
                                                                 </thead>
@@ -298,6 +300,7 @@
                                                                         <td>${ordersCl.customer.lastName}</td>
                                                                         <td>${ordersCl.customer.login}</td>
                                                                         <td>${ordersCl.customer.phone}</td>
+                                                                        <td>${ordersCl.price}</td>
                                                                         <td>
                                                                             <a href="order-comment?orderId=${ordersCl.id}" class="search_link"><span
                                                                                     class="icon icon-sm-variant-2 icon-primary fa-pencil-square-o"></span></a>
@@ -313,10 +316,12 @@
                                         </div>
                                     </section>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 

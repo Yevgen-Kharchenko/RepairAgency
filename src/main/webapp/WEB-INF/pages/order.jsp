@@ -55,7 +55,7 @@
                                 <div class="cell-xs-12 offset-top-18">
                                     <div class="form-group">
                                         <label for="contact-message" class="form-label-outside"><fmt:message key="please.send"/></label>
-                                        <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
+                                        <textarea id="contact-message" name="message"  class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="cell-xs-12 offset-top-30">
