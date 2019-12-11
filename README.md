@@ -1,10 +1,11 @@
 # RepairAgency
 
-#Система Ремонтное Агенство.
-Пользователь может создать заявку на ремонт изделия. 
-Менеджер может принять заявку указав цену, либо отклонить заявку, указав причину. 
-Мастер может выполнить принятую Менеджером заявку.
-Пользователь может оставить Отзыв о выполненных работах.
+#Система «Ремонтна Агенція»
+
+Користувач може створити замовлення на ремонт виробу.
+Менеджер може прийняти замовлення та вказати ціну,  або відхилити замовлення і вказати причину.
+Майстер може виконати замовлення, що прийняв Менеджер.  
+Користувач може залишити Відгук про виконані роботи.
 
 Requirements:
 
@@ -23,6 +24,9 @@ How to install:
 	b. ? Add configuration / command
 6. Go to link http://localhost:8880/RepairAgency
 7. To login as an admin, use a login / password : admin@g.com / admin
+8. To login as manager, use a login / password: manager@g.com / manager
+9. To login as master, use a login / password: master@g.com / master
+10. To login as customer, use a login / password: user1@g.com / password or register yourself
 
 #Business logic: 	
 
