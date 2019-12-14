@@ -13,6 +13,7 @@ public class OrderDao extends AbstractDao<Order> {
     public OrderDao(ConnectionFactory connectionFactory) {
         super(connectionFactory);
     }
+
     private static final Logger LOG = Logger.getLogger(OrderDao.class);
 
     private static final String COLUMN_DATE = "date";

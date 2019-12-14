@@ -110,5 +110,4 @@ public class CommentsDao extends AbstractDao<Comments> {
     public List<Comments> getAllByField(String field, boolean full) {
         return null;
     }
-
 }

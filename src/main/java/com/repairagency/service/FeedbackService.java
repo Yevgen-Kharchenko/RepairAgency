@@ -1,12 +1,12 @@
 package com.repairagency.service;
 
+import com.repairagency.controller.view.FeedbackDTO;
+import com.repairagency.controller.view.UserDTO;
 import com.repairagency.model.Feedback;
 import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.repository.DaoFactory;
 import com.repairagency.repository.EntityDao;
-import com.repairagency.web.view.FeedbackDTO;
-import com.repairagency.web.view.UserDTO;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
@@ -19,13 +19,17 @@ public class FeedbackService {
     private EntityDao<User> userDao;
     private EntityDao<Feedback> feedbackDao;
 
-
     public FeedbackService() {
         this.userDao = DaoFactory.getEntityDao(DaoType.USER);
         this.feedbackDao = DaoFactory.getEntityDao(DaoType.FEEDBACK);
 
     }
 
+    /**
+     * Gets list FeedbackDTO from DB
+     *
+     * @return
+     */
     public List<FeedbackDTO> getAll() {
         List<Feedback> all = feedbackDao.getAll(true);
         return all.stream().map(feedback -> {
@@ -37,16 +41,22 @@ public class FeedbackService {
 
             UserDTO userDTO = new UserDTO();
             userDTO.setId(customer.getId());
-            userDTO.setName(customer.getFirstName()+" "+customer.getLastName());
+            userDTO.setName(customer.getFirstName() + " " + customer.getLastName());
             feedbackDTO.setCustomer(userDTO);
             return feedbackDTO;
         }).collect(Collectors.toList());
     }
 
+    /**
+     * Converts data from Post request to Feedback and stores it into DB
+     *
+     * @param date
+     * @param message
+     * @param userId
+     */
     public void setFeedback(LocalDateTime date, String message, int userId) {
-        Feedback feedback = new Feedback(date,message,userId);
+        Feedback feedback = new Feedback(date, message, userId);
         feedbackDao.create(feedback);
-        LOG.info("feedback create : "+ feedback.toString());
+        LOG.info("feedback create : " + feedback.toString());
     }
 }
-

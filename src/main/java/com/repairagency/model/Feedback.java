@@ -8,7 +8,6 @@ public class Feedback {
     private String feedback;
     private int userId;
 
-
     public Feedback(int id, LocalDateTime date, String feedback, int userId) {
         this.id = id;
         this.date = date;
@@ -59,7 +58,7 @@ public class Feedback {
     @Override
     public String toString() {
         return "Feedback{" + "id=" + id + ", date='" + date + ", feedback='" + feedback +
-                '\'' + ", userId='" + userId + '\''  +
+                '\'' + ", userId='" + userId + '\'' +
                 '}' + "\n";
     }
 }

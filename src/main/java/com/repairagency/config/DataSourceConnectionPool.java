@@ -1,13 +1,13 @@
 package com.repairagency.config;
 
-        import org.apache.log4j.Logger;
+import org.apache.log4j.Logger;
 
-        import javax.naming.Context;
-        import javax.naming.InitialContext;
-        import javax.naming.NamingException;
-        import javax.sql.DataSource;
-        import java.sql.Connection;
-        import java.sql.SQLException;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class DataSourceConnectionPool implements ConnectionFactory {
     private static Logger LOG = Logger.getLogger(DataSourceConnectionPool.class);
@@ -30,7 +30,7 @@ public class DataSourceConnectionPool implements ConnectionFactory {
         Connection connection = null;
         try {
             connection = dataSource.getConnection();
-            LOG.debug("Connection received " + connection + " "+ connection.hashCode());
+            LOG.debug("Connection received " + connection + " " + connection.hashCode());
         } catch (SQLException e) {
             LOG.error("Some problem was occurred while getting connection to BD", e);
         }
@@ -40,5 +40,4 @@ public class DataSourceConnectionPool implements ConnectionFactory {
     public static DataSourceConnectionPool getInstance() {
         return INSTANCE;
     }
-
 }

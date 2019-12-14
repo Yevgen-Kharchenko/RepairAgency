@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @RequiredArgsConstructor
 public abstract class AbstractDao<T> implements EntityDao<T> {
     private static final Logger LOG = Logger.getLogger(AbstractDao.class);
@@ -24,7 +23,6 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
     }
 
     protected static final String COLUMN_ID = "id";
-
 
     @Override
     public List<T> getAll(boolean full) {
@@ -94,7 +92,6 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return result;
     }
 
-
     public T getByField(String login, boolean full) {
         return null;
     }
@@ -117,7 +114,6 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
         return result;
     }
 
-
     public T getByDate(LocalDateTime date, boolean full) {
         return null;
     }
@@ -139,7 +135,6 @@ public abstract class AbstractDao<T> implements EntityDao<T> {
 
         return result;
     }
-
 
     public List<T> getAllById(String query, StatementMapper<T> statementMapper, EntityMapper<T> mapper) {
         List<T> result = new ArrayList<>();

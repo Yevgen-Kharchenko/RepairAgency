@@ -21,5 +21,7 @@ public class ServiceFactory {
         return orderService;
     }
 
-  public static CommentsService getCommentsService(){return commentsService;}
+    public static CommentsService getCommentsService() {
+        return commentsService;
+    }
 }

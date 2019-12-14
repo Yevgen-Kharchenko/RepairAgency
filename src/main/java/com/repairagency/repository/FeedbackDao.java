@@ -10,6 +10,7 @@ import java.util.List;
 
 public class FeedbackDao extends AbstractDao<Feedback> {
     private static final Logger LOG = Logger.getLogger(FeedbackDao.class);
+
     public FeedbackDao(ConnectionFactory connectionFactory) {
         super(connectionFactory);
     }
@@ -62,7 +63,6 @@ public class FeedbackDao extends AbstractDao<Feedback> {
     public List<Feedback> getAll() {
         return getAll(SELECT_ALL_FEEDBACK, getMapper());
     }
-
 
     @Override
     public boolean create(Feedback entity) {

@@ -2,8 +2,6 @@ package com.repairagency.config;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.apache.log4j.Logger;
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -11,11 +9,12 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class DataSourceConnectionFactory implements ConnectionFactory{
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+
+public class DataSourceConnectionFactory implements ConnectionFactory {
     private static Logger LOG = Logger.getLogger(DataSourceConnectionFactory.class);
     private static final DataSourceConnectionFactory INSTANCE = new DataSourceConnectionFactory();
-
-
 
     private static DataSource dataSource;
 

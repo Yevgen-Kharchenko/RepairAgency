@@ -11,6 +11,7 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
     public RepairsTypesDao(ConnectionFactory connectionFactory) {
         super(connectionFactory);
     }
+
     private static final Logger LOG = Logger.getLogger(RepairsTypesDao.class);
 
     private static final String COLUMN_TITLE = "title";
@@ -65,6 +66,7 @@ public class RepairsTypesDao extends AbstractDao<RepairsTypes> {
     public List<RepairsTypes> getAllById(int id, boolean full) {
         return null;
     }
+
     public RepairsTypes getById(int id, boolean full) {
         return getById("SELECT * FROM `repairs_types` WHERE id = ?",
                 ps -> ps.setInt(1, id),

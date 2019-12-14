@@ -1,11 +1,11 @@
 package com.repairagency.service;
 
+import com.repairagency.controller.view.UserDTO;
 import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.model.enums.Role;
 import com.repairagency.repository.DaoFactory;
 import com.repairagency.repository.EntityDao;
-import com.repairagency.web.view.UserDTO;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -15,23 +15,35 @@ public class UserService {
     private EntityDao<User> userDao;
     private static final Logger LOG = Logger.getLogger(UserService.class);
 
-
     public UserService() {
         this.userDao = DaoFactory.getEntityDao(DaoType.USER);
     }
 
+    /**
+     * Validates User's Login and checks if it corresponds with password
+     *
+     * @param login
+     * @param password
+     * @return
+     */
     public boolean validateUser(String login, String password) {
         User user = userDao.getByField(login, false);
-        LOG.info("Get user by login:"+user);
-        if (user != null){
+        LOG.info("Get user by login:" + user);
+        if (user != null) {
             if (user.getPassword().equals(password)) {
                 LOG.info("user validate");
                 return true;
             }
         }
-            return false;
+        return false;
     }
 
+    /**
+     * Validates if Login exists in DB
+     *
+     * @param login
+     * @return
+     */
     public boolean validateLogin(String login) {
         List<User> all = userDao.getAll();
         for (User user : all) {
@@ -43,41 +55,100 @@ public class UserService {
         return true;
     }
 
+    /**
+     * Validates whether confirmPasswords corresponds with Password
+     *
+     * @param password
+     * @param confirmPassword
+     * @return
+     */
     public boolean validatePassword(String password, String confirmPassword) {
         if (password.equals(confirmPassword)) return true;
         return false;
     }
 
+    /**
+     * Gets User by ID from DB
+     *
+     * @param id
+     * @return
+     */
     public User getUser(int id) {
         return userDao.getById(id, false);
     }
 
+    /**
+     * Gets User by Login from DB
+     *
+     * @param login
+     * @return
+     */
     public User getUserByLogin(String login) {
         return userDao.getByField(login, false);
     }
 
+    /**
+     * Converts data from Post request to User and stores it into DB
+     *
+     * @param firstName
+     * @param lastName
+     * @param phone
+     * @param login
+     * @param password
+     * @return
+     */
     public User registrationUser(String firstName, String lastName, String phone, String login, String password) {
         User newUser = new User(firstName, lastName, phone, login, password, Role.CUSTOMER);
         userDao.create(newUser);
         return newUser;
     }
 
+    /**
+     * Converts data from Post request to User and updates it in DB
+     *
+     * @param id
+     * @param firstName
+     * @param lastName
+     * @param phone
+     * @param login
+     * @param password
+     * @param role
+     * @return
+     */
     public User updateUser(int id, String firstName, String lastName, String phone, String login, String password, Role role) {
         User updatedUser = new User(id, firstName, lastName, phone, login, password, role);
         userDao.update(updatedUser);
         return updatedUser;
     }
 
-    public List<UserDTO>getAll() {
+    /**
+     * Gets List UserDTO from DB
+     *
+     * @return
+     */
+    public List<UserDTO> getAll() {
         List<User> all = userDao.getAll();
         return mapToUserDTO(all);
     }
 
-    public List<UserDTO>getAllPaginated(int page, int size) {
+    /**
+     * Gets a paginated List UserDTO from DB
+     *
+     * @param page
+     * @param size
+     * @return
+     */
+    public List<UserDTO> getAllPaginated(int page, int size) {
         List<User> all = userDao.getAllPaginated(page, size);
         return mapToUserDTO(all);
     }
 
+    /**
+     * Adds List User to List UserDTO
+     *
+     * @param all
+     * @return
+     */
     private List<UserDTO> mapToUserDTO(List<User> all) {
         return all.stream().map(users -> {
             User userProfile = userDao.getById(users.getId(), false);
@@ -93,7 +164,12 @@ public class UserService {
         }).collect(Collectors.toList());
     }
 
-    public void deleteUser(int id){
+    /**
+     * Deletes User from DB
+     *
+     * @param id
+     */
+    public void deleteUser(int id) {
         User deleteUser = getUser(id);
         userDao.remove(deleteUser);
     }
