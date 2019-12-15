@@ -50,15 +50,7 @@ public class StaticResourceFilterTest {
         verify(filterChain).doFilter(request, response);
     }
 
-    @Test
-    public void shouldSkipWhenUIResource() throws IOException, ServletException {
-        when(request.getRequestURI()).thenReturn(UI_PATH);
-        
-        instance.doFilter(request, response, filterChain);
-        
-        verify(filterChain).doFilter(request, response);
-    } 
-    @Test
+       @Test
     public void shouldSkipWhenServletPath() throws IOException, ServletException {
         when(request.getRequestURI()).thenReturn(CONTEXT_PATH + APP_PATH);
         

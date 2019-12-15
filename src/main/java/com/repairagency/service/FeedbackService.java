@@ -7,12 +7,13 @@ import com.repairagency.model.User;
 import com.repairagency.model.enums.DaoType;
 import com.repairagency.repository.DaoFactory;
 import com.repairagency.repository.EntityDao;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@AllArgsConstructor
 public class FeedbackService {
     private static final Logger LOG = Logger.getLogger(FeedbackService.class);
 

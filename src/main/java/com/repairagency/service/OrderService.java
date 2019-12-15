@@ -10,6 +10,7 @@ import com.repairagency.model.enums.DaoType;
 import com.repairagency.model.enums.Status;
 import com.repairagency.repository.DaoFactory;
 import com.repairagency.repository.EntityDao;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
@@ -17,7 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.google.common.primitives.Ints.tryParse;
-
+@AllArgsConstructor
 public class OrderService {
     private static final Logger LOG = Logger.getLogger(OrderService.class);
 
@@ -32,6 +33,10 @@ public class OrderService {
         this.repairTypesDao = DaoFactory.getEntityDao(DaoType.REPAIR);
         this.commentsDao = DaoFactory.getEntityDao(DaoType.COMMENTS);
     }
+
+
+
+
 
     /**
      * Gets List OrderDTO from DB by User ID

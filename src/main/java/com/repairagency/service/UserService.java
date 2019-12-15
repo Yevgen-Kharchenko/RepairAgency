@@ -6,11 +6,13 @@ import com.repairagency.model.enums.DaoType;
 import com.repairagency.model.enums.Role;
 import com.repairagency.repository.DaoFactory;
 import com.repairagency.repository.EntityDao;
+import lombok.AllArgsConstructor;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@AllArgsConstructor
 public class UserService {
     private EntityDao<User> userDao;
     private static final Logger LOG = Logger.getLogger(UserService.class);
